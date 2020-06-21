@@ -17,6 +17,18 @@ import java.util.Scanner;
  */
 public class BMI {
   public static void main(String[] args) {
+    // Get user weight and height in kg and cm
+    Scanner scanner = new Scanner(System.in);
+    System.out.print("Enter your weight (kg) -> ");
+    double weight = scanner.nextInt();
+    System.out.print("Enter your height (cm) -> ");
+    double height = scanner.nextInt() / 100.0;
+
+    calculateBMI(weight, height);
+
+  }
+
+  public static void calculateBMI(double weight, double height) { // also used by 3.17 exercise
     System.out.println(
             "BMI VALUES\n" +
             "Underweight: less than 18.5\n" +
@@ -25,24 +37,18 @@ public class BMI {
             "Obese: 30 or greater\n"
     );
 
-    // Get user weight and height in kg and cm
-    Scanner scanner = new Scanner(System.in);
-    System.out.print("Enter your weight (kg) -> ");
-    int weight = scanner.nextInt();
-    System.out.print("Enter your height (cm) -> ");
-    double height = scanner.nextInt() / 100.0;
-
     // Calculating BMI (using double which is floating point)
-    double bmi = weight / (height * height);
+//    double bmi = weight / (height * height); // kg and cm
+    double bmi = (weight * 703) / (height * height); // pounds and inches
 
     // Determine user BMI index
     if (bmi < 18.5)
-      System.out.println("\nYou are underweight -> Lets go to Macdonald's");
+      System.out.println("You are underweight -> Lets go to Macdonald's");
     else if (bmi < 24.9)
-      System.out.println("\nNormal BMI -> Well Done!");
+      System.out.println("Normal BMI -> Well Done!");
     else if (bmi < 29.9)
-      System.out.println("\nYou are overweight -> Today at 5pm at the Gym");
+      System.out.println("You are overweight -> Today at 5pm at the Gym");
     else
-      System.out.println("\nYou are obese -> ...");
+      System.out.println("You are obese -> ...");
   }
 }

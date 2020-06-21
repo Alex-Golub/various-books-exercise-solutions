@@ -1,0 +1,72 @@
+3.5 (Keyword new) What’s the purpose of keyword new?
+Explain what happens when you use it.
+=== ANS ===
+We use new keyword when we want to create new instance object in the memory.
+When we write new MyClass() we invoke MyClass's empty-argument constructor
+and Java will create an object of that class in the memory and we will get
+a reference to that object.
+Within the constructor, this object's attribute(s) are set to their default values, so we
+get a reference to MyClass object which is initialized with default values.
+
+
+
+3.6 (Default Constructors) What is a default constructor?
+How are an object’s instance variables initialized if a class has only a default constructor?
+=== ANS ===
+Default constructor is class's constructor that takes no arguments e.g. new MyClass().
+Java will provide a no-arg i.e default constructor if there is no other
+"programmer-defined" constructor.
+Default constructor as it's name states will create an object in memory and will initialize
+this object attributes to their default values.
+Attribute values has default values, primitive are set to 0 if they are integers, 0.0 if they
+are floating-point, false for boolean and empty character for char values.
+Reference attribute values are set to null as its default values.
+
+
+
+3.7 (Instance Variables) Explain the purpose of an instance variable.
+=== ANS ===
+Instance variables are meant to represent the object current state.
+Object state is constantly changing and by querying its instance variables (getters) we
+can get information about its present state.
+E.g. Person object has an age instance variable to represent this Person current age.
+Every moment we can query this Person current age.
+
+
+
+3.8 (Using Classes without Importing Them) Most classes need to be imported before they can
+be used in an app.
+Why is every app allowed to use classes System and String without first importing them?
+=== ANS ===
+The package java.lang is the most basic package that must be imported to write Java code.
+It contains the most mandatory classes to allow write Java program such as String class, System
+class, Math class etc.
+Because it is to basic and mandatory it will be redundant to import it each time, so,
+Java compiler automatically imports this package for us.
+We can still write import java.lang.*; but it is redundant.
+
+
+
+3.9 (Using a Class without Importing It) Explain how a program could use class Scanner
+without importing it.
+=== ANS ===
+We can write Scanner class fully-qualified name and skip the import statement.
+import java.util.Scanner; // import
+java.util.Scanner scanner = new java.util.Scanner(System.in); // without using import
+
+
+
+3.10 (set and get Methods) Explain why a class might provide a set method and a get method for
+an instance variable.
+=== ANS ===
+Each object which is instantiated from a class must keep its inner attributes safe from direct
+access from outside world i.e. "hide/encapsulate" inner data.
+We dont want our object attribute to be changed without our knowing/controlling the data.
+To prevent such situations we do allow to read object attributes and to set it but only thought
+an "interface" that we provide in form of getter and setters methods.
+With getters we give back the object attribute to the client but we will give a copy of the
+original one so the client can only read it without modifying the content.
+With setters we give client the ability to change object attributes but we are controlling the
+values that are passed and if its not according to object rules we will ignore the values.
+
+
