@@ -1,0 +1,394 @@
+9.3.1 Describe the relationship between an object and its defining class.
+=== ANS ===
+A class is a template from which objects can be created.
+Each object that is created will contain all properties/attributes and methods that are defined in the class
+
+
+
+9.3.2 How do you define a class?
+=== ANS ===
+To define a class we use the "class" key word followed by the name of the class
+e.g. class MyClass {...} // MyClass is a template for creating MyClass objects
+
+
+
+9.3.3 How do you declare an object’s reference variable?
+=== ANS ===
+When an object is created it created in the memory and we must somehow now "where
+he is". To point to that object we use a reference variable of that object type.
+MyObject referenceToMyObject = new MyObject(); // referenceToMyObject now points to the MyObject that has been created
+
+
+
+9.3.4 How do you create an object?
+=== ANS ===
+To create a new object we are using the new operator after that we are invoking the class constructor
+
+
+
+9.4.5 What are the differences between constructors and methods?
+=== ANS ===
+We use Constructors to create a new object and (optionally) initialize its fields
+Methods are used to change object state i.e. change objects fields
+
+
+
+9.4.6 When will a class have a default constructor?
+=== ANS ===
+Default constructor will be provided by the compiler if no other constructor was provided by the developer.
+Default constructor has no argument and fields of that newly created object are initialised to there default values
+primitives to 0 or 0.0 if int or double respectively, boolean to false, char to '\u0000', objects to null
+
+
+
+9.5.1 Which operator is used to access a data field or invoke a method from an object?
+=== ANS ===
+Dot operator (.)
+Use dot operator in reference variable context (dot operator can't be used with primitive data types)
+
+
+
+9.5.2 What is an anonymous object?
+=== ANS ===
+Its an object that is created on the fly and no reference variable is pointing to that object
+i.e. address memory of that object is ignored when using the new operator
+e.g. Circle circle = new Circle(); // circle pointing to a Circle object on the memory
+new Circle(); // there is no reference to the newly crated circle thus its name is "Anonymous Object"
+
+
+
+9.5.3 What is NullPointerException?
+=== ANS ===
+Its a RuntimeException that occurs when we try to access methods of an object but the referance variable
+no pointing to any object yet.
+e.g. Phone phone; // phone can hold a reference to a Phone object but currently its not pointing to anything
+phone.ring(); // will cause NullPointerException because phone is still not pointing to any Phone object
+
+
+
+9.5.4 Is an array an object or a primitive-type value?
+Can an array contain elements of an object type?
+Describe the default value for the elements of an array.
+=== ANS ===
+Array is an object in Java. We use new operator to create new array.
+Array can contain primitive types as-well as object reference variables
+i.e. int[] intArray = new int[5]; // array of primitive integer values
+TV[] tvsArray = new TV[5]; // array of reference variables each can point to an TV object in the memory
+primitive type array will default its value to  default values: integer 0, doubles 0.0, boolean false, char '\u0000'
+Object type array will default to null values for each reference variable
+
+
+
+9.5.5 What is wrong with each of the following programs?
+=== ANS ===
+(a): ShowErrors class doesn't contain a constructor that takes an single argument.
+It only has the default(no-arg) constructor provided by the comelier thus, line 3 is not compiling
+(b): ShowErrors does'nt have a method named x() thus, line 4 not compiling
+(c): c is a reference variable which is declared but not initialised to point to an actual object on the memory.
+On line 5 client tries to invoke getRadius() method using that un-initialized reference variable (which is null)
+Java compiler will warn about this but if it will be run we will get NullPointerException.
+(d): Class c doesn't have a constructor that receives a floating point argument thus, line 3 will not compile
+It only have no-arg constructor.
+
+
+
+9.5.6 What is wrong in the following code?
+=== ANS ===
+In class A the developer provided a single argument constructor so, compiler will not give the default no-args
+constructor if there is other constructors thus, line 3 will not compile because A doesn't have a no-args constructor
+
+
+
+9.5.7 What is the output of the following code?
+=== ANS ===
+No issue constructing object from class A. class A declares a field of type boolean that is not initialized
+to default value will be used when an object of class A will be created.
+Default value for boolean is false.
+The output for this program will be: false
+
+
+
+9.6.1 How do you create a Date for the current time?
+How do you display the current time?
+=== ANS ===
+Using System.currentTimeMillis() to get the current time in milliseconds from 1 JUN, 1970.
+Than using Date() overloaded constructor that accepts long which is exactly what we have from previous step.
+System.out.println(java.util.Date(System.currentTimeMillis())); // we will get the current date
+
+
+
+9.6.2 How do you create a Point2D?
+Suppose p1 and p2 are two instances of Point2D,
+how do you obtain the distance between the two points?
+How do you obtain the midpoint between the two points?
+=== ANS ===
+Point2D is part of javafx.geometry library.
+We can use the class Point2D to create a point in 2D space.
+Obtaining the distance between two 2D points can be done using the distance() method.
+distance() methods is overloaded so, if we have 2 Point2D objects we can get the distance
+using distance(Point2D otherPoint); methods which return the distance between those points as double value
+otherwise we can use distance(double x, double y); to calculate distance from this point to the point we specify
+as x and y within the method.
+Midpoint between two Point2D objects is obtained using the midpoint(Point2D otherPoint); method
+
+
+
+9.6.3 Which packages contain the classes Date, Random, Point2D, System, and Math?
+=== ANS ===
+Date, Random: java.util
+Point2D: javafx.geometry
+System: java.lang
+Math: java.Math
+
+
+
+9.7.1 Suppose the class F is defined in (a).
+Let f be an instance of F.
+Which of the statements in (b) are correct?
+=== ANS ===
+We have instance of F so, in b we first create it as F f = new F();
+NOTE: instance data fields must be encapsulated i.e. hidden i.e. private
+System.out.println(f.i); // correct but not a good practice because of NOTE. result here is 0
+System.out.println(f.s); // correct, reading static field can be done using ClassName or class reference variable result here is ""
+f.imethod(); // correct, instance methods invoked with instance reference variable
+f.smethod(); // correct, but should have been renamed to F.smethod()
+System.out.println(F.i); // compile-error, i is an instance data field thus requires an reference of class F to read it,
+// here we try to read it in static manner
+System.out.println(F.s); // correct, s is static and can be read using static manner result here is "" i.e. empty string
+F.imethod(); // compile-error, imethod() is instance method can can't be read with static manner
+F.smethod(); // correct, smethod() is static and invoked using static manner
+
+
+
+9.7.2 Add the static keyword in the place of ? if appropriate.
+=== ANS ===
+public static void main(String[] args) {...} // main must be static otherwise we will get run-time error "please define the main method"
+public int getCount() { return count; } // no static modifier is needed here because count is a instance data field
+public static int factorial(int n) {...} // calculating factorial is not instance specific method, it can be done for every integer n
+
+
+
+9.7.3 Can you invoke an instance method or reference an instance variable from a static method?
+Can you invoke a static method or reference a static variable from an instance method?
+What is wrong in the following code?
+=== ANS ===
+Yes, invoking instance method or referencing to an instance variable from static context is possible
+only if within this static method there is a reference variable.
+Yes, referencing static members are always possible from instance methods because static members are class members
+and not associated with any class instance objects.
+line 3 will cause compilation-error because main is static method and method1() is instance method
+invoking instance method from static context is not possible if there is no reference variable declared within the static method
+line 11 will cause compilation-error. method2() is static and it tries to read class c instance variable which is forbidden
+
+
+
+9.9.1 What is an accessor method?
+What is a mutator method?
+What are the naming conventions for accessor methods and mutator methods?
+=== ANS ===
+accessor methods are instance methods that allow clients to retrieve encapsulated object data fields
+i.e. object private data fields
+mutator methods are also instance methods that allow clients to be able to change object private fields.
+Using mutator methods we can prevent from clients to temper with the data and we allow to set it only if
+the wanted values are valid.
+Naming conventions for getters: get<PropertyName> , for booleans fields: is<PropertyName>
+Naming conventions for setters: set<PropertyName>
+
+
+
+9.9.2 What are the benefits of data field encapsulation?
+=== ANS ===
+Using field encapsulation we prevent direct access to object field and not allowing to temper the data freely.
+Client should read/change object fields only through an interface which we will supply in form of getters/setters
+This way we have more control on the values that are passed (we can validate it before assigning new value to a field).
+
+
+
+9.9.3 In the following code, radius is private in the Circle class, and myCircle is an object
+of the Circle class.
+Does the highlighted code cause any problems? If so, explain why.
+=== ANS ===
+No, in main static method a Circle object is created and we can reference that object with myCircle reference variable.
+main method is part of Circle class so, we can freely reference this class private fields in this cas radius field.
+This is possible due to the fact that main() is part of Circle class. If main was written in other class
+it wouldn't be possible to directly reference myCircle radius field (in that case a getter should be supplied in Circle class)
+
+
+
+9.10.1 Describe the difference between passing a parameter of a primitive type and passing
+a parameter of a reference type.
+Show the output of the following programs:
+=== ANS ===
+In java values are passed-by-value i.e. if the value is a primitive type (byte, short, int, float, double, boolean)
+within the method a copy of that value is made and used (this value is now considered as a local variable)
+within this method if the value is changed its not affecting the original value that have been passed thus, retuning from the
+method the original value is the same as it was before invoking the method.
+If a reference variable is used to pass to a method, in that method a new reference variable will point to the same object
+so, changing the content of that object within the method will affect the object fields. And when method is finished
+the original reference variable that pointed before invoking the method is still pointing to the same object but its
+content has already changed in the method.
+So, primitive are passed and a copy of them is made in the method not changing the original value
+Reference variable are passed and thier content i.e. object state can be changed in the method.
+OUTPUT: count is 101
+        times is 0
+count has been changed because increment() has a Count reference variable to preforming c.count++ is actually changing
+myCount count field while times is a primitive type so, for each invocation of increment() times is always 0.
+incrementing times in increment() does not change the original times value from main.
+
+
+
+9.10.2 Show the output of the following program:
+=== ANS ===
+swap1(Circle x, Circle y) {...} // swapping the reference variables localy not changing the original circle1 and circle2
+                                // thus this method is not doing anything.
+swap2(Circle x, Circle y) {...} // this method actually swaps the content of circle1 and circle2.
+                                // swapping the radius values.
+OUTPUT: After swap1: circle1 = 1.0 circle2 = 2.0
+        After swap2: circle1 = 2.0 circle2 = 1.0
+
+
+
+9.10.3 Show the output of the following code:
+=== ANS ===
+(a): swap(a[0], a[1]); // a[i] is an primitive type (int) so invoking swap(int n1, int n2) {...} with this variables will not
+change the original a[0] and a[1] (a copy is made in the method)
+OUTPUT: a[0] = 1 a[1] = 2
+(b): swap(int[] a) {...} // is receiving a reference address to the array object which is located on the Heap and actually
+changing its content.
+OUTPUT: a[0] = 2 a[1] = 1
+(c): Same as (b) t instance content (e1, e2) fields are swapped
+OUTPUT: e1 = 2 e2 = 1
+(d): i is static so it is not associated with any T object while j is an instance field i.e. for every T object
+there is its own j instance variable.
+i is playing the role of a object created counter.
+OUTPUT: t1's i = 2 and j = 1
+        t2's i = 2 and j = 1
+
+
+
+9.10.4 What is the output of the following programs?
+=== ANS ===
+(a): m1(Date date) {...} // data is a local reference variable, although it is instantiated with a Date object the original
+                         // main() date is not changing. it would have changed if this line was written: data = m1(date);
+                         // and m1(Date date) {...} would have returned a Date type rather then void
+OUTPUT: null
+
+(b): OUTPUT: 1234567
+m1(Date date) {...} creating new Date instance and assigning it to the local data reference variable i.e. overriding
+the previous reference thus date in m1(Date date) will now referencing a Date object the getTime() method will return 7654321.
+Returning from m1() date hasn't been changed thus System.out.println(date.getTime()); prints 1234567.
+It would have changed if m1(Date date) returned a Date object and in the main date would be accepting it e.g.
+date = m1(date);
+System.out.println(date.getTime()); // 7654321
+public static Date m1(Date date) { date = new Date(7654321); return date; }
+
+(c): OUTPUT: 7654321
+date in m1() method is pointing to the same object in memory that date in main() is pointing and by using setTime()
+method of util.Date class the object content is changed in m1() thus returning from m1() and printing getTime()
+using main() date reference variable is printing the value that has been set in m1()
+
+(d): OUTPUT: 1234567
+date in m1() is local so assigning null reference to it not changing the original reference from main().
+if we try to invoke getTime() on m1() date we will get NullPointerException because date has been assigned null.
+
+
+
+9.11.1 What is wrong in the following code?
+=== ANS ===
+On line 3 Date array of size 10 is created.
+When an array of objects is creates all its values are null (default value for object reference variable)
+On line 4 because each "cell" of the dates array hasn't yet been initialized with a Date object it will print null.
+Tying to invoke toString() method on a null on line 5 will cause NullPointerException.
+on line 3 this is what in dates is pointing to: [null, null, null, null, null, null, null, null, null, null]
+each one of them is capable to hold a reference to a Date object.
+
+
+
+9.12.1 If a class contains only private data fields and no setter methods, is the class immutable?
+=== ANS ===
+No. Class considered to be immutable if:
+1. All data fields are private (encapsulated)
+2. No setters method
+3. If an object has data field that is an object (dependency) then when an object is instantiated we make a copy of the passed
+reference variable and assign a copy of it to the field
+e.g. private StringBuilder sb;
+public ClassNameConstructor(StringBuilder sb) { this.sb = new StringBuilder(sb); }
+4. Returning an reference to the client we must return a copy of the original data field
+e.g.
+public StringBuilder getSb() { return new StringBuilder(this.sb); }
+5. Class should not be extended i.e. we mark class as final
+e.g.
+public final class ImmutableClass {...}
+
+
+
+9.12.2 If all the data fields in a class are private and of primitive types, and the class
+doesn’t contain any setter methods, is the class immutable?
+=== ANS ===
+No. Although Inheritance hasn't been learned yet. If class is extendable then it is not immutable
+to prevent that we mark the class with the final modifier.
+
+
+
+9.12.3 Is the following class immutable?
+=== ANS ===
+No. field values is an array. Arrays in Java are objects thus, returning the reference in getValues() method
+to the client is not safe i.e. client can have the reference to our class data field array and can change
+its content without us knowing it i.e. class state is changed and other object of that class is not created
+which is violating the immutable class principle.
+
+
+
+9.13.1 What is the output of the following program?
+=== ANS ===
+... System.out.println("i + j is " + i + j); // i + j is 23. i is declared in main() and j is declared in the inner scope.
+k = i + j; // i is the inner scope variable of main() which is 2 and j is not defined with main() scope so j is the static
+variable of the class level which is 0 thus k = 2 + 0 => k = 2
+System.out.println("k is " + k); // k is 2
+System.out.println("j is " + j); // j is 0, static int j here
+
+OUTPUT: i + j is 23
+        k is 2
+        j is 0
+
+
+
+9.14.1 Describe the role of the this keyword.
+=== ANS ===
+this keyword allows us to reference to the currently invoked method members.
+To reference a variable we use this.variableName
+We can invoke a constructor from other constructor using this(args-list) (is must be the first line)
+If a variable is hiding an instance variable we can reference the instance variable using this.variableName.
+
+
+
+9.14.2 What is wrong in the following code?
+=== ANS ===
+3 problems here.
+On line 6: referencing other constructor from a constructor is possible only is the referencing line is the first line
+within the constructor!
+In this line this(0) is 2nd thus this line causes compilation error.
+It should have been like this:
+4 public C() {
+5   this(0); // calling a single argument constructor of class C with one argument
+6   System.out.println("C's no-arg constructor invoked");
+7 }
+
+On line 10: p is an parameter of constructor and it is assigned to itself because p is hiding instance variable p here.
+This should be assigning p to instance variable p i.e. is should be using the this keyword
+9 public C(int p) {
+10      p = p; // should be this.p = p;
+11 }
+
+13 public void setP(int p) {
+14      p = p; // similar issue as in constructor C(int p) is should be this.p = p;
+15 }
+
+
+
+9.14.3 What is wrong in the following code?
+=== ANS ===
+public void m2() { // this is an instance method
+    Test.id = 45; // id field is not static! this line causes compilation error. it should be this.id = 45;
+}
+
