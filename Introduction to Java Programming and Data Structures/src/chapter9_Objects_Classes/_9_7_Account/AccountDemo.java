@@ -30,7 +30,7 @@ package chapter9_Objects_Classes._9_7_Account;
  *
  * Created by ag on 19-May-20 3:48 PM
  */
-public class AccountDemo {
+class AccountDemo {
     public static void main(String[] args) {
         Account account = new Account(1122, 20_000);
         account.setAnnualInterestRate(4.5);

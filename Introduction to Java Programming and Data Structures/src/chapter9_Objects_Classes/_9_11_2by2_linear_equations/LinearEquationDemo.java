@@ -19,37 +19,37 @@ package chapter9_Objects_Classes._9_11_2by2_linear_equations;
  * Created by ag on 24-May-20 5:49 PM
  */
 class LinearEquationDemo {
-    public static void main(String[] args) {
+  public static void main(String[] args) {
 
-        solvable();
+    solvable();
 
-        System.out.println();
+    System.out.println();
 
-        unSolvable();
+    unSolvable();
 
+  }
+
+  private static void unSolvable() {
+    LinearEquation unSolvable = new LinearEquation(1, 1, 1, 1, 1, 0);
+    System.out.println(unSolvable);
+    System.out.println("Is solvable? " + (unSolvable.isSolvable() ? "Yes" : "No"));
+
+    try {
+      System.out.println("Solution: x = " + unSolvable.getX() + ", y = " + unSolvable.getY());
+    } catch (ArithmeticException e) {
+      System.err.println(e.getMessage());
     }
+  }
 
-    private static void unSolvable() {
-        LinearEquation unSolvable = new LinearEquation(1, 1, 1, 1, 1, 0);
-        System.out.println(unSolvable);
-        System.out.println("Is solvable? " + (unSolvable.isSolvable() ? "Yes" : "No"));
+  private static void solvable() {
+    LinearEquation solvable = new LinearEquation(1, 2, 3, 4, 5, 6);
+    System.out.println(solvable);
+    System.out.println("Is solvable? " + (solvable.isSolvable() ? "Yes" : "No"));
 
-        try {
-            System.out.println("Solution: x = " + unSolvable.getX() + ", y = " + unSolvable.getY());
-        } catch (ArithmeticException e) {
-            System.err.println(e.getMessage());
-        }
+    try {
+      System.out.println("Solution: x = " + solvable.getX() + ", y = " + solvable.getY());
+    } catch (ArithmeticException e) {
+      System.err.println(e.getMessage());
     }
-
-    private static void solvable() {
-        LinearEquation solvable = new LinearEquation(1, 2, 3, 4, 5, 6);
-        System.out.println(solvable);
-        System.out.println("Is solvable? " + (solvable.isSolvable() ? "Yes" : "No"));
-
-        try {
-            System.out.println("Solution: x = " + solvable.getX() + ", y = " + solvable.getY());
-        } catch (ArithmeticException e) {
-            System.err.println(e.getMessage());
-        }
-    }
+  }
 }

@@ -21,43 +21,43 @@ package chapter9_Objects_Classes._9_10_Quadratic_Equations;
  * <p>
  * Created by ag on 24-May-20 5:02 PM
  */
-public class QuadraticEquationDemo {
-    public static void main(String[] args) {
+class QuadraticEquationDemo {
+  public static void main(String[] args) {
 
-        noRoots();
+    noRoots();
 
-        System.out.println();
+    System.out.println();
 
-        oneRoot();
+    oneRoot();
 
-        System.out.println();
+    System.out.println();
 
-        invalidEquation();
+    invalidEquation();
 
+  }
+
+  private static void noRoots() {
+    QuadraticEquation noRoots = new QuadraticEquation(-1, 2, -3);
+    System.out.println("No roots equation: " + noRoots);
+    System.out.println("Discriminant = " + noRoots.getDiscriminant());
+
+    // noRoots.getDiscriminant() < 0 no roots expected 0.0
+    System.out.println("Roots r1 = " + noRoots.getRoot1() + ", r2 = " + noRoots.getRoot2());
+  }
+
+  private static void oneRoot() {
+    // One root equation
+    QuadraticEquation oneRoot = new QuadraticEquation(1, 2, 1);
+    System.out.println("One root equation: " + oneRoot);
+    System.out.println("Roots: r1 = " + oneRoot.getRoot1() + ", r2 = " + oneRoot.getRoot2());
+  }
+
+  private static void invalidEquation() {
+    // Invalid quadratic noRoots
+    try {
+      QuadraticEquation linear = new QuadraticEquation(0, 2, -3);
+    } catch (IllegalArgumentException e) {
+      System.err.println(e.getMessage());
     }
-
-    private static void noRoots() {
-        QuadraticEquation noRoots = new QuadraticEquation(-1, 2, -3);
-        System.out.println("No roots equation: " + noRoots);
-        System.out.println("Discriminant = " + noRoots.getDiscriminant());
-
-        // noRoots.getDiscriminant() < 0 no roots expected 0.0
-        System.out.println("Roots r1 = " + noRoots.getRoot1() + ", r2 = " + noRoots.getRoot2());
-    }
-
-    private static void oneRoot() {
-        // One root equation
-        QuadraticEquation oneRoot = new QuadraticEquation(1, 2, 1);
-        System.out.println("One root equation: " + oneRoot);
-        System.out.println("Roots: r1 = " + oneRoot.getRoot1() + ", r2 = " + oneRoot.getRoot2());
-    }
-
-    private static void invalidEquation() {
-        // Invalid quadratic noRoots
-        try {
-            QuadraticEquation linear = new QuadraticEquation(0, 2, -3);
-        } catch (IllegalArgumentException e) {
-            System.err.println(e.getMessage());
-        }
-    }
+  }
 }
