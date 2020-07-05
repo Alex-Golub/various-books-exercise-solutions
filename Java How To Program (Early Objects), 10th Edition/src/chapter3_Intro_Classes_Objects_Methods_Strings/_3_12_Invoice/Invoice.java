@@ -3,7 +3,7 @@ package chapter3_Intro_Classes_Objects_Methods_Strings._3_12_Invoice;
 /**
  * Created by ag on 18-Jun-20 3:50 PM
  */
-class Invoice {
+public class Invoice {
 
   private String partNumber;
   private String description;

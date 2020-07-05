@@ -9,7 +9,7 @@ package chapter3_Intro_Classes_Objects_Methods_Strings._3_14_Date;
  * <p>
  * Created by ag on 21-Jun-20 12:11 PM
  */
-public class DateTest {
+class DateTest {
   public static void main(String[] args) {
     Date date = new Date(5, 12, 1988);
     System.out.println(date.displayDate());

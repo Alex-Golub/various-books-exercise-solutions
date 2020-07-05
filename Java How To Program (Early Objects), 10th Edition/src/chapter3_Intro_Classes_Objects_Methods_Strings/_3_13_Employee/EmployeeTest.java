@@ -12,7 +12,7 @@ package chapter3_Intro_Classes_Objects_Methods_Strings._3_13_Employee;
  * salary again.
  * Created by ag on 21-Jun-20 11:54 AM
  */
-public class EmployeeTest {
+class EmployeeTest {
   public static void main(String[] args) {
     Employee jane = new Employee("Jane", "Silky", 2500.0);
     Employee amy = new Employee("Amy", "Wilson", 4000.0);

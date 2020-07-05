@@ -5,7 +5,7 @@ import chapter3_Intro_Classes_Objects_Methods_Strings._3_14_Date.Date;
 /**
  * Created by ag on 21-Jun-20 12:31 PM
  */
-public class HeartRateTest {
+class HeartRateTest {
   public static void main(String[] args) {
     HeartRates rates = new HeartRates("Michael", "Scoot",
             new Date(12, 1, 1965));

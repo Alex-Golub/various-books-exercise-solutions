@@ -3,7 +3,7 @@ package chapter3_Intro_Classes_Objects_Methods_Strings._3_11_Account;
 /**
  * Created by ag on 18-Jun-20 3:33 PM
  */
-class Account {
+public class Account {
 
   private String name;
   private double balance;

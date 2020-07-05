@@ -3,7 +3,7 @@ package chapter3_Intro_Classes_Objects_Methods_Strings._3_15_Refactor;// Fig. 3.
 
 import java.util.Scanner;
 
-public class AccountTest {
+class AccountTest {
   public static void main(String[] args) {
     Account account1 = new Account("Jane Green", 50.00);
     Account account2 = new Account("John Blue", -7.53);

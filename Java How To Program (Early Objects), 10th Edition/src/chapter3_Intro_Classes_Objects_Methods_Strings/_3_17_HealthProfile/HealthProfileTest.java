@@ -5,7 +5,7 @@ import chapter3_Intro_Classes_Objects_Methods_Strings._3_14_Date.Date;
 /**
  * Created by ag on 21-Jun-20 1:02 PM
  */
-public class HealthProfileTest {
+class HealthProfileTest {
   public static void main(String[] args) {
     HealthProfile profile = new HealthProfile(
             "Alex", "MrDrProfessor", "MALE",
