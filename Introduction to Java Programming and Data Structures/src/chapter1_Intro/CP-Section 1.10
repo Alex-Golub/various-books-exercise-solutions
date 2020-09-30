@@ -1,0 +1,55 @@
+==================================== Section 1.10 =========================================
+1.10.1 What are syntax errors (compile errors), runtime errors, and logic errors?
+=== ANS ===
+Compile error: we didn't follow the Java right syntax. e.g. missing semi-colon, closing
+curly braces, quotation etc.
+Runtime error: program compiles and runs but terminates abnormally.
+Logic error: program compiles executes and finish normally but result is unexpected.
+
+1.10.2 Give examples of syntax errors, runtime errors, and logic errors.
+=== ANS ===
+Syntax: pubic class MyClass {...} // wrong use of class keyword
+
+Runtime:
+  public class MyClass {
+    public static void Main(String[] args) { // NoSuchMethodError when java MyClass executed
+      // some code here...
+    }
+  }
+
+Logic:
+  public class AddTwoNumber {
+    public static void main(String[] args) {
+      System.out.println("2 + 5 = " + (2 * 5)); // 7 expected, got 10
+    }
+  }
+
+1.10.3 If you forget to put a closing quotation mark on a string, what kind error of will be raised?
+=== ANS ===
+Compile time error
+
+
+1.10.4 If your program needs to read integers, but the user entered strings, an error would
+occur when running this program. What kind of error is this?
+=== ANS ===
+Runtime error
+
+
+1.10.5 Suppose you write a program for computing the perimeter of a rectangle and you
+mistakenly write your program so it computes the area of a rectangle. What kind of error is this?
+=== ANS ===
+Logic error
+
+
+1.10.6 Identify and fix the errors in the following code:
+    1 public class Welcome {
+    2   public void Main(String[] args) {
+    3     System.out.println('Welcome to Java!);
+    4   }
+    5 )
+=== ANS ===
+    1 public class Welcome {
+    2   public static void main(String[] args) { // static and lowercase m
+    3     System.out.println('Welcome to Java!"); // closing quotation missing
+    4   }
+    5 )

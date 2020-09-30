@@ -1,0 +1,54 @@
+==================================== Section 1.8 =========================================
+1.8.1 What is the Java source filename extension, and what is the Java bytecode filename
+extension?
+=== ANS ===
+Source file   => .java
+Bytecode file => .class
+
+
+1.8.2 What are the input and output of a Java compiler?
+=== ANS ===
+Source Code => compiler => Bytecode file
+
+
+1.8.3 What is the command to compile a Java program?
+=== ANS ===
+javac MyClass.java
+
+
+1.8.4 What is the command to run a Java program?
+=== ANS ===
+java MyClass
+
+
+1.8.5 What is the JVM?
+=== ANS ===
+After source file has been successfully compiled and bytecode file generated, this
+bytecode contains machine instruction to execute our source code.
+JVM is virtual machine that interprets bytecode file and executes every single line
+along with other library code.
+It translates the individual instructions in the bytecode into the target machine
+language code one at a time, rather than the whole program as a single unit.
+
+
+1.8.6 Can Java run on any machine?
+      What is needed to run Java on a computer?
+=== ANS ===
+Java is platform independent i.e. as long as there is a JVM installed on the machine
+Java program can be run on this machine because essentially Java uses JVM which interprets
+java bytecode to machine code.
+All what is needed to run Java program is JVM.
+
+
+1.8.7 If a NoClassDefFoundError occurs when you run a program, what is the cause of the error?
+=== ANS ===
+We try to execute bytecode file that does not exist.
+E.g. javac MyClass.java => MyClass.class is generated
+     java myClass => NoClassDefFoundError
+
+
+1.8.8 If a NoSuchMethodError occurs when you run a program, what is the cause of the error?
+=== ANS ===
+We try to execute (java MyClass) class file that does not have main method.
+Error: Main method not found in class MyClass, please define the main method as:
+   public static void main(String[] args)

@@ -1,0 +1,47 @@
+==================================== Section 1.3 =========================================
+1.3.1 What language does the CPU understand?
+=== ANSWER ===
+Sequence of binary number is the only language CPU can understand.
+Each sequence is a machine instruction.
+E.g. writing 5+10 is meaningless for CPU because it is not a machine instruction that CPU
+can understand but, providing a sequence of binary numbers such as
+00110101 00101011 00110001 00110000 the machine can understand and execute it
+(it is 5+10 in UTF8 to Binary bits)
+
+
+1.3.2 What is an assembly language?
+      What is an assembler?
+=== ANSWER ===
+Assembly language is one step above from native machine language which is binary numbers
+(also called low-level language).
+Assembly is more convenient to write and modify then plain machine language.
+But still its not machine language so, it must be converted to instructions for the machine
+to execute.
+To do this assembly language uses an assembler which takes the assembly source file
+i.e. file where assembly program was written, and interpret every single line to a plain
+machine instruction.
+As a result we get Machine-Code file which now can be executed by the machine.
+
+
+1.3.3 What is a high-level programming language?
+      What is a source program?
+=== ANSWER ===
+Its a language which can be written almost as plain English, platform independent.
+High-level language is written in a file called source file.
+
+
+1.3.4 What is an interpreter?
+      What is a compiler?
+=== ANSWER ===
+Interpreter is a software tool which interpret each line of a source file into
+machine instruction and executes one instruction at a time.
+
+Compiler is also a software tool which first interprets all the source file code
+into machine instructions and only then it is executed.
+
+
+1.3.5 What is the difference between an interpreted language and a compiled language?
+=== ANSWER ===
+Interpreted language are faster in execution of the code but can lead to program crash wheres,
+compiled languages are more slow because first the whole source code must be interpreted but it
+much safer to run because all instructions are valid (can crash if there is a logic issue).
