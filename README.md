@@ -3,7 +3,7 @@ This repository contains my solutions for the following books (checkpoints, code
 
 ## Java
 - [ ] Introduction to Java Programming and Data Structures | Y. daniel Liang | 11th Edition - [Solutions](https://bit.ly/3jexfNm)
-- [ ]Java How To Program (Early Objects) | Deitel & Associates, Inc. | 10th Edition - [Solutions](https://bit.ly/2FXTsBb)
+- [ ] Java How To Program (Early Objects) | Deitel & Associates, Inc. | 10th Edition - [Solutions](https://bit.ly/2FXTsBb)
 - [ ] Building Java Programs A Back to Basics Approach | Stuart Reges & Marty Stepp | Third Edition
 - [ ] Part 1: Java Programming 9th Edition | Joyce Farrell | 9th Edition
 - [ ] Part 2: Programming Logic and Design, Comprehensive | Joyce Farrell | 8th Edition
