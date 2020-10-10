@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Practice Page</title>
+    <style>
+      p {
+        border: 1px solid red;
+        background: rgba(255, 0, 0, 0.1);
+      }
+
+      blockquote {
+        border: 1px solid dodgerblue;
+        background: rgba(0, 0, 255, 0.05);
+      }
+
+      pre {
+        border: 1px solid orchid;
+        background: rgba(0, 255, 0, 0.1);
+      }
+
+      figure {
+        border: 1px solid orange;
+        background: rgba(255, 255, 0, 0.1);
+      }
+
+      img {
+        border: 1px solid black;
+        background: rgba(173, 255, 47, 0.2);
+      }
+
+      header {
+        border: 1px solid darkgreen;
+        background: rgba(0, 100, 0, 0.2);
+      }
+
+      article {
+        border: 1px solid gold;
+        background: rgba(0, 0, 139, 0.1);
+      }
+
+      .listing {
+        border: 2px solid black;
+        background: rgba(0, 0, 139, 0.1);
+        text-align: center;
+      }
+
+      .listing p {
+        background: none;
+        border: none;
+      }
+
+      ul .tel {
+        color: blueviolet;
+        white-space: nowrap;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>
+      Renowned type designer, Matthew Carter, has this to say about his
+      profession:
+    </p>
+    <blockquote>
+      <p>
+        Our alphabet hasn't changed in eons; there isn't much latitude in what a
+        designer can do with the individual letters.
+      </p>
+      <p>
+        Much like a piece of classical music, the score is written down. It's
+        not something that is tampered with, and yet, each conductor interprets
+        that score differently. There is tension in the interpretation.
+      </p>
+    </blockquote>
+
+    <pre>
+      This          is an           example of
+              text with                           a lot of curious
+                            whitespace.
+        public class Test {
+          public static void main(String args) {
+            System.out.println("This is preformatted element")
+          }
+        }
+    </pre>
+    <p>This is an example of text with a lot of curious whitespace.</p>
+
+    <figure>
+      <img
+        src="https://www.w3resource.com/w3r_images/matplotlib-piechart-exercise-1.png"
+        width="300"
+        alt="pie chart showing programing languages popularity"
+      />
+      <figcaption>Programing Languages Popularity</figcaption>
+    </figure>
+
+    <figure>
+      <pre>
+          <code>
+          body {
+            background-color: #000;
+            color: red;
+          }
+          </code>
+        </pre>
+      <figcaption>Sample CSS rule.</figcaption>
+    </figure>
+    <hr />
+
+    <article>
+      <header>
+        <h1>More about WOFF</h1>
+        <p>
+          by Jennifer Robbins,
+          <time datetime="2017-11-11">November 11, 2017</time>
+        </p>
+      </header>
+      <!-- article content here -->
+      <footer>
+        <p><small>Copyright &copy;2017 Jennifer Robbins.</small></p>
+        <nav>
+          <ul>
+            <li><a href="#">Previous</a></li>
+            <li><a href="#">Next</a></li>
+          </ul>
+        </nav>
+      </footer>
+    </article>
+
+    <section>
+      <h1>Web Typography</h1>
+      <p>
+        Back in 1997, there were competing font formats and tools for making
+        them…
+      </p>
+      <p>
+        We now have a number of methods for using beautiful fonts on web pages…
+      </p>
+      <aside>
+        <h2>Web Font Resources</h2>
+        <ul>
+          <li><a href="http://typekit.com/">Typekit</a></li>
+          <li><a href="http://fonts.google.com">Google Fonts</a></li>
+        </ul>
+      </aside>
+    </section>
+
+    <address>
+      Contributed by <a href="../authors/robbins/">Jennifer Robbins</a>,
+      <a href="http://www.oreilly.com/">O'Reilly Media</a>
+    </address>
+
+    <p><abbr title="Battlefield">BF</abbr> is a FFS</p>
+    <p>Scala Sans was designed by <s>Eric Gill</s> Martin Majoor.</p>
+    <p>Matthew Carter says, <q>Our alphabet hasn't changed in eons.</q></p>
+    <p>
+      Passages of this article were inspired by
+      <cite>The Complete Manual of Typography</cite> by James Felici.
+    </p>
+    <p><dfn>Script typefaces</dfn> are based on handwriting.</p>
+
+    <pre>
+    <code>
+      public class MyClass {
+        public static void main(String[] args) {
+          int <var>a</var> = 5, <var>b</var> = 20;
+          System.out.println(a + " " + b); // => <samp>5 20</samp>
+        }
+      }
+    </code>
+  </pre>
+
+    <p>
+      Chief Executive Officer: <del title="retired">Peter Pan</del
+      ><ins>Pippi Longstocking</ins>
+    </p>
+
+    <p>
+      The biggest word you've ever heard and this is how it goes:
+      <em>supercali<wbr />fragilistic<wbr />expialidocious</em>!
+    </p>
+
+    <p>
+      This is how you write Shalom:
+      <span dir="rtl">שלום</span>
+    </p>
+
+    <!-- GENERIC ELEMENTS (DIV AND SPAN) -->
+    <div class="listing">
+      <img
+        src="https://media4.giphy.com/media/xThuWu82QD3pj4wvEQ/200w.webp?cid=ecf05e47w6r7nasid45qo016igl1tvn8grc3nsimabfxwqbf&rid=200w.webp"
+        alt=""
+      />
+      <p><cite>The Complete Manual of Typography</cite>, James Felici</p>
+      <p>
+        A combination of type history and examples of good and bad type design.
+      </p>
+    </div>
+
+    <ul>
+      <li>John: <span class="tel">999.8282</span></li>
+      <li>Paul: <span class="tel">888.4889</span></li>
+      <li>George: <span class="tel">888.1628</span></li>
+      <li>Ringo: <span class="tel">999.3220</span></li>
+    </ul>
+
+    <div id="ISBN0321127307" class="listing book" draggable="true">
+      <img
+        src="https://media3.giphy.com/media/1TgECF0mNVirC/200w.webp?cid=ecf05e47fusby0326rfsw9cq3ttjuayqvltj6gn9kpae6zxy&rid=200w.webp"
+        alt="CMT cover"
+      />
+      <p><cite>The Complete Manual of Typography</cite>, James Felici</p>
+      <p class="description">
+        A combination of type history and examples of good and bad type.
+      </p>
+    </div>
+    <div id="ISBN0881792063" class="listing book">
+      <img
+        src="https://media3.giphy.com/media/l0HlOBZcl7sbV6LnO/200.webp?cid=ecf05e47fusby0326rfsw9cq3ttjuayqvltj6gn9kpae6zxy&rid=200.webp"
+        alt="ETS cover"
+      />
+      <p><cite>The Elements of Typographic Style</cite>, Robert Bringhurst</p>
+      <p class="description">
+        This lovely, well-written book is concerned foremost with creating
+        beautiful typography.
+      </p>
+    </div>
+
+    <ul id="tabs" role="toolbar">
+      <li>A-G</li>
+      <li>H-O</li>
+      <li>P-T</li>
+      <li>U-Z</li>
+    </ul>
+
+    <p>3 tsp. &lt; 3 Tsp. 32 333 333</p>
+  </body>
+</html>
