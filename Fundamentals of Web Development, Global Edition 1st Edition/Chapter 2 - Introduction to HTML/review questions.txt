@@ -1,0 +1,103 @@
+2.7.2 review Questions
+
+1. What is the difference between unordered lists and ordered lists?
+=== ANS ===
+Unordered list will be used when we want list of items that has no special order e.g.
+"grocery buying". Each list item is bulleted.
+Ordered list as its name suggests is a list of ordered items that must be done in order.
+E.g. recipe for making a Hummus.
+
+
+2. Why is semantic structure so important for HTML?
+=== ANS ===
+HTML role it to markup content i.e. give structure to text thus each element in the text
+has different meaning and to accomplish this HTML uses elements that give sematic
+structure to page content.
+
+
+3. What role does W3C play in the implementation of HTML?
+=== ANS ===
+International community of member organizations that articulates web standards so that
+websites look and work the same in all web browsers.
+Its mission is to lead the World Wide Web to its full potential by developing standards,
+protocols and guidelines that ensure its long-term growth.
+
+
+4. What are the three main aims of HTML5?
+=== ANS ===
+1. Improving the Native Web
+2. More Done with Less Code
+3. The Semantic Web
+
+
+5. What are nested HTML elements?
+=== ANS ===
+Elements that are within other HTML elements.
+E.g. <body> element has all the visible content of the page and it contains all the other
+HTML elements such as <header> <footer> etc.
+
+
+6. What is semantic markup? Why is it important?
+=== ANS ===
+Semantic markup is a way of writing and structuring your HTML so that it reinforces the
+semantics, or meaning, of the content rather than its appearance.
+
+
+7. Why is removing presentation-oriented markup from one’s HTML documents considered to
+be a best practice?
+=== ANS ===
+HTML is solely for text semantic markup and logical content structure rather then
+presentation.
+Thus presentation concerns has been taking out to different tool called CSS which solely
+deals with content presentation.
+
+
+8. What is the difference between standards mode and quirks mode?
+What role does the doctype play with these modes?
+=== ANS ===
+In quirks mode, layout emulates nonstandard behavior in Navigator 4 and
+Internet Explorer 5.
+In full standards mode, the behavior is (hopefully) the behavior described by the
+HTML and CSS specifications.
+In almost standards mode, there are only a very small number of quirks implemented.
+
+For HTML documents, browsers use a DOCTYPE in the beginning of the document to decide
+whether to handle it in quirks mode or standards mode.
+To ensure that your page uses full standards mode, make sure that your page has a DOCTYPE
+
+
+9. What is the difference between the <p> and the <div> element?
+In what contexts should one use the one over the other?
+=== ANS ===
+They have semantic difference - a <div> element is designed to describe a container
+of data whereas a <p> element is designed to describe a paragraph of content.
+The <p> tag specially used for a paragraph in an HTML document.
+The <div> tag defines a division or a section in an HTML document.
+
+
+10. Describe the difference between a relative and an absolute reference.
+When should each be used?
+=== ANS ===
+html is in the same directory on the same server as .
+Relative references work like directions.
+If you're referring to a page on somebody elses site, you have to use an
+absolute reference.
+If you're linking to another page on your site, you typically use a relative reference.
+
+
+11. What are the advantages of using the new HTML5 semantic elements?
+Disadvantages?
+=== ANS ===
+HTML5's semantic elements help structure the code we create, making it more readable
+and easier to maintain.
+They help us think about the structure of our dynamic data, and to
+choose titles' hierarchy properly.
+
+
+12. Are you allowed to use more than one <heading> element in a web page?
+Why or why not?
+=== ANS ===
+Yes.
+Yes you can use multiple header elements in your documents,
+by virtue of the w3c documentation: A header element is intended to usually contain the
+section's heading.
