@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=LabClass
+comment0.text=\r\n\ The\ LabClass\ class\ represents\ an\ enrolment\ list\ for\ one\ lab\ class.\ It\ stores\r\n\ the\ time,\ room\ and\ participants\ of\ the\ lab,\ as\ well\ as\ the\ instructor's\ name.\r\n\ \r\n\ @author\ Michael\ K\u00F6lling\ and\ David\ Barnes\r\n\ @version\ 2016.02.29\r\n
+comment1.params=maxNumberOfStudents
+comment1.target=LabClass(int)
+comment1.text=\r\n\ Create\ a\ LabClass\ with\ a\ maximum\ number\ of\ enrolments.\ All\ other\ details\r\n\ are\ set\ to\ default\ values.\r\n
+comment2.params=newStudent
+comment2.target=void\ enrollStudent(Student)
+comment2.text=\r\n\ Add\ a\ student\ to\ this\ LabClass.\r\n
+comment3.params=
+comment3.target=int\ numberOfStudents()
+comment3.text=\r\n\ Return\ the\ number\ of\ students\ currently\ enrolled\ in\ this\ LabClass.\r\n
+comment4.params=roomNumber
+comment4.target=void\ setRoom(java.lang.String)
+comment4.text=\r\n\ Set\ the\ room\ number\ for\ this\ LabClass.\r\n
+comment5.params=timeAndDayString
+comment5.target=void\ setTime(java.lang.String)
+comment5.text=\r\n\ Set\ the\ time\ for\ this\ LabClass.\ The\ parameter\ should\ define\ the\ day\r\n\ and\ the\ time\ of\ day,\ such\ as\ "Friday,\ 10am".\r\n
+comment6.params=instructorName
+comment6.target=void\ setInstructor(java.lang.String)
+comment6.text=\r\n\ Set\ the\ name\ of\ the\ instructor\ for\ this\ LabClass.\r\n
+comment7.params=
+comment7.target=void\ printList()
+comment7.text=\r\n\ Print\ out\ a\ class\ list\ with\ other\ LabClass\ details\ to\ the\ standard\r\n\ terminal.\r\n
+numComments=8
