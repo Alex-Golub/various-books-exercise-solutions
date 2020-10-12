@@ -1,0 +1,200 @@
+5.5
+Describe the four basic elements of counter-controlled repetition
+=== ANS ===
+initialization - first we initialize our counter to control how many time repetition should be executed
+loopContinuationCondition - before loop statments will be executed boolean value must be evaluated
+increment - once all the statements have been executed the counter is incremented/decremented
+            so we get closer to the end of the
+            loop statement(s) - statements that are executed if we enter the loop
+
+******************************************************************************************
+
+5.6
+Compare and contrast the while and for repetition statements.
+=== ANS ===
+       initialization loopContinuationCondition increment
+while  outside         evaluated before         within the loop
+for    inside/outside  evaluated before         within the loop/in the increment part
+
+NOTE: What can be done with while can be done with for loop
+e.g. int i = 0;
+while (i <= 10) { System.out.println("Hi"); i++; }
+is equivalent to this for loop
+for (int i = 0; i <= 10; i++) { System.out.println("Hi"); }
+
+******************************************************************************************
+
+5.7
+Discuss a situation in which it would be more appropriate to use a do…while statement
+than a while statement. Explain why.
+=== ANS ===
+Suppose we want to draw a (x, y) coordinate in unit circle, we want at least one point to be drawn.
+if we use do..while we ensure at least one point to be drawn. If we have used while we should
+initialize a counter.
+e.g.
+do {
+ double x = 2 * Math.random() - 1.0; // (-1, 1)
+ double y = 2 * Math.random() - 1.0;
+} while (x*x + y*y <= 1.0);
+
+double x = 2 * Math.random() - 1.0;
+double y = 2 * Math.random() - 1.0;
+while (x*x + y*y <= 1.0) {
+  x = 2 * Math.random() - 1.0;
+  y = 2 * Math.random() - 1.0;
+}
+
+One more example is if we want to calculate average of class score.
+Average can be calculated if there is at least one score. Using do...while is appropriate.
+
+******************************************************************************************
+
+5.8
+Compare and contrast the break and continue statements.
+=== ANS ===
+break will stop execution of all statements within the loop body and transfer execution to first
+statement after the loop.
+continue will skip all statements and go to the next loop iteration
+
+for (int i = 0; i <= 10; i++) {
+  if (i == 4) { continue; } // skipping 4
+  if (i == 9) { break; } // when i == 9 break out of the loop
+  System.out.println(i + " ");
+} // 0 1 2 3 5 6 7 8
+
+******************************************************************************************
+
+5.9
+Find and correct the error(s) in each of the following segments of code:
+a) For (i = 100, i >= 1, i++) // 1. For is capitalize, causing compilation-error should be for (f is lower-case)
+                              // 2. There is no type of i, causing compilation-error, should be int i = 100
+                              // 3. improper for construct each part should be separated with ; correct way for (init; boolean; increment)
+                              // 4. infinite loop! i is getting bigger and will nave hit value 1
+                              // correct loop is -> for (int i = 100; i >= 1; i--) will print value of i 100 times
+    System.out.println(i);
+
+b) The following code should print whether integer value is odd or even:
+  switch (value % 2)
+  {
+    case 0:
+      System.out.println("Even integer");
+    case 1:
+      System.out.println("Odd integer");
+  } // this will not work because there is no break; statement after each case which will
+    // case "fall-through" to the next case.
+    // e.g. value = 2 we will get "Even integer" followed in new line "Odd integer"
+    // because in case 0 there is no break statement. correct structure is ->
+    switch (value % 2) {
+      case 0:
+        System.out.println("Even integer");
+        break;
+      case 1:
+        System.out.println("Odd integer");
+        break;
+    }
+
+c) The following code should output the odd integers from 19 to 1:
+    for (i = 19; i >= 1; i += 2) // infinite loop! because i is always incremented and will never hit 1
+                                 // Also there is no type for i which cause compilation-error
+      System.out.println(i);
+
+    // correct answer will be ->
+    for (int i = 19; i >= 1; i -= 2)
+      System.out.println(i); // 19 17 15 13 11 9 7 5 3 1 (each number on new line)
+
+d) The following code should output the even integers from 2 to 100:
+    counter = 2; // no type, compilation-error
+    do
+    {
+      System.out.println(counter);
+      counter += 2;
+    } While (counter < 100); // 1. compilation-error, while is capitalized
+                             // 2. out will be => 2 4 6 8 ... 98
+                             //    100 will not be printed because of weak < equality sign
+                             //    should be while (counter <= 100)
+
+******************************************************************************************
+
+5.10
+What does the following program do?
+=== ANS ===
+10 rows in each row 5 "@"
+@@@@@
+@@@@@
+@@@@@
+@@@@@
+@@@@@
+@@@@@
+@@@@@
+@@@@@
+@@@@@
+@@@@@
+
+******************************************************************************************
+
+5.19
+Assume that i = 1, j = 2, k = 3 and m = 2.
+What does each of the following statements print?
+
+a) System.out.println(i == 1);                      // true
+b) System.out.println(j == 3);                      // false
+c) System.out.println((i >= 1) && (j < 4));         // true (logical AND)
+d) System.out.println((m <= 99) & (k < m));         // false (boolean logical AND)
+e) System.out.println((j >= i) || (k == m));        // true ("short circuit" logical OR)
+f) System.out.println((k + m < j) | (3 - j >= k));  // false (boolean logical OR)
+g) System.out.println(!(k > m));                    // false
+
+******************************************************************************************
+
+5.23 (De Morgan’s Laws)
+In this chapter, we discussed the logical operators &&, &, ||, |, ^ and !.
+De Morgan’s laws can sometimes make it more convenient for us to express a logical expression.
+These laws state that the expression !(condition1 && condition2) is logically equivalent
+to the expression (!condition1 || !condition2).
+Also, the expression !(condition1 || condition2) is logically equivalent
+to the expression (!condition1 && !condition2).
+Use De Morgan’s laws to write equivalent expressions for each of the following,
+then write an application to show that both the original expression and the new
+expression in each case produce the same value:
+  a) !(x < 5) && !(y >= 7)    => x >= 5 || y < 7
+  b) !(a == b) || !(g != 5)   => a != b && g == 5
+  c) !((x <= 8) && (y > 4))   => x > 8 || y <= 4
+  d) !((i > 4) || (j <= 6))   => i <= 4 && j > 6
+
+******************************************************************************************
+
+5.27
+What does the following program segment do?
+for (i = 1; i <= 5; i++) {   // total of 5 groups, each group three lines, each line 4 asterisks
+  for (j = 1; j <= 3; j++) { // three lines for each i
+    for (k = 1; k <= 4; k++) // 4 asterisks in a row for each line j
+      System.out.print('*');
+
+      System.out.println();
+    } // end inner for
+
+    System.out.println();
+} // end outer for
+
+=== ANS ===
+****
+****
+****
+
+****
+****
+****
+
+****
+****
+****
+
+****
+****
+****
+
+****
+****
+****
+
+******************************************************************************************
