@@ -1,0 +1,413 @@
+2.2.1
+Identify and fix the errors in the following code:
+  1 public class Test {
+  2   public void main(string[] args) {
+  3     double i = 50.0;
+  4     double k = i + 50.0;
+  5     double j = k + 1;
+  6
+  7     System.out.println("j is " + j + " and
+  8     k is " + k);
+  9   }
+  10 }
+
+      === ANS ===
+      line 2: static and String.
+      line 7-8: adding + after " and " to concat string on new lines.
+      System.out.println("j is " + j + " and " +
+            "k is " + k);
+
+██████████████████████████████████████████████████████████████████████████████████████████
+
+2.3.1
+How do you write a statement to let the user enter a double value from the keyboard?
+What happens if you entered 5a when executing the following code?
+  double radius = input.nextDouble();
+=== ANS ===
+double value = new Scanner(System.in).nextDouble();
+5a is not floating-point value thus, when try scanner object will read this value
+using nextDouble() method we will get:
+  Exception in thread "main" java.util.InputMismatchException
+i.e. 5a can't be converted to floating point value.
+
+
+2.3.2
+Are there any performance differences between the following two import statements?
+import java.util.Scanner;
+import java.util.*;
+=== ANS ===
+No.
+First import is specific import statement and the second is wildcard import statement.
+The information for the classes in an imported package is not read in at compile time or
+runtime unless the class is used in the program.
+The import statement simply tells the compiler where to locate the classes.
+There is no performance difference between a specific import and a wildcard import
+declaration.
+
+██████████████████████████████████████████████████████████████████████████████████████████
+
+2.4.1
+Which of the following identifiers are valid?
+Which are Java keywords?
+miles, Test, a++, ––a, 4#R, $4, #44, apps, class, public, int, x, y, radius
+=== ANS ===
+Valid: miles, Test, $4, apps, radius, x, y
+Keywords: class, public, int
+Not Valid: a++, --a, 4#R, #44, class, public, int
+
+██████████████████████████████████████████████████████████████████████████████████████████
+
+2.5.1
+Identify and fix the errors in the following code:
+  1 public class Test {
+  2   public static void main(String[] args) {
+  3     int i = k + 2;
+  4     System.out.println(i);
+  5   }
+  6 }
+  === ANS ===
+  On line 3, variable k hasn't been declared and initialized hence undefined.
+  Line 3 will result in compilation error.
+
+██████████████████████████████████████████████████████████████████████████████████████████
+
+2.6.1
+Identify and fix the errors in the following code:
+  1 public class Test {
+  2   public static void main(String[] args) {
+  3     int i = j = k = 2;
+  4     System.out.println(i + " " + j + " " + k);
+  5   }
+  6 }
+  === ANS ===
+  j and k are undefined.
+  Correct code will be:
+  int j, k;
+  int i = j = k = 2;
+
+██████████████████████████████████████████████████████████████████████████████████████████
+
+2.7.1
+What are the benefits of using constants?
+Declare an int constant SIZE with value 20.
+=== ANS ===
+Benefits:
+(1) If used repeatedly we don't have to type in the value each time.
+(2) Changing the value is done in only one place.
+(3) Makes program easier to read.
+
+final int SIZE = 20;
+
+██████████████████████████████████████████████████████████████████████████████████████████
+
+2.8.1
+(1) What are the naming conventions for class names, method names, constants, and variables?
+(2) Which of the following items can be a constant, a method, a variable, or a class according
+to the Java naming conventions? MAX_VALUE, Test, read, readDouble
+=== ANS ===
+(1) class:     Capitalize, each new word with first char uppercase. e.g. class MyClass {...}
+    methods:   Lowercase. camelCase if more then one word.          e.g. calcArea(int a, int b) {...}
+    constants: Uppercase and underscores if more then one word.     e.g. final int E = 2.71;
+    variables: lowercase. camelCase if more then one word.          e.g. int year = 1988;
+(2) Test             -> class
+    read, readDouble -> methods
+    MAX_VALUE        -> constant
+    read             -> variables
+
+
+2.8.2
+Translate the following algorithm into Java code:
+Step 1: Declare a double variable named miles with an initial value 100.
+Step 2: Declare a double constant named KILOMETERS_PER_MILE with value 1.609.
+Step 3: Declare a double variable named kilometers, multiply miles and
+KILOMETERS_PER_MILE, and assign the result to kilometers.
+Step 4: Display kilometers to the console.
+What is kilometers after Step 4?
+=== ANS ===
+double miles = 100;
+final double KILOMETERS_PER_MILE = 1.609;
+double kilometers = 100 * KILOMETERS_PER_MILE;
+System.out.print(kilometers); // => 160.9
+
+██████████████████████████████████████████████████████████████████████████████████████████
+
+2.9.1
+(1) Find the largest and smallest data types in Java.
+(2) Which of these data types requires the least amount of memory?
+=== ANS ===
+(1)
+Type    Smallest              Largest                 Memory-Required
+byte    -128                  127                     1byte - 8bits
+short   -32768                32767                   2byte - 16bits
+int     -2147483648           2147483647              4byte - 32bits
+long    -9223372036854775808  9223372036854775807     8byte - 64bits
+float   1.4E-45               3.4028235E38            4byte - 32bits
+double  4.9E-324              1.7976931348623157E308  8byte - 64bits
+boolean false                 true                    1bit
+char    0                     65535                   2bytes - 16bits unsigned
+(2)
+Lease amount of memory required it the boolean data type.
+Only 1 bit is required to represent the state.
+
+
+2.9.2
+Show the result of the following remainders:
+56 % 6   => 2
+78 % -4  => 2
+-34 % 5  => -4 (if dividend is negative then reminder is also negative ires. of divisor)
+-34 % -5 => -4
+5 % 1    => 0
+1 % 5    => 1
+
+
+2.9.3
+If today is Tuesday, what will be the day in 100 days?
+=== ANS ===
+(3 + 100) % 7 = 5 => Thursday (1 -> Sunday, 2 -> Monday, ... , 7n -> Saturday)
+
+
+2.9.4
+What is the result of 25 / 4?
+How would you rewrite the expression if you wished the result to be a floating-point number?
+=== ANS ===
+Integer division will result only the integral part whereas decimal part will be truncated.
+E.g. 25 / 4 = 6 and not 6.25.
+To get the full decimal result at least one of the operands must be of floating number
+type.
+So, 25.0 / 4 == 25 / 4.0 == 25.0 / 4.0 = 6.25
+
+
+2.9.5
+Show the result of the following code:
+System.out.println(2 * (5 / 2 + 5 / 2));   // => 8
+System.out.println(2 * 5 / 2 + 2 * 5 / 2); // => 10 (#)
+System.out.println(2 * (5 / 2));           // => 4
+System.out.println(2 * 5 / 2);             // => 5
+# NOTE: * and / has the same precedence i.e. expression evaluates from left to right
+if there is mix of * and /
+
+
+2.9.6
+Are the following statements correct? If so, show the output.
+System.out.println("25 / 4 is " + 25 / 4);           // => 25 / 4 is 6        (correct)
+System.out.println("25 / 4.0 is " + 25 / 4.0);       // => 25 / 3.0 is 6.25   (correct)
+System.out.println("3 * 2 / 4 is " + 3 * 2 / 4);     // => 3 * 2 / 4 is 1     (incorrect)
+System.out.println("3.0 * 2 / 4 is " + 3.0 * 2 / 4); // => 3.0 * 2 / 4 is 1.5 (correct)
+
+
+2.9.7
+Write a statement to display the result of 2^3.5.
+=== ANS ===
+System.out.println("2^3.5 is " + Math.pow(2, 3.5));
+
+2.9.8
+Suppose m and r are integers.
+Write a Java expression for m(r^2) to obtain a floating-point result.
+=== ANS ===
+System.out.println(m * (r * r) * 1.0); // or m * Math.pow(r, 2)
+
+██████████████████████████████████████████████████████████████████████████████████████████
+
+2.10.1
+How many accurate digits are stored in a float or double type variable?
+=== ANS ===
+With float we get 7-8 digits after decimal point.
+With double we get double precession which is 15-17 digits after decimal point.
+
+
+2.10.2
+Which of the following are correct literals for floating-point numbers?
+12.3, 12.3e+2, 23.4e-2, –334.4, 20.5, 39F, 40D
+=== ANS ===
+All values can be used as floating-point literals.
+
+
+2.10.3
+Which of the following are the same as 52.534?
+5.2534e+1, 0.52534e+2, 525.34e-1, 5.2534e+0
+=== ANS ===
+5.2534e+1  => 5.2534 x10   => 52.534 ✔
+0.52534e+2 => 0.52435 x100 => 52.534 ✔
+525.34e-1  => 525.34 /10   => 52.534 ✔
+5.2534e+0  => 5.253 x1     => 5.2534 ✖
+
+
+2.10.4
+Which of the following are correct literals?
+5_2534e+1, _2534, 5_2, 5_
+=== ANS ===
+5_2534e+1 => 5_2534 x10 => 5_25340 ✔
+_2534     => ✖ compile-error. underscores are allowed only between two digits
+5_2       => ✔
+5_        => ✖ same reason as with _2534
+
+██████████████████████████████████████████████████████████████████████████████████████████
+
+2.11.1
+How would you write the following arithmetic expressions in Java?
+=== ANS ===
+(a). 4.0 / (3 * (r + 34)) - 9 * (a + b * c) + (3.0 + d * (2 + a)) / (a + b * d)
+(b). 5.5 * Math.pow(r + 2.5, 2.5 + t)
+
+██████████████████████████████████████████████████████████████████████████████████████████
+
+2.12.1
+How do you obtain the current second, minute, and hour?
+=== ANS ===
+E.g. Total number of seconds are stored in totalSeconds
+we need to get totalMinutes = totalSeconds / 60
+seconds = totalSeconds % 60
+minutes = totalMinutes % 60
+hours   = totalMinutes / 60 % 24
+
+██████████████████████████████████████████████████████████████████████████████████████████
+
+2.13.1
+Show the output of the following code:
+  double a = 6.5;
+  a += a + 1;             // a = a + (a + 1)
+  System.out.println(a);  // => 14.0
+  a = 6;
+  a /= 2;
+  System.out.println(a);  // 3.0
+
+██████████████████████████████████████████████████████████████████████████████████████████
+
+2.14.1
+Which of these statements are true?
+a. Any expression can be used as a statement.      => false
+b. The expression x++ can be used as a statement.  => true
+c. The statement x = x + 5 is also an expression.  => true
+d. The statement x = y = x = 0 is illegal.         => false
+
+
+2.14.2
+Show the output of the following code:
+int a = 6;
+int b = a++;           // b = 6, a = 7
+System.out.println(a); // => 7
+System.out.println(b); // => 6
+a = 6;
+b = ++a;               // b = 7, a = 7
+System.out.println(a); // => 7
+System.out.println(b); // => 7
+
+██████████████████████████████████████████████████████████████████████████████████████████
+
+2.15.1
+Can different types of numeric values be used together in a computation?
+=== ANS ===
+Yes.
+The resulting data type will be the largest one obtained during the calculations.
+E.g. 123456 + 0.5 * 12345L => result will be double data type value
+
+
+2.15.2
+(1). What does an explicit casting from a double to an int do with the fractional part
+of the double value?
+(2). Does casting change the variable being cast?
+=== ANS ===
+(1). Explicitly casting floating-point data type to integral type will discard the
+fractional part. E.g. (int) 1.234 => 1
+(2). Casting variable change the type only for that statement.
+The variable itself doesn't change type.
+
+
+2.15.3
+Show the following output:
+float f = 12.5F;
+int i = (int)f;                  // i = 12 (# fractional part has been discarded when cast)
+System.out.println("f is " + f); // => f is 12.5
+System.out.println("i is " + i); // => i is 12
+
+
+2.15.4
+If you change (int)(tax * 100) / 100.0 to (int)(tax * 100) / 100
+in line 11 in Listing 2.8, what will be the output for the input purchase amount of 197.556?
+=== ANS ===
+tax = 197.556 * 0.06 = 11.85336
+(int)(11.85336 * 100) => (int) 1185.336 => 1185
+1185 / 100            => 11 => output: "Sales tax is $11"
+
+
+2.15.5
+Show the output of the following code:
+double amount = 5;
+System.out.println(amount / 2); // => 2.5 (# amount is of type double so 5.0 / 2)
+System.out.println(5 / 2);      // => 2   (# integral division)
+
+
+2.15.6
+Write an expression that rounds up a double value in variable d to an integer.
+=== ANS ===
+double d = (int) (12.3456 * (100 + 0.5)) / 100.0
+
+██████████████████████████████████████████████████████████████████████████████████████████
+
+2.16.1
+How would you write the following arithmetic expression?
+=== ANS ===
+(-b + Math.pow(b * b - 4 * a * c, 0.5)) / (2 * a)
+
+██████████████████████████████████████████████████████████████████████████████████████████
+
+2.17.1
+Show the output of Listing 2.10 with the input value 1.99.
+=== ANS ===
+Enter an amount in double, for example 11.56: 1.99
+Your amount 1.99 consists of
+ 1 dollars
+ 3 quarters
+ 2 dimes
+ 0 nickels
+ 4 pennies
+
+██████████████████████████████████████████████████████████████████████████████████████████
+
+2.18.1
+Can you declare a variable as int and later redeclare it as double?
+=== ANS ===
+No.
+Once variable created it stays the same type for the rest of its scope.
+E.g.
+int a = 5;
+double a = 10.5; // Variable 'a' is already defined in the scope
+
+{ double a = 5.6; } // {} defines scope
+int a = 5; // this is OK
+
+
+2.18.2
+What is an integer overflow?
+Can floating-point operations cause overflow?
+=== ANS ===
+Overflow is the situation when number can't "fit" into the required data type.
+E.g. byte = 127 + 5; will result if overflow becuase the maximum value of byte data type
+is 127. Adding 5 to 127 will cause overflow and wrap around to -128 + 5 + 1 = -124
+
+Numbers are stored with a limited numbers of digits.
+When a variable is assigned a value that is too large (in size) to be stored,
+it causes overflow.
+Overflow is for integer operations only.
+Floating-point operations will not cause overflow.
+
+
+2.18.3
+Will overflow cause a runtime error?
+=== ANS ===
+No.
+Java doesn't warns if overflow is happening but IDE will.
+
+
+2.18.4
+(1) What is a round-off error?
+(2) Can integer operations cause round-off errors?
+(3) Can floating-point operations cause round-off errors?
+=== ANS ===
+(1) Round-off error is the differance between the calculated approximation value and the
+exact mathematical value.
+(2) Integers operation do not cause rounding errors.
+(3) Yes, floating point are the only one that can cause that.
+Floating point calculations are approximation of the result because there is a limited size
+for floating point data type thus the result not stored with the absolute accuracy.
+E.g. 1.0 - 0.1 - 0.1 - 0.1 - 0.1 - 0.1 = 0.5000000000000001 and not 0.5
