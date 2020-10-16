@@ -1,0 +1,562 @@
+******************************************************************************************
+***************************** Section 1.1: Basic Computing Concepts **********************
+******************************************************************************************
+
+1. Why do computers use binary numbers?
+=== ANS ===
+It is easier to build electronic devices reliably if they only have to distinguish
+between two electric states.
+
+
+2. Convert each of the following decimal numbers into its equivalent binary number:
+=== ANS ===
+Algorithm:
+1. Divide number by 2
+2. Write its quotient and reminder
+  2.1. Keep dividing the the new quotient from step 2 by 2
+  2.2 Stop when quotient zero is reached
+3. Collect all reminders from bottom up it will be the answer
+
+e.g.
+6/2 => q=3 r=0
+3/2 => q=1 r=1
+1/2 => q=0 r=1
+q is zero, stop.
+collect from bottom up we get: 110
+
+a. 6   => 110
+b. 44  => 10 1100
+c. 72  => 0100 1000
+d. 131 => 1000 0011
+
+
+3. What is the decimal equivalent of each of the following binary numbers?
+=== ANS ===
+Algorithm:
+1. From right side calculate the sum of powers of 2
+
+e.g.
+0 * 2^0 = 0
+0 * 2^1 = 0
+1 * 2^2 = 4
+0 + 0 + 4 = 4
+
+a. 100     => 4
+b. 1011    => 8 + 2 + 1 = 11
+c. 101010  => 32 + 8 + 2 = 42
+d. 1001110 => 64 + 8 + 4 + 2 = 78
+
+
+4. In your own words, describe an algorithm for baking cookies.
+Assume that you have a large number of hungry friends, so you’ll want to produce several
+batches of cookies!
+=== ANS ===
+1. Mix the dry ingredients.
+2. Cream the butter and sugar.
+3. Beat in the eggs.
+4. Stir in the dry ingredients.
+5. Set the oven temperature.
+6. Set the timer.
+7. Place the first batch of cookies into the oven.
+8. Allow the cookies to bake.
+
+
+5. What is the difference between the file MyProgram.java and the file MyProgram.class?
+=== ANS ===
+MyProgram.java is a source code file typed by the programmer, and MyProgram.class is a
+compiled executable class file (i.e. bytecode) that is run by the computer (utilizing JVM)
+
+
+******************************************************************************************
+***************************** Section 1.2: And Now—Java **********************************
+******************************************************************************************
+
+6. Which of the following can be used in a Java program as identifiers?
+  println        => ✔
+  first-name     => ✖
+  AnnualSalary   => ✔
+  "hello"        => ✖
+  ABC            => ✔
+  42isTheAnswer  => ✖
+  for            => ✖ for is reserved word
+  sum_of_data    => ✔
+  _average B4    => ✖
+
+
+7. Which of the following is the correct syntax to output a message?
+  a. System.println(Hello, world!);       // => ✖ (out and "" in string literal are missing)
+  b. System.println.out('Hello, world!'); // => ✖ (out and println are reversed and '' is used instead of "")
+  c. System.println("Hello, world!");     // => ✖ (out is missing)
+  d. System.out.println("Hello, world!"); // => ✔
+  e. Out.system.println"(Hello, world!)"; // => ✖ (messed out)
+
+
+8. What is the output produced from the following statements?
+System.out.println("\"Quotes\"");                        // => "Quotes"
+System.out.println("Slashes \\//");                      // => Slashes \//
+System.out.println("How '\"confounding' \"\\\" it is!"); // => How '"confounding' "\" it is!
+
+
+9. What is the output produced from the following statements?
+System.out.println("name\tage\theight"); // => name    age     height
+System.out.println("Archie\t17\t5'9\""); // => Archie  17      5'9"
+System.out.println("Betty\t17\t5'6\"");  // => Betty   17      5'6"
+System.out.println("Jughead\t16\t6'");   // => Jughead 16      6'
+
+
+10. What is the output produced from the following statements?
+System.out.println("Shaq is 7'1");                          // => Shaq is 7'1
+System.out.println("The string \"\" is an empty message."); // => The string "" is an empty message.
+System.out.println("\\'\"\"");                              // => \'""
+
+
+11. What is the output produced from the following statements?
+System.out.println("\ta\tb\tc");                  // =>         a       b       c
+System.out.println("\\\\");                       // => \\
+System.out.println("'");                          // => '
+System.out.println("\"\"\"");                     // => """
+System.out.println("C:\nin\the downward spiral"); // => C:
+                                                  //    in      he downward spiral
+
+
+12. What is the output produced from the following statements?
+System.out.println("Dear \"DoubleSlash\" magazine,");        // => Dear "DoubleSlash" magazine,
+System.out.println();                                        // =>
+System.out.println("\tYour publication confuses me. Is it"); // =>         Your publication confuses me. Is it
+System.out.println("a \\\\ slash or a //// slash?");         // => a \\ slash or a //// slash?
+System.out.println("\nSincerely,");                          // =>
+                                                             // => Sincerely
+System.out.println("Susan \"Suzy\" Smith");                  // => Susan "Suzy" Smith
+
+
+13. What series of println statements would produce the following output?
+"Several slashes are sometimes seen,"
+said Sally. "I've said so." See?
+\ / \\ // \\\ ///
+=== ANS ===
+System.out.println("\"Several slashes are sometimes seen,\"");
+System.out.println("said Sally. \"I've said so.\" See?");
+System.out.println("\\ / \\\\ // \\\\\\ ///");
+
+
+14. What series of println statements would produce the following output?
+This is a test of your
+knowledge of "quotes" used
+in 'string literals.'
+You're bound to "get it right"
+if you read the section on
+''quotes.''
+=== ANS ===
+System.out.println("This is a test of your");
+System.out.println("knowledge of \"quotes\" used");
+System.out.println("in 'string literals.'");
+System.out.println();
+System.out.println("You're bound to \"get it right\"");
+System.out.println("if you read the section on");
+System.out.println("''quotes.''");
+
+
+15. Write a println statement that produces the following output:
+/ \ // \\ /// \\\
+=== ANS ===
+System.out.println("/ \\ // \\\\ /// \\\\\\");
+
+
+16. Rewrite the following code as a series of equivalent System.out.println statements
+(i.e., without any System.out.print statements):
+System.out.print("Twas ");
+System.out.print("brillig and the ");
+System.out.println(" ");
+System.out.print(" slithy toves did");
+System.out.print(" ");
+System.out.println("gyre and");
+System.out.println("gimble");
+System.out.println();
+System.out.println( "in the wabe.");
+=== ANS ===
+System.out.println("Twas brillig and the  ");
+System.out.println("  slithy toves did gyre and");
+System.out.println("gimble");
+System.out.println();
+System.out.println("in the wabe.");
+
+
+17. What is the output of the following program?
+Note that the program contains several comments.
+public class Commentary {
+  public static void main(String[] args) {
+    System.out.println("some lines of code");
+    System.out.println("have // characters on them");
+    System.out.println("which means "); // that they are comments
+    // System.out.println("written by the programmer.");
+
+    System.out.println("lines can also");
+    System.out.println("have /* and */ characters");
+    /* System.out.println("which represents");
+    System.out.println("a multi-line style");
+    */
+    System.out.println("of comment.");
+  }
+}
+=== ANS ===
+some lines of code
+have // characters on them
+which means
+lines can also
+have /* and */ characters
+of comment.
+
+
+******************************************************************************************
+***************************** Section 1.3: Program Errors ********************************
+******************************************************************************************
+
+18. Name the three errors in the following program:
+public MyProgram {                                     // => compile-error: missing class
+  public static void main(String[] args) {
+    System.out.println("This is a test of the")        // => compile-error: missing ;
+    System.out.Println("emergency broadcast system."); // => compile-error: Println
+  }
+}
+
+
+19. Name the four errors in the following program:
+public class SecretMessage {
+  public static main(string[] args) {   // => CE - no return type and lowercase string
+    System.out.println("Speak friend");
+    System.out.println("and enter);     // => CE - missing closing "
+                                        // => CE - missing closing }
+}
+
+
+20. Name the four errors in the following program:
+public class FamousSpeech                                   // => CE - missing {
+  public static void main(String[]) {                       // => CE - missing args
+    System.out.println("Four score and seven years ago,");
+    System.out.println("our fathers brought forth on");
+    System.out.println("this continent a new nation");
+    System.out.println("conceived in liberty,");
+    System.out.println("and dedicated to the proposition");
+    System.out.println("that"); /* this part should
+    System.out.println("all"); really say,
+    System.out.println("men"); "all PEOPLE!" */
+    System.out.println("are";                              // => CE - missing )
+    System.out.println("created");
+    System.out.println("equal");
+  }
+}
+
+
+******************************************************************************************
+***************************** Section 1.4: Procedural Decomposition **********************
+******************************************************************************************
+
+21. Which of the following method headers uses the correct syntax?
+a. public static example() {       // => ✖, return type is missing
+b. public static void example() {  // => ✔
+c. public void static example() {  // => ✖, static should come before return type
+d. public static example void[] {  // => ✖, name of method and return type are reversed + [] is invalid
+e. public void static example{} (  // => ✖, static should come before return type + no args list i.e. no ()
+
+
+22. What is the output of the following program?
+(You may wish to draw a structure diagram first.)
+public class Tricky {
+  public static void main(String[] args) {
+    message1();
+    message2();
+    System.out.println("Done with main.");
+  }
+
+  public static void message1() {
+    System.out.println("This is message1.");
+  }
+
+  public static void message2() {
+    System.out.println("This is message2.");
+    message1();
+    System.out.println("Done with message2.");
+  }
+}
+=== ANS ===
+This is message1.
+This is message2.
+This is message1.
+Done with message2.
+Done with main.
+
+
+23. What is the output of the following program?
+(You may wish to draw a structure diagram first.)
+public class Strange {
+  public static void first() {
+    System.out.println("Inside first method");
+  }
+
+  public static void second() {
+    System.out.println("Inside second method");
+    first();
+  }
+
+  public static void third() {
+    System.out.println("Inside third method");
+    first();
+    second();
+  }
+
+  public static void main(String[] args) {
+    first();
+    third();
+    second();
+    third();
+  }
+}
+=== ANS ===
+Inside first method
+Inside third method
+Inside first method
+Inside second method
+Inside first method
+Inside second method
+Inside first method
+Inside third method
+Inside first method
+Inside second method
+Inside first method
+
+
+24. What would have been the output of the preceding program
+if the third method had contained the following statements?
+public static void third() {
+  first();
+  second();
+  System.out.println("Inside third method");
+}
+=== ANS ===
+Inside first method
+Inside first method
+Inside second method
+Inside first method
+Inside third method
+Inside second method
+Inside first method
+Inside first method
+Inside second method
+Inside first method
+Inside third method
+
+
+25. What would have been the output of the Strange program if the main method had
+contained the following statements?
+(Use the original version of third, not the modified version from the most recent exercise.)
+public static void main(String[] args) {
+  second();
+  first();
+  second();
+  third();
+}
+=== ANS ===
+Inside second method
+Inside first method
+Inside first method
+Inside second method
+Inside first method
+Inside third method
+Inside first method
+Inside second method
+Inside first method
+
+
+26. What is the output of the following program?
+(You may wish to draw a structure diagram first.)
+public class Confusing {
+  public static void method2() {
+    method1();
+    System.out.println("I am method 2.");
+  }
+
+  public static void method3() {
+    method2();
+    System.out.println("I am method 3.");
+    method1();
+  }
+
+  public static void method1() {
+    System.out.println("I am method 1.");
+  }
+
+  public static void main(String[] args) {
+    method1();
+    method3();
+    method2();
+    method3();
+  }
+}
+=== ANS ===
+I am method 1.
+I am method 1.
+I am method 2.
+I am method 3.
+I am method 1.
+I am method 1.
+I am method 2.
+I am method 1.
+I am method 2.
+I am method 3.
+I am method 1.
+
+
+27. What would have been the output of the preceding program if the method3
+method had contained the following statements?
+public static void method3() {
+  method1();
+  method2();
+  System.out.println("I am method 3.");
+}
+=== ANS ===
+method1(): I am method 1.
+method2(): I am method 1.
+           I am method 2.
+method3(): I am method 1.
+           I am method 1.
+           I am method 2.
+           I am method 3.
+
+I am method 1.
+I am method 1.
+I am method 1.
+I am method 2.
+I am method 3.
+I am method 1.
+I am method 2.
+I am method 1.
+I am method 1.
+I am method 2.
+I am method 3.
+
+
+28. What would have been the output of the Confusing program if
+the main method had contained the following statements?
+(Use the original version of method3, not the modified version from the most recent exercise.)
+public static void main(String[] args) {
+  method2();
+  method1();
+  method3();
+  method2();
+}
+=== ANS ===
+method1(): I am method 1.
+method2(): I am method 1.
+           I am method 2.
+method3(): I am method 1.
+           I am method 2.
+           I am method 3.
+           I am method 1.
+
+I am method 1.
+I am method 2.
+I am method 1.
+I am method 1.
+I am method 2.
+I am method 3.
+I am method 1.
+I am method 1.
+I am method 2.
+
+
+29. The following program contains at least 10 syntax errors.
+What are they?
+public class LotsOf Errors {         // => CE - LotsOf Errors only one should be
+  public static main(String args) {  // => CE - no return type should be void + no []
+    System.println(Hello, world!);   // => CE - out is missing and ""
+    message()                        // => CE - missing ;
+  }
+
+  public static void message {                        // => CE - no args list ()
+    System.out println("This program surely cannot "; // => CE - no . between out and println + no )
+    System.out.println("have any "errors" in it");    // => CE - inner "" are not escaped
+  }
+// => CE - no }
+=== ANS ===
+public class LotsOfErrors {
+  public static void main(String[] args) {
+    System.out.println("Hello, world!");
+    message();
+  }
+
+  public static void message() {
+    System.out.println("This program surely cannot ");
+    System.out.println("have any \"errors\" in it");
+  }
+}
+
+
+30. Consider the following program, saved into a file named Example.java:
+1 public class Example {
+2  public static void displayRule() {
+3    System.out.println("The first rule ");
+4    System.out.println("of Java Club is,");
+5    System.out.println();
+6    System.out.println("you do not talk about Java Club.");
+7   }
+8
+9  public static void main(String[] args) {
+10   System.out.println("The rules of Java Club.");
+11   displayRule();
+12   displayRule();
+13  }
+14 }
+
+What would happen if each of the following changes were made to the Example program?
+For example, would there be no effect, a syntax error, or a different program output?
+Treat each change independently of the others.
+a. Change line 1 to: public class Demonstration
+b. Change line 9 to: public static void MAIN(String[] args) {
+c. Insert a new line after line 11 that reads: System.out.println();
+d. Change line 2 to: public static void printMessage() {
+e. Change line 2 to: public static void showMessage() { and change lines 11 and 12 to: showMessage();
+f. Replace lines 3–4 with: System.out.println("The first rule of Java Club is,");
+=== ANS ===
+a. compilation-error => file name(Example) is not the same as the class name(Demonstration)
+b. run-time-error    => JVM is looking specifically for public static void main(String[] args) method
+                        java is case sensitive therefore MAIN an main methods are different
+c. different program output
+d. compilation-error => on lines 11 and 12 because there is no displayRule()
+e. nothing
+f. different program output
+
+
+31. The following program is legal under Java’s syntax rules,
+but it is difficult to read because of its layout and lack of comments.
+Reformat it using the rules given in this chapter, and add a comment
+header at the top of the program.
+public class GiveAdvice {
+  public static void main(String[] args) { // main method
+    System.out.println("Programs can be easy or");
+    System.out.println("difficult to read, depending");
+    System.out.println("upon their format.");
+    System.out.println(); // empty line here
+    System.out.println("Everyone, including yourself,");
+    System.out.println("will be happier if you choose");
+    System.out.println("to format your programs.");
+  }
+}
+
+
+32. The following program is legal under Java’s syntax rules,
+but it is difficult to read because of its layout and lack of comments.
+Reformat it using the rules given in this chapter, and add a comment
+header at the top of the program.
+public class Messy {
+  public static void main(String[] args) { // main method
+    message();
+    System.out.println();
+    message();
+  }
+
+  public static void message() { // message
+    System.out.println("I really wish that");
+    System.out.println("I had formatted my source");
+    System.out.println("code correctly!");
+  }
+}
