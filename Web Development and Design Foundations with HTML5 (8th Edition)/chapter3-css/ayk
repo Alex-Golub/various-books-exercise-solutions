@@ -1,0 +1,10 @@
+=== Apply Your Knowledge ===
+1. Past to editor and see
+
+2.
+"_"      => #CCCCCC;
+"_": "_" => font-family: Arial, san-serif
+<_>      => </style>
+<_>      => </head>
+
+3. Closing <style> element is not valid, should be </style>
