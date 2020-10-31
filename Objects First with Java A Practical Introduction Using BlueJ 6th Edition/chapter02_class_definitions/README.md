@@ -24,7 +24,8 @@
 > **Write out what you think the outer wrappers of the Student and LabClass classes
 > might look like; do not worry about the inner part.**
 >
-> > `public class Student {...}` >>`public class LabClass {...}`
+> > `public class Student {...}`
+> > `public class LabClass {...}`
 
 > Exercise 2.7
 > **Does it matter whether we write
@@ -66,12 +67,16 @@
 > Exercise 2.12
 > **What do you think is the type of each of the following fields?**
 >
-> > `private int count; // => int` >> `private Student representative; // => Student, i.e. its an object instance` >> `private Server host; // => Server`
+> > `private int count; // => int`
+> > `private Student representative; // => Student, i.e. its an object instance`
+> > `private Server host; // => Server`
 
 > Exercise 2.13
 > **What are the names of the following fields?**
 >
-> > `private boolean alive; // => alive` >> `private Person tutor; // => tutor` >> `private Game game; // => game`
+> > `private boolean alive; // => alive`
+> > `private Person tutor; // => tutor`
+> > `private Game game; // => game`
 
 > Exercise 2.14
 > **From what you know about the naming conventions for classes,
@@ -86,7 +91,9 @@
 > does it matter which order the three words appear in?**
 >
 > > Yes it does.
-> > `int private price; // => CE - <identifer> expected` >> `int price private; // => CE - ; expected after price` >> `int price; // => OK but this field is not private anymore`
+> > `int private price; // => CE - <identifer> expected`
+> > `int price private; // => CE - ; expected after price`
+> > `int price; // => OK but this field is not private anymore`
 > > Conclusion, fields must have the format => `<access modifier> <data type> <name>;`
 
 > Exercise 2.16
@@ -108,7 +115,8 @@
 > > Thus, this constructor belongs to Student class.
 
 > Exercise 2.19
-> **How many parameters does the following constructor have, and what are their types?** > `public Book(String title, double price)`
+> **How many parameters does the following constructor have, and what are their types?**
+> `public Book(String title, double price)`
 >
 > > Two formal parameters, title of type String and price of type double.
 
