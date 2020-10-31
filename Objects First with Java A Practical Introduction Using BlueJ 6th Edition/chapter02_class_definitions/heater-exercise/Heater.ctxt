@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Heater
+comment0.text=\r\n\ Exercise\ 2.93\ Challenge\ exercise\r\n\r\n\ @author\ Mr.Dr.Prof.AG\r\n\ @version\ 31-10-2020\r\n
+comment1.params=min\ max
+comment1.target=Heater(double,\ double)
+comment2.params=
+comment2.target=void\ warmer()
+comment3.params=
+comment3.target=void\ cooler()
+comment4.params=newValue
+comment4.target=void\ setIncrement(double)
+comment4.text=\r\n\ Setting\ new\ increment\ value\r\n\r\n\ @param\ incrementBy\ -\ positive\ value\ otherwise\ ignored\r\n
+comment5.params=
+comment5.target=double\ getTemperature()
+numComments=6
