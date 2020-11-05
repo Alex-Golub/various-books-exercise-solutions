@@ -1,0 +1,214 @@
+********************************************************************************
+*********************** Section 2.2: Variables *********************************
+********************************************************************************
+5.
+Which of the following choices is the correct syntax for declaring a real
+number variable named grade and initializing its value to 4.0?
+a. int grade : 4.0;     // X, 4.0 is of type double and : is not assignment op
+b. grade = double 4.0;  // X, double keyword is not in the right place
+c. double grade = 4.0;  // ✔
+d. grade = 4;           // X, double keyword missing
+e. 4.0 = grade;         // X, reversed and no type
+
+
+6.
+Imagine you are writing a personal fitness program that stores the user’s age,
+gender, height (in feet or meters), and weight (to the nearest pound or kilogram).
+Declare variables with the appropriate names and types to hold this information.
+=== ANS ===
+int age;
+String gender;
+double height;
+int weight;
+
+
+7.
+Imagine you are writing a program that stores a student’s year
+(Freshman, Sophomore, Junior, or Senior), the number of courses the student
+is taking, and his or her GPA on a 4.0 scale.
+Declare variables with the appropriate names and types to hold this information.
+=== ANS ===
+String year;
+int coursesTaken;
+double gpa;
+
+
+8.
+Suppose you have an int variable called number.
+What Java expression produces the last digit of the number (the 1s place)?
+=== ANS ===
+number % 10
+
+
+9.
+The following program contains 9 mistakes! What are they?
+public class Oops2 {
+  public static void main(String[] args) {
+    int x;                              // => no initialization
+    System.out.println("x is"x);        // => incorrect string concatenation
+
+    int x = 15.2;                       // => x has been already defined
+    System.out.println("x is now + x"); // => x is part of the string, its value is not printed
+
+    int y; // set y to 1 more than x    // => only declaration without assignment
+    y = int x +1;                       // => incorrect place of int
+    System.out.println("x and y are " + x + and + y); // => and is not defined
+  }
+}
+=== ANS ===
+Correct version of the code is:
+public class Oops2 {
+  public static void main(String[] args) {
+    int x = 0;
+    System.out.println("x is " + x);
+
+    x = 15;
+    System.out.println("x is now " + x);
+
+    int y = x + 1; // set y to 1 more than x
+    System.out.println("x and y are " + x + " and " + y);
+  }
+}
+// x is 0
+// x is now 15
+// x and y are 15 and 16
+
+
+10.
+Suppose you have an int variable called number.
+(a). What Java expression produces the second-to-last digit of the number (the 10s place)?
+(b). What expression produces the third-to-last digit of the number (the 100s place)?
+=== ANS ===
+(a). number % 100 / 10
+(b). number / 100 % 10
+
+
+11.
+What are the values of a, b, and c after the following statements?
+int a = 5;
+int b = 10;
+int c = b; // c = 10
+
+a = a + 1; // => a = 6
+b = b - 1; // => b = 9
+c = c + a; // => c = 10 + 6 = 16
+
+
+11.2
+What is the value of variable x after the following code executes?
+
+int x = 3;
+x = x + 2; // x = 3 + 2 = 5
+x = x + x; // x = 5 + 5 = 10
+
+
+12.
+What are the values of first and second at the end of the following code?
+How would you describe the net effect of the code statements in this exercise?
+int first = 8;
+int second = 19;
+first = first + second;  // first = 8 + 19 = 27
+second = first – second; // second = 27 - 19 = 8
+first = first – second;  // first = 27 - 8 = 19
+=== ANS ===
+The code will swap (int-place) the values between first and second
+without using 3rd temp variable.
+
+
+13.
+Rewrite the code from the previous exercise to be shorter,
+by declaring the variables together and by using the special
+assignment operators (e.g., += , –=, *=, and /=) as appropriate.
+=== ANS ===
+int first = 8, second = 19;
+first  += second;
+second  = first - second;
+first  -= second;
+
+
+14.
+What are the values of i, j, and k after the following statements?
+int i = 2;
+int j = 3;
+int k = 4;
+int x = i + j + k; // x = 2 + 3 + 4 = 9
+
+i = x - i - j;     // i = 9 - 2 - 3 = 4
+j = x - j - k;     // j = 9 - 3 - 4 = 2
+k = x - k - i;     // k = 9 - 4 - 4 = 1
+
+
+15.
+What is the output from the following code?
+int max;
+int min = 10;
+max = 17 – 4 / 10;             // max = 17 - 0 = 17
+max = max + 6;                 // max = 17 + 6 = 23
+min = max – min;               // min = 23 - 10 = 13
+System.out.println(max * 2);   // => 46
+System.out.println(max + min); // => 36
+System.out.println(max);       // => 23
+System.out.println(min);       // => 13
+
+
+16.
+Suppose you have a real number variable x.
+Write a Java expression that computes the following value y while using
+the * operator only four times:
+y = 12.3x^4 - 9.1x^3 + 19.3x^2 - 4.6x + 34.2
+=== ANS ===
+double y = 12.3 * Math.pow(x, 4) - 9.1 * Math.pow(x, 3)
+           + 19.3 * Math.pow(x, 2) - 4.6 * x + 34.2
+
+
+17.
+The following program redundantly repeats the same expressions many times.
+Modify the program to remove all redundant expressions using variables
+of appropriate types.
+public class ComputePay {
+public static void main(String[] args) {
+    // Calculate pay at work based on hours worked each day
+    int hoursWorked = 4 + 5 + 8 + 4;
+    System.out.println("My total hours worked:");
+    System.out.println(hoursWorked);
+
+    double hourlySalary = 8.75;
+    System.out.println("My hourly salary:");
+    System.out.println("$" + hourlySalary);
+
+    double totalPay = hoursWorked * hourlySalary;
+    System.out.println("My total pay:");
+    System.out.println(totalPay);
+
+    double tax = 0.20;
+    System.out.println("My taxes owed:"); // 20% tax
+    System.out.println(totalPay * tax);
+  }
+}
+
+
+18.
+The following program redundantly repeats the same expressions many times.
+Modify the program to remove all redundant expressions using variables
+of appropriate types.
+// This program computes the total amount owed for a meal,
+// assuming 8% tax and a 15% tip.
+public class Receipt {
+  public static void main(String[] args) {
+    System.out.println("Subtotal:");
+    int subtotal = 38 + 40 + 30;
+    System.out.println(subtotal);
+
+    System.out.println("Tax:");
+    double tax = .08;
+    System.out.println((subtotal) * tax);
+
+    System.out.println("Tip:");
+    double tip = (subtotal) * .15;
+    System.out.println(tip);
+
+    System.out.println("Total:");
+    double total = 38 + 40 + 30 + (subtotal) * tax + tip;
+    System.out.println(total);
+  }
+}

@@ -1,0 +1,228 @@
+********************************************************************************
+*********************** Section 2.3: The for Loop ******************************
+********************************************************************************
+18.
+Complete the following code, replacing the "FINISH ME" parts with your own code:
+public class Count2 {
+  public static void main(String[] args) {
+    for (int i = /* FINISH ME */) {        // for (int i = 1; i <= 4; i++)
+      System.out.println(/* FINISH ME */); // ("2 times " + i + " = " + (2 * i)
+    }
+  }
+}
+to produce the following output:
+2 times 1 = 2
+2 times 2 = 4
+2 times 3 = 6
+2 times 4 = 8
+
+
+19.
+Assume that you have a variable called count that will take on
+the values 1, 2, 3, 4, and so on.
+You are going to formulate expressions in terms of count that will yield
+different sequences.
+For example, to get the sequence 2, 4, 6, 8, 10, 12, ..., you would use the
+expression (2 * count).
+Fill in the following table, indicating an expression
+that will generate each sequence.
+
+Sequence                                        Expression
+a. 2, 4, 6, 8, 10, 12, ...                      2 * count
+b. 4, 19, 34, 49, 64, 79, ...                   15 * count - 11
+c. 30, 20, 10, 0, -10, -20, ...                 -10 * count + 40
+d. -7, -3, 1, 5, 9, 13, ...                     4 * count - 11
+e. 97, 94, 91, 88, 85, 82, ...                  -3 * count + 100
+=== NOTE ===
+E.g. 4, 19, 34, 49, 64, 79,...
+19 - 4 = 34 - 19 = 49 - 34 = ... = 15 this is the coefficient
+To get the constant: 15 + x = 4 => x = -11
+=> 15 * count - 11
+
+
+20.
+Complete the code for the following for loop:
+for (int i = 1; i <= 6; i++) {
+  System.out.println(18 * i - 22); // your code here
+}
+so that it prints the following numbers, one per line:
+–4
+14
+32
+50
+68
+86
+
+
+21.
+What is the output of the following oddStuff method?
+public static void oddStuff() {
+  int number = 4;
+  for (int count = 1; count <= number; count++) {
+    System.out.println(number);
+    number = number / 2;
+  }
+}
+=== ANS ===
+4
+2
+
+
+22.
+What is the output of the following loop?
+int total = 25;
+for (int number = 1; number <= (total / 2); number++) {
+  total = total – number;
+  System.out.println(total + " " + number);
+}
+=== ANS ===
+number total   total / 2    output
+1      25      12
+       24                   24 1
+2      24      12
+       22                   22 2
+3      22      11
+       19                   19 3
+4      19      9
+       15                   15 4
+5      15      7
+       10                   10 5
+6      10      5
+
+
+23.
+What is the output of the following loop?
+System.out.println("+----+");
+for (int i = 1; i <= 3; i++) {
+  System.out.println("\\    /");
+  System.out.println("/    \\");
+}
+System.out.println("+----+");
+=== ANS ===
++----+
+\    /
+/    \
+\    /
+/    \
+\    /
+/    \
++----+
+
+
+24.
+What is the output of the following loop?
+for (int i = 1; i <= 3; i++)
+  System.out.println("How many lines");
+  System.out.println("are printed?");
+=== ANS ===
+How many lines
+How many lines
+How many lines
+are printed?
+
+25.
+What is the output of the following loop?
+System.out.print("T-minus ");
+for (int i = 5; i >= 1; i——) {
+  System.out.print(i + ", ");
+}
+System.out.println("Blastoff!");
+=== ANS ===
+T-minus
+5,
+4,
+3,
+2,
+1,
+Blastoff!
+
+
+26.
+What is the output of the following sequence of loops?
+for (int i = 1; i <= 5; i++) {
+  for (int j = 1; j <= 10; j++) {
+    System.out.print((i * j) + " ");
+  }
+  System.out.println();
+}
+=== ANS ===
+1 2 3 4 5 6 7 8 9 10
+2 4 6 8 10 12 14 16 18 20
+3 6 9 12 15 18 21 24 27 30
+4 8 12 16 20 24 28 32 36 40
+5 10 15 20 25 30 35 40 45 50
+
+
+27.
+What is the output of the following sequence of loops?
+for (int i = 1; i <= 10; i++) {
+  for (int j = 1; j <= 10 — i; j++) {
+    System.out.print(" ");
+  }
+  for (int j = 1; j <= 2 * i — 1; j++) {
+    System.out.print("*");
+  }
+  System.out.println();
+}
+=== ANS ===
+         *
+        ***
+       *****
+      *******
+     *********
+    ***********
+   *************
+  ***************
+ *****************
+*******************
+
+
+28.
+What is the output of the following sequence of loops?
+for (int i = 1; i <= 2; i++) {
+  for (int j = 1; j <= 3; j++) {
+    for (int k = 1; k <= 4; k++) {
+      System.out.print("*");
+    }
+    System.out.print("!");
+  }
+  System.out.println();
+}
+=== ANS ===
+****!****!****!
+****!****!****!
+
+
+29.
+What is the output of the following sequence of loops?
+Notice that the code is the same as that in the previous exercise,
+except that the placement of the braces has changed.
+for (int i = 1; i <= 2; i++) {
+  for (int j = 1; j <= 3; j++) {
+    for (int k = 1; k <= 4; k++) {
+      System.out.print("*");
+    }
+  }
+  System.out.print("!");
+  System.out.println();
+}
+=== ANS ===
+************!
+************!
+
+
+30. What is the output of the following sequence of loops?
+Notice that the code is the same as that in the previous exercise,
+except that the placement of the braces has changed.
+for (int i = 1; i <= 2; i++) {
+  for (int j = 1; j <= 3; j++) {
+    for (int k = 1; k <= 4; k++) {
+      System.out.print("*");
+      System.out.print("!");
+    }
+  System.out.println();
+  }
+}
+=== ANS ===
+*!*!*!*!*!*!*!*!*!*!*!*!
+*!*!*!*!*!*!*!*!*!*!*!*!

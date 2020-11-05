@@ -1,0 +1,110 @@
+********************************************************************************
+*********************** Section 2.4: Managing Complexity ***********************
+********************************************************************************
+31.
+Suppose that you are trying to write a program that produces the following output:
+1 3 5 7 9 11 13 15 17 19 21
+1 3 5 7 9 11
+The following program is an attempt at a solution,
+but it contains four major errors. Identify them all.
+=== ANS ===
+public class BadNews {
+    public static final int MAX_ODD = 21;
+
+    public static void writeOdds(int max) {
+        for (int count = 1; count <= max; count += 2) {
+            System.out.print(count + " ");
+        }
+        System.out.println();
+    }
+
+    public static void main(String[] args) {
+        writeOdds(MAX_ODD);
+        writeOdds(MAX_ODD - 10);
+    }
+}
+
+
+
+32.
+What is the output of the following unknown method?
+=== ANS ===
+25
+4
+25 + 16
+3
+25 + 16 + 9
+2
+25 + 16 + 9 + 4
+1
+25 + 16 + 9 + 4 + 1
+0
+The result is: 55
+
+
+
+33.
+Suppose that you have a variable called line that will take on the
+values 1, 2, 3, 4, and so on, and a class constant named SIZE that takes one
+of two values.
+You are going to formulate expressions in terms of line and SIZE
+that will yield different sequences of numbers of characters.
+Fill in the table below, indicating an expression that will generate each sequence.
+
+line value               constant SIZE value    Number of characters         Expression
+a. 1, 2, 3, 4, 5, 6,...          1              4, 6, 8, 10, 12, 14, ...     2 * line + (2 * SIZE)
+   1, 2, 3, 4, 5, 6,...          2              6, 8, 10, 12, 14, 16, ...    2 * line + (2 * SIZE)
+
+b. 1, 2, 3, 4, 5, 6,...          3              13, 17, 21, 25, 29, 33, ...  4 * line + (3 * SIZE)
+   1, 2, 3, 4, 5, 6,...          5              19, 23, 27, 31, 35, 39, ...
+
+c. 1, 2, 3, 4, 5, 6,...          4              10, 9, 8, 7, 6, 5, ...       -1 * line + (2 * SIZE + 3)
+   1, 2, 3, 4, 5, 6,...          9              20, 19, 18, 17, 16, 15, ...
+
+
+34.
+Write a table that determines the expressions for the number of each type of
+character on each of the 6 lines in the following output.
+!!!!!!!!!!!!!!!!!!!!!!
+\\!!!!!!!!!!!!!!!!!!//
+\\\\!!!!!!!!!!!!!!////
+\\\\\\!!!!!!!!!!//////
+\\\\\\\\!!!!!!////////
+\\\\\\\\\\!!//////////
+=== ANS ===
+line    !    \
+1      22    0
+2      18    2
+3      14    4
+4      10    6
+5      6     8
+6      2     10
+There is a linear relationship applying linear line: y - y0 = m(x - x)
+# of ! = -4 * line + 26
+# of \ =  2 * line - 2
+
+
+
+35.
+Suppose that a program has been written that produces the output shown in the
+previous problem.
+Now the author wants the program to be scalable using a class constant called SIZE.
+The previous output used a constant height of 6, since there were 6 lines.
+The following is the output for a constant height of 4.
+Create a new table that shows the expressions for the character counts at this
+new size of 4, and compare these tables to figure out the expressions for
+any size using the SIZE constant.
+!!!!!!!!!!!!!!
+\\!!!!!!!!!!//
+\\\\!!!!!!////
+\\\\\\!!//////
+=== ANS ===
+y(line) = -4 * line + k
+We have to find x that include HEIGHT
+HEIGHT = 4 => #of! = 14 => HEIGHT * x + y = 14
+HEIGHT = 8 => #of! = 30 => HEIGHT * x + y = 30
+4x + y = 14
+8x + y = 30
+=> x = 4; y = -2
+k = 4 * HEIGHT - 2
+see Ex2_17_SlashFigure2 for the actual implementation
