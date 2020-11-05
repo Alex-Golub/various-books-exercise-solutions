@@ -1,0 +1,581 @@
+3.2.1
+List six relational operators.
+=== ANS ===
+<  less then
+<= less then or equal
+>  greater then
+>= greater or equal
+== equals
+!= not equal to
+
+
+3.2.2
+Assuming x is 1, show the result of the following Boolean expressions:
+(x > 0)  => true
+(x < 0)  => false
+(x != 0) => true
+(x >= 0) => true
+(x != 1) => false
+
+
+3.2.3
+Can the following conversions involving casting be allowed?
+Write a test program to verify it.
+boolean b = true;
+i = (int)b;  // => compile-error, i is not defined here
+
+int i = 1;
+boolean b = (boolean)i; // => compile-error, Inconvertible types; cannot cast 'int' to 'boolean'
+=== ANS ===
+boolean type can't be converted to other types and vice-versa
+
+
+████████████████████████████████████████████████████████████████████████████████
+
+
+3.3.1
+Write an if statement that assigns 1 to x if y is greater than 0.
+=== ANS ===
+if (y > 0) {
+  x = 1;
+}
+
+3.3.2
+Write an if statement that increases pay by 3% if score is greater than 90.
+=== ANS ===
+if (score > 90) {
+  pay *= 1.03;
+}
+
+
+3.3.3
+What is wrong in the following code?
+if radius >= 0 {               // => first mistake, parentheses omitted around boolean expression
+  area = radius * radius * PI; // => PI value is constant from Math library should be Math.PI
+  System.out.println("The area for the circle of radius " + radius + " is " + area);
+}
+
+
+████████████████████████████████████████████████████████████████████████████████
+
+
+3.4.1
+Write an if statement that increases pay by 3% if score is greater than 90,
+otherwise increases pay by 1%.
+=== ANS ===
+if (score > 90) pay *= 1.03;
+else            pay *= 1.01;
+
+
+3.4.2
+What is the output of the code in (a) and (b) if number is 30?
+What if number is 35?
+=== ANS ===
+(a): 30 is even
+     30 is odd
+(b): 30 is even
+
+(a): 35 is odd
+(b): 35 is odd
+
+
+████████████████████████████████████████████████████████████████████████████████
+
+
+3.5.1
+Suppose x = 3 and y = 2;
+show the output, if any, of the following code.
+What is the output if x = 3 and y = 4?
+What is the output if x = 2 and y = 2?
+Draw a flowchart of the code.
+
+if (x > 2) {
+  if (y > 2) {
+    z = x + y;
+    System.out.println("z is " + z);
+  }
+}
+else
+  System.out.println("x is " + x);
+
+=== ANS ===
+x = 3, y = 2;
+no output
+
+x = 3, y = 4;
+z is 7
+
+x = 2, y = 2;
+x is 2
+
+
+3.5.2
+Suppose x = 2 and y = 3.
+Show the output, if any, of the following code.
+What is the output if x = 3 and y = 2?
+What is the output if x = 3 and y = 3?
+
+if (x > 2)
+  if (y > 2) {
+    int z = x + y;
+      System.out.println("z is " + z);
+  }
+ else
+  System.out.println("x is " + x);
+=== ANS ===
+x = 2, y = 3;
+no output
+
+x = 3, y = 2;
+x is 3
+
+x = 3, y = 3;
+z is 6
+
+
+3.5.3
+What is wrong in the following code?
+if (score >= 60)
+  System.out.println("D");
+else if (score >= 70)
+  System.out.println("C");
+else if (score >= 80)
+  System.out.println("B");
+else if (score >= 90)
+  System.out.println("A");
+else
+  System.out.println("F");
+=== ANS ===
+Top condition should be checked first.
+If score is 100 we get "D" as output which clearly not expected.
+Correct version is:
+if (score >= 90)
+  System.out.print("A");
+else if (score >= 80)
+  System.out.print("B");
+else if (score >= 70)
+  System.out.print("C");
+else if (score >= 60)
+  System.out.print("D");
+else
+  System.out.print("F");
+
+
+████████████████████████████████████████████████████████████████████████████████
+
+
+3.6.1
+Which of the following statements are equivalent?
+Which ones are correctly Point indented?
+=== ANS ===
+a == c == d
+b and c is correctly indented
+
+
+3.6.2
+Rewrite the following statement using a Boolean expression:
+if (count % 10 == 0)
+  newLine = true;
+else
+  newLine = false;
+=== ANS ===
+boolean newLine = count % 10 == 0;
+
+
+3.6.3
+Are the following statements correct?
+Which one is better?
+=== ANS ===
+Both are correct but b is the better.
+
+
+3.6.4
+What is the output of the following code if number is 14, 15, or 30?
+=== ANS ===
+number   a                      b
+14       14 is even             14 is even
+15       15 is multiple of 5    15 is multiple of 5
+30       30 is even             30 is even
+         30 is multiple of 5
+
+
+████████████████████████████████████████████████████████████████████████████████
+
+3.7.1
+Which of the following is a possible output from invoking Math.random()?
+323.4, 0.5, 34, 1.0, 0.0, 0.234
+=== ANS ===
+Math.random() give a double value v in range 0.0 <= v < 1.0
+thus possible values are 0.5, 0.0, 0.234
+
+To get the other ones:
+323.4 => Math.random() * 324;      // [0, 323.9999999999999999]
+34    => (int) (Math.random * 35); // [0, 34]
+1.0   => Math.random() * 2;        // [0, 1.9999999999999999]
+
+
+3.7.2
+a. How do you generate a random integer i such that 0 <= i < 20?
+b. How do you generate a random integer i such that 10 <= i < 20?
+c. How do you generate a random integer i such that 10 <= i <= 50?
+d. Write an expression that returns 0 or 1 randomly.
+=== ANS ===
+a. (int) (Math.random() * 20);      // [0, 20)
+b. 10 + (int) (Math.random() * 10); // 10 + [0, 9]  => [10, 19]
+c. 10 + (int) (Math.random() * 41); // 10 + [0, 40] => [10, 50]
+  General case for b and c:
+  To generate random number v between x and y i.e. x <= v <= y
+  x + (int) (Math.random() * (y - x + 1));
+  e.g. v in the range of: x = -5, y = 20
+  -5 + (int) (Math.random() * 26); // -5 + [0, 25] => [-5, 20]
+d. (int) (Math.random() * 2); // (int) [0, 1.9999999999999999] => [0, 1]
+
+
+████████████████████████████████████████████████████████████████████████████████
+
+
+3.9.1
+Are the following two statements equivalent?
+=== ANS ===
+Yes, if income is greater then 20,000 no tax applied :o
+
+
+████████████████████████████████████████████████████████████████████████████████
+
+
+3.10.1
+Assuming that x is 1, show the result of the following Boolean expressions:
+(true) && (3 > 4)     // => false
+!(x > 0) && (x > 0)   // => false
+(x > 0) || (x < 0)    // => true
+(x != 0) || (x == 0)  // => true
+(x >= 0) || (x < 0)   // => true
+(x != 1) == !(x == 1) // => true
+
+
+3.10.2
+(a) Write a Boolean expression that evaluates to true if a number
+stored in variable num is between 1 and 100.
+(b) Write a Boolean expression that evaluates to true if a number
+stored in variable num is between 1 and 100 or the number is negative.
+=== ANS ===
+(a): 1 < n && n < 100
+(b): (1 < n && n < 100) || (n < 0)
+
+
+3.10.3
+(a) Write a Boolean expression for |x - 5| < 4.5.
+(b) Write a Boolean expression for |x - 5| > 4.5.
+=== ANS ===
+Use absolute value properties:
+|x| < y => -y < x < y
+|x| > y => x > y or x < y
+
+(a): |x - 5| < 4.5
+     => -4.5 < x - 5 < 4.5
+     => 0.5 < x < 9.5
+     => 0.5 < x && x < 9.5
+
+(b): |x - 5| > 4.5
+     => x - 5 > 4.5 or x - 5 < -4.5
+     => x > 9.5 or x < 0.5
+     => x > 9.5 || x < 0.5
+
+Another solution is to use the Math.abs() method as follows:
+(a): Math.abs(x - 5) < 4.5
+(b): Math.abs(x - 5) > 4.5
+
+
+
+3.10.4
+Assume x and y are int type.
+Which of the following are legal Java expressions?
+x > y > 0            // => illegal. x > y is boolean, boolean > 0 is compilation-error
+x = y && y           // => illegal. integer types can't be evaluated with &&
+x /= y               // => legal. integer division
+x or y               // => illegal. or is un-identified word.
+x and y              // => illegal. same as previous
+(x != 0) || (x = 0)  // => illegal. right side is integer type, boolean || integer is undefined
+
+
+3.10.5
+Are the following two expressions the same?
+(a) x % 2 == 0 && x % 3 == 0
+(b) x % 6 == 0
+=== ANS ===
+(a): x is divisible by 2 and 3 i.e. by 6
+(b): x divisible by 6
+They are the same.
+
+
+3.10.6
+What is the value of the expression
+x >= 50 && x <= 100 if x is 45, 67, or 101?
+=== ANS ===
+expression checks if x in the range [50, 100]
+x = 45;  // => false
+x = 67;  // => true
+x = 101; // => false
+
+
+3.10.7
+Suppose, when you run the following program,
+you enter the input 2 3 6 from the console.
+What is the output?
+=== ANS ===
+(x < y && y < z) is true  // => also called transitive property
+(x < y && y < z) is true  // => short-circuit x < y
+!(x < y) is false
+(x + y < z) is true
+(x + y > z) is false
+
+
+3.10.8
+Write a Boolean expression that evaluates to true if age is greater than 13 and
+less than 18.
+=== ANS ===
+age > 13 && age < 18
+
+
+3.10.9
+Write a Boolean expression that evaluates to true if weight is greater than 50
+pounds or height is greater than 60 inches.
+=== ANS ===
+weight > 50 || height > 60
+
+
+3.10.10
+Write a Boolean expression that evaluates to true if weight is greater than 50
+pounds and height is greater than 60 inches.
+=== ANS ===
+weight > 50 && height > 60
+
+
+3.10.11
+Write a Boolean expression that evaluates to true if either weight is greater
+than 50 pounds or height is greater than 60 inches, but not both.
+=== ANS ===
+weight > 50 ^ height > 60
+
+
+████████████████████████████████████████████████████████████████████████████████
+
+
+3.11.1
+How many days in the February of a leap year?
+Which of the following is a leap year? 500, 1000, 2000, 2016, and 2020?
+=== ANS ===
+Leap year has 366 days, extra day goes to February which make the month 29 days.
+500  = 4 * 125 and 500  = 100 * 5 or 500 = 400 * 1 + 100    => 500 not leap year
+1000 = 4 * 250 and 1000 = 10 * 100 or 1000 = 400 * 2 + 200  => 1000 not leap year
+2000 = 4 * 500 and 2000 = 20 * 100 or 2000 = 400 * 5        => 2000 leap year
+2016 = 4 * 504 and 2016 = 100 * 20 + 16                     => 2016 leap year
+2020 = 4 * 505 and 2020 = 100 * 20 + 20                     => 2020 leap year
+
+
+████████████████████████████████████████████████████████████████████████████████
+
+
+3.12.1
+What happens if you enter an integer as 05?
+=== ANS ===
+It will be treated as 5
+
+
+████████████████████████████████████████████████████████████████████████████████
+
+
+3.13.1
+(a). What data types are required for a switch variable?
+(b). If the keyword break is not used after a case is processed, what is the next
+statement to be executed?
+(c). Can you convert a switch statement to an equivalent if statement, or vice versa?
+(d). What are the advantages of using a switch statement?
+=== ANS ===
+(a). switch supports byte, short, int, char, String and enum data types.
+NOTE: Cases values must be known in compile time otherwise we get
+compile time error.
+
+(b). If break is omitted from the case then the next case will be executed
+and the next until break keyword will be encountered or till end of switch block.
+Its called fall-through behavior.
+
+(c). Every switch block can be convert to if-else statements but not vice-versa
+because, if is evaluated to boolean where's switch must be one of the data types
+byte, short, int, char, String or enum.
+
+(d). Use switch statement where there are lots of if-else-if.
+It make code more readable and easy to maintain.
+
+
+3.13.2
+(a). What is y after the following switch statement is executed?
+(b). Rewrite the code using an if-else statement.
+x = 3; y = 3;
+switch (x + 3) {
+  case 6: y = 1;
+  default: y += 1;
+}
+=== ANS ===
+(a). y => 2
+(b).
+if (x + 3 == 6) {
+  y = 1;
+}
+y += 1;
+
+
+3.13.3
+(a). What is x after the following if-else statement is executed?
+(b). Use a switch statement to rewrite it and draw the flowchart for the
+new switch statement.
+int x = 1, a = 3;
+if (a == 1)
+  x += 5;
+else if (a == 2)
+  x += 10;
+else if (a == 3)
+  x += 16;
+else if (a == 4)
+  x += 34;
+=== ANS ===
+(a). x => 17
+(b).
+int x = 1, a = 3;
+switch (a) {
+  case 1: x += 5;  break;
+  case 2: x += 10; break;
+  case 3: x += 16; break;
+  case 4: x += 34; break;
+}
+
+
+3.13.4
+Write a switch statement that displays
+Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday,
+if day is 0, 1, 2, 3, 4, 5, 6, respectively.
+=== ANS ===
+switch (day) {
+  case 0: System.out.println("Saturday"); break;
+  case 1: System.out.println("Sunday");   break;
+  case 2: System.out.println("Monday");   break;
+  case 3: System.out.println("Tuesday");  break;
+  case 4: System.out.println("Wednesday");break;
+  case 5: System.out.println("Thursday"); break;
+  case 6: System.out.println("Friday");   break;
+}
+
+
+3.13.5
+Rewrite Listing 3.9 using an if-else statement.
+=== ANS ===
+int zodiac = year % 10;
+if      (zodiac == 0)  System.out.println("monkey");
+else if (zodiac == 1)  System.out.println("rooster");
+else if (zodiac == 2)  System.out.println("dog");
+else if (zodiac == 3)  System.out.println("pig");
+else if (zodiac == 4)  System.out.println("rat");
+else if (zodiac == 5)  System.out.println("ox");
+else if (zodiac == 6)  System.out.println("tiger");
+else if (zodiac == 7)  System.out.println("rabbit");
+else if (zodiac == 8)  System.out.println("dragon");
+else if (zodiac == 9)  System.out.println("snake");
+else if (zodiac == 10) System.out.println("horse");
+else    (zodiac == 11) System.out.println("sheep");
+
+
+████████████████████████████████████████████████████████████████████████████████
+
+
+3.14.1
+Suppose when you run the following program, you enter the input 2 3 6 from the
+console. What is the output?
+=== ANS ===
+"sorted"
+
+
+3.14.2
+Rewrite the following if statements using the conditional operator.
+=== ANS ===
+ticketPrice = ages >= 16 ? 20 : 10;
+
+
+3.14.3
+Rewrite the following codes using if-else statements.
+(a). score = (x > 10) ? 3 * scale : 4 * scale;
+(b). tax = (income > 10000) ? income * 0.2 : income * 0.17 + 1000;
+(c). System.out.println((number % 3 == 0) ? i : j);
+=== ANS ===
+(a). if (x > 10) score = 3 * scale;
+     else        score = 4 * scale;
+(b). if (income > 10000) tax = income * 0.2;
+     else                tax = income * 0.17 + 1000;
+(c). if (number % 3 == 0) System.out.println(i);
+     else                 System.out.println(j);
+
+
+3.14.4
+Write an expression using a conditional operator that returns randomly -1 or 1.
+=== ANS ===
+Math.random() < 0.5 ? -1 : 1;
+
+
+████████████████████████████████████████████████████████████████████████████████
+
+
+3.15.1
+List the precedence order of the Boolean operators.
+Evaluate the following expressions:
+true || true && false => true || (true && false) => true
+true && true || false => true || false           => true
+=== ANS ===
+Boolean operators are binary operators thus left associative.
+Order is: ! ^ && ||
+
+
+3.15.2
+True or false?
+All the binary operators except = are left associative.
+=== ANS ===
+True.
+++, --, +, -, !, (type), new are all right associative but they are unary operators
+=, +=, -=, *=, /=, %= are all right associative but they are assignment operators
+thus belongs to the = group.
+
+
+3.15.3
+Evaluate the following expressions:
+NOTE: order is (), [], {}
+2 * 2 – 3 > 2 && 4 – 2 > 5
+  => {[(2 * 2) - 3] > 2} && {[4 - 2] > 5}
+  => {[4 - 3] > 2} && {2 > 5}
+  => {1 > 2} && {2 > 5}
+  => false && false
+  => false
+
+2 * 2 – 3 > 2 || 4 – 2 > 5
+  => {[(2 * 2) - 3] > 2} || [(4 - 2) > 5]
+  => {[4 - 3] > 2} || [2 > 5]
+  => {1 > 2} || [2 > 5]
+  => false || false
+  => false
+
+
+3.15.4
+(a). Is (x > 0 && x < 10) the same as ((x > 0) && (x < 10))?
+(b). Is (x > 0 || x < 10) the same as ((x > 0) || (x < 10))?
+(c). Is (x > 0 || x < 10 && y < 0) the same as (x > 0 || (x < 10 && y < 0))?
+=== ANS ===
+(a). true
+(b). true
+(c). true. recall boolean order: ! ^ && ||
+
+
+
+
+
+
+
+
+
+
