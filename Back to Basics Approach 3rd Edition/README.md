@@ -2,28 +2,33 @@
   <a href="https://www.amazon.com/Building-Java-Programs-Stuart-Reges/dp/0133360903"><img src="https://images-na.ssl-images-amazon.com/images/I/51qxMiwkkAL._SX402_BO1,204,203,200_.jpg" height="400" title="Cover" alt="Cover"></a>
 </p>
 <p align="center">
-<img src="https://img.shields.io/badge/In%20Progress-Chapter 2-blue.svg" />
+<img src="https://img.shields.io/badge/In%20Progress-Chapter 3 Introduction to Parameters and Objects-blue.svg" />
   <img src="https://img.shields.io/badge/Made%20With-Java 8-purple.svg" />
 </p>
 
-# Building Java Programs A Back to Basics Approach Stuart Reges Marty Stepp | 3rd Edition
+# Building Java Programs A Back to Basics Approach Stuart Reges Marty Stepp | 3rd Edition | 2014
 
 **This repository** contains my personal solutions to **programming exercises**.
 
 ## Progress
 
-- [x] Chapter 1 Introduction to Java Programming
-  - [x] 1.1 Basic Computing Concepts
-  - [x] 1.2 And Now—Java
-  - [x] 1.3 Program Errors
-  - [x] 1.4 Procedural Decomposition
-  - [x] _1.5 Case Study: DrawFigures_
-- [ ] Chapter 2 Primitive Data and Definite Loops
-  - [ ] 2.1 Basic Data Concepts
-  - [ ] 2.2 Variables
-  - [ ] 2.3 The for Loop
-  - [ ] 2.4 Managing Complexity
-  - [ ] _2.5 Case Study: Hourglass Figure_
+- [x] <a href="https://bit.ly/3mfBMjO" target="_blank" title="Solutions">Chapter 1 Introduction to Java Programming</a>
+  - 1.1 Basic Computing Concepts
+  - 1.2 And Now—Java
+  - 1.3 Program Errors
+  - 1.4 Procedural Decomposition
+  - _1.5 Case Study: `DrawFigures`_
+- [x] <a href="#" target="_blank" title="Solutions">Chapter 2 Primitive Data and Definite Loops</a>
+  - 2.1 Basic Data Concepts
+    - _Date Type, Expression, Literal, Operator, Operand, Scientific Notation_
+    - `x % y = x - (x / y) * y`
+    - _Operator Precedence, Casting_
+  - 2.2 Variables
+    - _Declaration, String Concatenation_
+  - 2.3 The for Loop
+  - 2.4 Managing Complexity
+    - _Scope, Local Variable, Localizing, Pseudocode, Class Constants_
+  - _2.5 Case Study: `Hourglass Figure`_
 - [ ] Chapter 3 Introduction to Parameters and Objects
   - [ ] 3.1 Parameters
   - [ ] 3.2 Methods That Return Values
@@ -65,6 +70,19 @@
 - [ ] Chapter 17 Binary Trees
 - [ ] Chapter 18 Advanced Data Structures
 
-## Interesting and Challenging Exercises:
+## Concept Exercises:
     - Chapter 1:
-        - 16. Shining (p. 58)
+        - 16. Shining (p.58)
+    - Chapter 2:
+        - 12. In-place Swaping (p.121)
+        - 27. Pyramid (p.125)
+        - 33-35. loopTableConstant, loopTableSlashes, loopTableSlashesConstant
+        - 17. SlashFigure, SlashFigure2
+        - 23. DollarFigure, DollarFigure2
+        - All Programming projects (p. 131 - 135)
+
+### ToDo's
+    - Chapter 2: 
+        - Programing projects: Staircase (5), SeattleNeedle (7), Book(8)
+    - Chapter 3:
+        - 
