@@ -1,33 +1,42 @@
 <p align="center">
-  <a href="https://www.pearson.com/uk/educators/higher-education-educators/program/Liang-Introduction-to-Java-Programming-and-Data-Structures-Comprehensive-Version-Global-Edition-11th-Edition/PGM1898285.html">
+  <a href="https://bit.ly/2IMBXEE">
   <img src="https://www.pearsonhighered.com/assets/bigcovers/1/2/9/2/1292221879.JPG" 
   height="400" 
   title="Introduction to Java Programming and Data Structures" 
   alt="Cover"></a>
 </p>
 <p align="center">
-<img src="https://img.shields.io/badge/In%20Progress-Chapter 4 Mathematical Functions, Characters, and Strings-blue.svg" />
-  <img src="https://img.shields.io/badge/Made%20With-Java 8-purple.svg" />
+<img src="https://img.shields.io/badge/In%20Progress-Chapter 5 Loops-blue.svg" />
+  <img src="https://img.shields.io/badge/Made%20With-Java 8/11-purple.svg" />
 </p>
 
 # Introduction to Java Programming and Data Structures Comprehensive 
 # Version Global Edition 11th Edition | 2017
-**[This repository](https://github.com/Alex-Golub/Java-ProgrammIng-and-Data-Structures-11th)** contains my personal solutions to **programming exercises and CheckPoints** in the textbook - [Introduction to Java Programming and Data Structures Comprehensive Version Eleventh Edition](https://www.pearson.com/uk/educators/higher-education-educators/program/Liang-Introduction-to-Java-Programming-and-Data-Structures-Comprehensive-Version-Global-Edition-11th-Edition/PGM1898285.html) written by [Y. Daniel Liang](https://yongdanielliang.github.io/).
+**This repository** contains my personal solutions to **programming exercises and CheckPoints** in the textbook - [Introduction to Java Programming and Data Structures Comprehensive Version Eleventh Edition](https://www.pearson.com/uk/educators/higher-education-educators/program/Liang-Introduction-to-Java-Programming-and-Data-Structures-Comprehensive-Version-Global-Edition-11th-Edition/PGM1898285.html) written by [Y. Daniel Liang](https://yongdanielliang.github.io/).
 
 ## Progress
-- [x] <a href="#" target="_blank" title="Solutions">Chapter 1 Introduction to Computers, Programs, and Java™</a>
-- [x] <a href="#" target="_blank" title="Solutions">Chapter 2 Elementary Programming</a> 
+- [x] <a href="https://bit.ly/3pAW6yw" target="_blank" title="Solutions">Chapter 1 Introduction to Computers, Programs, and Java™</a>
+- [x] <a href="https://bit.ly/2IIaZOM" target="_blank" title="Solutions">Chapter 2 Elementary Programming</a> 
     - Displaying the Current Time 
-    - Counting Monetary Units (`(int) (x * 100 + 0.5) / 100.0`)
-- [ ] <a href="#" target="_blank" title="Solutions">Chapter 3 Selections</a>
-    - Equality Test of Two Floating-Point Values (`epsilon`)
-    - Generating Random Numbers (`System.currentTimeMillis(), Math.random(), Random`)
-    - Computing Body Mass Index
-    - Computing Taxes (`rounding to n decimal places`)
-    - Determining Leap Year
+    - Counting Monetary Units `(int) (x * 100 + 0.5) / 100.0`
+- [x] <a href="https://bit.ly/3f8q5cy" target="_blank" title="Solutions">Chapter 3 Selections</a>
+    - Equality Test of Two Floating-Point Values `epsilon`
+    - Generating Random Numbers `System.currentTimeMillis(), Math.random(), Random`
+    - Computing Taxes `rounding to n decimal places`
     - Lottery
-    - Bitwise Operations (`&, |, ^, ~, <<, >>, >>>`)
-- [ ] **Chapter 4 Mathematical Functions, Characters, and Strings**
+    - Bitwise Operations `&, |, ^, ~, <<, >>, >>>`
+- [x] <a href="https://bit.ly/2UwhtD5" target="_blank" title="Solutions">Chapter 4 Mathematical Functions, Characters, and Strings</a>
+    - Distance between two points `Distance Formula`
+    - Computing Angles of a Triangle `Cosine Theorem`
+    - Math `Trigonometric`, `Exponent`, `Rounding` methods
+    - `ASCII(8bit)`, `Unicode(16bit)`, `Character` class
+    - `Escape Sequences` for Special Characters
+    - Whitespace characters `' ', \t, \f, \r, \n` 
+    - `referenceVariable.methodName(arguments)` and `ClassName.methodName(arguments)`
+    - token-based input `next<Type>();`, line-based input `nextLine();`
+    - `equals()` vs. `==` vs. `referenceVariable.compareTo(Object other)`
+    - Case Studies: `GuessBirthday`, `BaseConverting`, `Lottery revised`
+    - Formatting `System.out.printf()`, `%<±field_width>,.<precision><format_specifier>` 
 - [ ] **Chapter 5 Loops**
 - [ ] **Chapter 6 Methods**
 - [ ] **Chapter 7 Single-Dimensional Arrays** 
@@ -68,8 +77,6 @@
 - [ ] **Chapter 42 2-4 Trees and B-Trees**
 - [ ] **Chapter 43 Red-Black Trees**
 - [ ] **Chapter 44 Testing Using JUnit**
-
-## Interesting and Challenging Exercises:
 
 ### Fixing Required
     Chapter 3:
