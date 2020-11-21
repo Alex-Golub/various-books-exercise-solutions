@@ -1,9 +1,14 @@
 <p align="center">
-  <a href="https://www.amazon.com/Building-Java-Programs-Stuart-Reges/dp/0133360903"><img src="https://images-na.ssl-images-amazon.com/images/I/51qxMiwkkAL._SX402_BO1,204,203,200_.jpg" height="400" title="Cover" alt="Cover"></a>
+  <a href="https://www.amazon.com/Building-Java-Programs-Stuart-Reges/dp/0133360903">
+  <img src="https://images-na.ssl-images-amazon.com/images/I/51qxMiwkkAL._SX402_BO1,204,203,200_.jpg" 
+  height="400" 
+  title="Back to Basics Approach" 
+  alt="Back to Basics Approach"></a>
 </p>
 <p align="center">
-<img src="https://img.shields.io/badge/In%20Progress-Chapter 3 Introduction to Parameters and Objects-blue.svg" />
+<img src="https://img.shields.io/badge/In%20Progress-Supplement 3G Graphics (Optional)-blue.svg" />
   <img src="https://img.shields.io/badge/Made%20With-Java 8-purple.svg" />
+  <img src="https://img.shields.io/badge/Supplmented%20With-PracticeIt!-green.svg" />
 </p>
 
 # Building Java Programs A Back to Basics Approach Stuart Reges Marty Stepp | 3rd Edition | 2014
@@ -29,11 +34,20 @@
   - 2.4 Managing Complexity
     - _Scope, Local Variable, Localizing, Pseudocode, Class Constants_
   - _2.5 Case Study: `Hourglass Figure`_
-- [ ] Chapter 3 Introduction to Parameters and Objects
-  - [ ] 3.1 Parameters
-  - [ ] 3.2 Methods That Return Values
-  - [ ] 3.3 Using Objects
-  - [ ] _3.4 Case Study: Projectile Trajectory_
+- [x] Chapter 3 Introduction to Parameters and Objects
+  - 3.1 Parameters
+    - `formal` and `actual`
+    - `method overloading` and `method signature`
+  - 3.2 Methods That Return Values
+    - `Math class`
+    - `static methods <class_name>.<element>`
+  - 3.3 Using Objects
+    - `Object: state (data) and behavior (methods)`
+    - `Class`
+    - `String, Immutable Object, Constructor`
+    - `<instance_variable>.<method_name>(<expression>, <expression>, ..., <expression>)`
+    - `token-based input`
+  - _3.4 Case Study: Projectile Trajectory_
 - [ ] Supplement 3G Graphics (Optional)
   - [ ] 3G.1 Introduction to Graphics
   - [ ] 3G.2 Procedural Decomposition with Graphics
@@ -80,9 +94,11 @@
         - 17. SlashFigure, SlashFigure2
         - 23. DollarFigure, DollarFigure2
         - All Programming projects (p. 131 - 135)
+    - Chapter 3:
+        - 4. printSquare (p. 189)
 
 ### ToDo's
     - Chapter 2: 
         - Programing projects: Staircase (5), SeattleNeedle (7), Book(8)
     - Chapter 3:
-        - 
+        - Programing projects Christmas-trees(1), Calendar(6)
