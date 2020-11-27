@@ -8,7 +8,7 @@
   </a>
 </p>
 <p align="center">
-<img src="https://img.shields.io/badge/In%20Progress-Chapter 2-blue.svg" />
+<img src="https://img.shields.io/badge/In%20Progress-Chapter 4: Grouping Objects-blue.svg" />
   <img src="https://img.shields.io/badge/Made%20With-Java 8-green.svg" />
 </p>
 
@@ -22,14 +22,14 @@
 
 ## Progress and Objectives Covered
 
-- [ ] **Part 1: Foundations of object orientation**
+- [ ] [Part 1: Foundations of object orientation](https://bit.ly/3o50Rz4)
   - [x] **1. Objects and classes**
     - <details>
         <summary>Terms introduced in this chapter:</summary>
         object, class, instance, method, signature, parameter, type, state, source code,
         return value, compiler
-        </details>
-  - [x] **2. Understanding class definitions**
+      </details>
+  - [x] [2. Understanding class definitions](https://bit.ly/3fHCnZo)
     - `Ticket-Machine` - A simulation of a ticket vending machine for train tickets;
     - `Book` - Storing details of a book.
     - `Heater` - Exercise
@@ -40,11 +40,19 @@
         block, statement, assignment statement, conditional statement, return statement,
         return type, comment, expression, operator, variable, local variable, scope, lifetime
       </details>
-  - [ ] **3. Object interaction**
+  - [x] **3. Object interaction**
     - `Clock-display` - An implementation of a display for a digital clock; concepts of abstraction,
       modularization, and object interaction.
     - `Mail system` - A simple simulation of an email system.
+    - <details>
+        <summary>Terms introduced in this chapter:</summary>
+        abstraction, modularization, divide and conquer, class diagram, object diagram,
+        object reference, overloading, internal method call, external method call, dot
+        notation, debugger, breakpoint
+      </details>
   - [ ] **4. Grouping objects**
+    - `Music-organizer` - introduce collections and loops. Includes the ability to play MP3 files.
+    - `Auction` - More about collections and loops, this time with iterators.
   - [ ] **5. Functional Processing of Collections (Advanced)**
   - [ ] **6. More-sophisticated behavior**
   - [ ] **7. Fixed-size collections – arrays**
