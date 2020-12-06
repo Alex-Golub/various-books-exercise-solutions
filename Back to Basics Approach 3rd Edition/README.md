@@ -6,7 +6,7 @@
   alt="Back to Basics Approach"></a>
 </p>
 <p align="center">
-<img src="https://img.shields.io/badge/In%20Progress-Supplement 3G Graphics (Optional)-blue.svg" />
+<img src="https://img.shields.io/badge/In%20Progress-Chapter 4 Conditional Execution-blue.svg" />
   <img src="https://img.shields.io/badge/Made%20With-Java 8-purple.svg" />
   <img src="https://img.shields.io/badge/Supplmented%20With-PracticeIt!-green.svg" />
 </p>
@@ -23,7 +23,8 @@
   - 1.3 Program Errors
   - 1.4 Procedural Decomposition
   - _1.5 Case Study: `DrawFigures`_
-- [x] <a href="#" target="_blank" title="Solutions">Chapter 2 Primitive Data and Definite Loops</a>
+---
+- [x] <a href="https://bit.ly/3o9IloY" target="_blank" title="Solutions">Chapter 2 Primitive Data and Definite Loops</a>
   - 2.1 Basic Data Concepts
     - _Date Type, Expression, Literal, Operator, Operand, Scientific Notation_
     - `x % y = x - (x / y) * y`
@@ -34,7 +35,8 @@
   - 2.4 Managing Complexity
     - _Scope, Local Variable, Localizing, Pseudocode, Class Constants_
   - _2.5 Case Study: `Hourglass Figure`_
-- [x] Chapter 3 Introduction to Parameters and Objects
+---
+- [x] <a href="https://bit.ly/3ljfbC1" target="_blank" title="Solutions">Chapter 3 Introduction to Parameters and Objects</a>
   - 3.1 Parameters
     - `formal` and `actual`
     - `method overloading` and `method signature`
@@ -48,16 +50,21 @@
     - `<instance_variable>.<method_name>(<expression>, <expression>, ..., <expression>)`
     - `token-based input`
   - _3.4 Case Study: Projectile Trajectory_
-- [ ] Supplement 3G Graphics (Optional)
-  - [ ] 3G.1 Introduction to Graphics
-  - [ ] 3G.2 Procedural Decomposition with Graphics
-  - [ ] _3G.3 Case Study: Pyramids_
+---
+- [x] Supplement 3G Graphics (Optional)
+    - <details>
+        <summary>Terms introduced in this chapter:</summary>
+        DrawingPanel, Drawing Lines and Shapes, Colors, Drawing with Loops, Text and Fonts
+      </details>
+    - _3G.3 Case Study: Pyramids_
+---
 - [ ] Chapter 4 Conditional Execution
   - [ ] 4.1 if/else Statements
   - [ ] 4.2 Cumulative Algorithms
   - [ ] 4.3 Text Processing
   - [ ] 4.4 Methods with Conditional Execution
   - [ ] _4.5 Case Study: Body Mass Index_
+---
 - [ ] Chapter 5 Program Logic and Indefinite Loops
   - [ ] 5.1 The while Loop
   - [ ] 5.2 Fencepost Algorithms
@@ -65,6 +72,7 @@
   - [ ] 5.4 User Errors
   - [ ] 5.5 Assertions and Program Logic
   - [ ] _5.6 Case Study: NumberGuess_
+---
 - [ ] Chapter 6 File Processing
   - [ ] 6.1 File-Reading Basics
   - [ ] 6.2 Details of Token-Based Processing
@@ -102,3 +110,5 @@
         - Programing projects: Staircase (5), SeattleNeedle (7), Book(8)
     - Chapter 3:
         - Programing projects Christmas-trees(1), Calendar(6)
+    - Chapter Graphics:
+        - PP (2 - 5)
