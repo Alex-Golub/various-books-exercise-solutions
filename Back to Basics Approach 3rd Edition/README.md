@@ -6,7 +6,7 @@
   alt="Back to Basics Approach"></a>
 </p>
 <p align="center">
-<img src="https://img.shields.io/badge/In%20Progress-Chapter 4 Conditional Execution-blue.svg" />
+<img src="https://img.shields.io/badge/In%20Progress-Chapter 5 Program Logic and Indefinite Loops-blue.svg" />
   <img src="https://img.shields.io/badge/Made%20With-Java 8-purple.svg" />
   <img src="https://img.shields.io/badge/Supplmented%20With-PracticeIt!-green.svg" />
 </p>
@@ -18,52 +18,45 @@
 ## Progress
 
 - [x] <a href="https://bit.ly/3mfBMjO" target="_blank" title="Solutions">Chapter 1 Introduction to Java Programming</a>
-  - 1.1 Basic Computing Concepts
-  - 1.2 And Now—Java
-  - 1.3 Program Errors
-  - 1.4 Procedural Decomposition
-  - _1.5 Case Study: `DrawFigures`_
+    - <details>
+        <summary>Terms introduced in this chapter:</summary>
+       Basic Computing Concepts, Program Errors, Procedural Decomposition 
+      </details>
+    - _1.5 Case Study: `DrawFigures`_
 ---
 - [x] <a href="https://bit.ly/3o9IloY" target="_blank" title="Solutions">Chapter 2 Primitive Data and Definite Loops</a>
-  - 2.1 Basic Data Concepts
-    - _Date Type, Expression, Literal, Operator, Operand, Scientific Notation_
-    - `x % y = x - (x / y) * y`
-    - _Operator Precedence, Casting_
-  - 2.2 Variables
-    - _Declaration, String Concatenation_
-  - 2.3 The for Loop
-  - 2.4 Managing Complexity
-    - _Scope, Local Variable, Localizing, Pseudocode, Class Constants_
-  - _2.5 Case Study: `Hourglass Figure`_
+    - <details>
+        <summary>Terms introduced in this chapter:</summary>
+        Date Type, Expression, Literal, Operator, Operand, Scientific Notation(1e10),
+        x % y = x - (x / y) * y, Declaration, String Concatenation, The for Loop,
+        Scope, Local Variable, Localizing, Pseudocode, Class Constants
+      </details>
+    - _2.5 Case Study: `Hourglass Figure`_
 ---
 - [x] <a href="https://bit.ly/3ljfbC1" target="_blank" title="Solutions">Chapter 3 Introduction to Parameters and Objects</a>
-  - 3.1 Parameters
-    - `formal` and `actual`
-    - `method overloading` and `method signature`
-  - 3.2 Methods That Return Values
-    - `Math class`
-    - `static methods <class_name>.<element>`
-  - 3.3 Using Objects
-    - `Object: state (data) and behavior (methods)`
-    - `Class`
-    - `String, Immutable Object, Constructor`
-    - `<instance_variable>.<method_name>(<expression>, <expression>, ..., <expression>)`
-    - `token-based input`
-  - _3.4 Case Study: Projectile Trajectory_
+    - <details>
+        <summary>Terms introduced in this chapter:</summary>
+        formal and actual parameters, method signature and overloading,
+        Math class, static methods className.method, String class, Immutable Object,
+        Constructor, class_object.method, token-based input
+      </details>
+    - _3.4 Case Study: Projectile Trajectory_
 ---
-- [x] Supplement 3G Graphics (Optional)
+- [x] <a href="#" target="_blank" title="Solutions">Supplement 3G Graphics (Optional)</a>
     - <details>
         <summary>Terms introduced in this chapter:</summary>
         DrawingPanel, Drawing Lines and Shapes, Colors, Drawing with Loops, Text and Fonts
       </details>
     - _3G.3 Case Study: Pyramids_
 ---
-- [ ] Chapter 4 Conditional Execution
-  - [ ] 4.1 if/else Statements
-  - [ ] 4.2 Cumulative Algorithms
-  - [ ] 4.3 Text Processing
-  - [ ] 4.4 Methods with Conditional Execution
-  - [ ] _4.5 Case Study: Body Mass Index_
+- [x] <a href="#" target="_blank" title="Solutions">Chapter 4 Conditional Execution</a>
+    - <details>
+        <summary>Terms introduced in this chapter:</summary>
+        Relational Operators, Object Equality, Factoring if/else Statements, 
+        Cumulative Algorithms (sum, min/max), Round-off Errors, char Type, printf, 
+        Throwing Exceptions, Reasoning about Paths, Design Heuristics. 
+      </details>
+    - _4.5 Case Study: Body Mass Index_
 ---
 - [ ] Chapter 5 Program Logic and Indefinite Loops
   - [ ] 5.1 The while Loop
@@ -74,11 +67,6 @@
   - [ ] _5.6 Case Study: NumberGuess_
 ---
 - [ ] Chapter 6 File Processing
-  - [ ] 6.1 File-Reading Basics
-  - [ ] 6.2 Details of Token-Based Processing
-  - [ ] 6.3 Line-Based Processing
-  - [ ] 6.4 Advanced File Processing
-  - [ ] 6.5 Case Study: Zip Code Lookup
 - [ ] Chapter 7 Arrays
 - [ ] Chapter 8 Classes
 - [ ] Chapter 9 Inheritance and Interfaces
@@ -102,13 +90,19 @@
         - 17. SlashFigure, SlashFigure2
         - 23. DollarFigure, DollarFigure2
         - All Programming projects (p. 131 - 135)
-    - Chapter 3:
+    - Chapter 3G:
         - 4. printSquare (p. 189)
+    - Chapter 3:
+        - Self-Check: 16(countFactors), 27(medianOf3), 29(printNumOdd)
+    - Chapter 4:
+        Exercises: 2(season), 7(xo), 18(wordCount), 20(numUnique)
 
 ### ToDo's
     - Chapter 2: 
-        - Programing projects: Staircase (5), SeattleNeedle (7), Book(8)
+        - PP: Staircase (5), SeattleNeedle (7), Book(8)
     - Chapter 3:
-        - Programing projects Christmas-trees(1), Calendar(6)
+        - PP: Christmas-trees(1), Calendar(6)
     - Chapter Graphics:
-        - PP (2 - 5)
+        - PP: (2 - 5)
+    - Chapter 4:
+        - PP: (3-7)
