@@ -6,9 +6,9 @@
   alt="Back to Basics Approach"></a>
 </p>
 <p align="center">
-<img src="https://img.shields.io/badge/In%20Progress-Chapter 5 Program Logic and Indefinite Loops-blue.svg" />
-  <img src="https://img.shields.io/badge/Made%20With-Java 8-purple.svg" />
-  <img src="https://img.shields.io/badge/Supplmented%20With-PracticeIt!-green.svg" />
+<img src="https://img.shields.io/badge/In%20Progress-Chapter 6 File Processing-blue.svg" />
+  <img src="https://img.shields.io/badge/Made%20With-Java 8-purple.svg" /> <br>
+  <img src="https://img.shields.io/badge/Supplmented%20With-PracticeIt! and CodeStepByStep-brown.svg" />
 </p>
 
 # Building Java Programs A Back to Basics Approach Stuart Reges Marty Stepp | 3rd Edition | 2014
@@ -17,14 +17,18 @@
 
 ## Progress
 
-- [x] <a href="https://bit.ly/3mfBMjO" target="_blank" title="Solutions">Chapter 1 Introduction to Java Programming</a>
+- [x] <a href="https://bit.ly/3mfBMjO" target="_blank" title="Solutions">Chapter
+  1 Introduction to Java Programming</a>
     - <details>
         <summary>Terms introduced in this chapter:</summary>
        Basic Computing Concepts, Program Errors, Procedural Decomposition 
       </details>
     - _1.5 Case Study: `DrawFigures`_
+
 ---
-- [x] <a href="https://bit.ly/3o9IloY" target="_blank" title="Solutions">Chapter 2 Primitive Data and Definite Loops</a>
+
+- [x] <a href="https://bit.ly/3o9IloY" target="_blank" title="Solutions">Chapter
+  2 Primitive Data and Definite Loops</a>
     - <details>
         <summary>Terms introduced in this chapter:</summary>
         Date Type, Expression, Literal, Operator, Operand, Scientific Notation(1e10),
@@ -32,7 +36,9 @@
         Scope, Local Variable, Localizing, Pseudocode, Class Constants
       </details>
     - _2.5 Case Study: `Hourglass Figure`_
+
 ---
+
 - [x] <a href="https://bit.ly/3ljfbC1" target="_blank" title="Solutions">Chapter 3 Introduction to Parameters and Objects</a>
     - <details>
         <summary>Terms introduced in this chapter:</summary>
@@ -40,33 +46,50 @@
         Math class, static methods className.method, String class, Immutable Object,
         Constructor, class_object.method, token-based input
       </details>
-    - _3.4 Case Study: Projectile Trajectory_
+    - _3.4 Case Study: `Projectile Trajectory`_
+
 ---
-- [x] <a href="#" target="_blank" title="Solutions">Supplement 3G Graphics (Optional)</a>
+
+- [x] <a href="https://bit.ly/3nhUvvV" target="_blank" title="Solutions">Supplement 3G Graphics (Optional)</a>
     - <details>
-        <summary>Terms introduced in this chapter:</summary>
-        DrawingPanel, Drawing Lines and Shapes, Colors, Drawing with Loops, Text and Fonts
+      <summary>Terms introduced in this chapter:</summary>
+      DrawingPanel, Drawing Lines and Shapes, Colors, Drawing with Loops, Text and Fonts
       </details>
-    - _3G.3 Case Study: Pyramids_
+    - _3G.3 Case Study: `Pyramids`_
+
 ---
-- [x] <a href="#" target="_blank" title="Solutions">Chapter 4 Conditional Execution</a>
+
+- [x] <a href="https://bit.ly/2INCjeQ" target="_blank" title="Solutions">Chapter
+  4 Conditional Execution</a>
     - <details>
         <summary>Terms introduced in this chapter:</summary>
         Relational Operators, Object Equality, Factoring if/else Statements, 
         Cumulative Algorithms (sum, min/max), Round-off Errors, char Type, printf, 
         Throwing Exceptions, Reasoning about Paths, Design Heuristics. 
       </details>
-    - _4.5 Case Study: Body Mass Index_
+    - _4.5 Case Study: `Body Mass Index`_
+
 ---
-- [ ] Chapter 5 Program Logic and Indefinite Loops
-  - [ ] 5.1 The while Loop
-  - [ ] 5.2 Fencepost Algorithms
-  - [ ] 5.3 The booleanType
-  - [ ] 5.4 User Errors
-  - [ ] 5.5 Assertions and Program Logic
-  - [ ] _5.6 Case Study: NumberGuess_
+
+- [x] <a href="#" target="_blank" title="Solutions">Chapter 5 Program Logic and
+  Indefinite Loops</a>
+    - <details>
+        <summary>Terms introduced in this chapter:</summary>
+        while Loop (Priming a Loop, “dummy” value),  
+        random numbers (Math.random(), Random class),  
+        Simulations, do/while, Fencepost, 
+        Sentinel Loops, Fencepost with if, boolean Type, Logical Operators,
+        Short-Circuited Evaluation, boolean Variables and Flags, 
+        Scanner Lookahead, Handling User Errors, Assertions
+      </details>
+    - _5.6 Case Study: `NumberGuess`_
+
 ---
+
 - [ ] Chapter 6 File Processing
+
+---
+
 - [ ] Chapter 7 Arrays
 - [ ] Chapter 8 Classes
 - [ ] Chapter 9 Inheritance and Interfaces
@@ -81,6 +104,7 @@
 - [ ] Chapter 18 Advanced Data Structures
 
 ## Concept Exercises:
+
     - Chapter 1:
         - 16. Shining (p.58)
     - Chapter 2:
@@ -96,8 +120,11 @@
         - Self-Check: 16(countFactors), 27(medianOf3), 29(printNumOdd)
     - Chapter 4:
         Exercises: 2(season), 7(xo), 18(wordCount), 20(numUnique)
+    - Chapter 5:
+        Exercises: 13(consecutive), 14(hasMidpoint), 21(swapDigitPairs)
 
 ### ToDo's
+
     - Chapter 2: 
         - PP: Staircase (5), SeattleNeedle (7), Book(8)
     - Chapter 3:
@@ -106,3 +133,5 @@
         - PP: (2 - 5)
     - Chapter 4:
         - PP: (3-7)
+    - Chapter 5:
+        - PP: 7 (Pig game)
