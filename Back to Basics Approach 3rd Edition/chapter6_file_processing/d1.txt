@@ -1,0 +1,19 @@
+This e-book has an unusual structure, being a compilation of eight
+smaller books accompanied by eight related sets of _numbered_
+explanatory notes provided by the author. It also contains several
+hundred footnotes scattered throughout the text (many being Greek
+spellings of words in the text). These have been given _alphabetic_
+labels and are now grouped together as endnotes.
+
+Numerous asterisks are present in parts of the text; these represent
+uncertain quantities, not footnotes. The text also contains archaic
+characters that may not display correctly with all viewing devices or
+fonts. For best viewing, the device’s character encoding should be set
+to Unicode (UTF-8), and one of the following fonts selected: Arial
+Unicode MS, DejaVu, Segoe UI Symbol or FreeSerif.
+
+The text has been preserved as in the original, including inconsistent
+punctuation, capitalisation and hyphenation. Archaic and
+inconsistent spellings have been retained except where obviously
+misspelled in the original. A list of these and other corrections has
+been appended at the end.
