@@ -1,0 +1,7 @@
+Before sorting:
+13 23 480 -18 75
+hello how are you feeling today
+
+After sorting:
+-18 13 23 75 480
+are feeling hello how today you

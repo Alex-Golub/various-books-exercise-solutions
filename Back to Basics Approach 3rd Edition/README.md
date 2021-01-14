@@ -6,7 +6,7 @@
   alt="Back to Basics Approach"></a>
 </p>
 <p align="center">
-<img src="https://img.shields.io/badge/In%20Progress-Chapter 7 Arrays-blue.svg" />
+<img src="https://img.shields.io/badge/In%20Progress-Chapter 8: Classes-blue.svg" />
   <img src="https://img.shields.io/badge/Made%20With-Java 8-purple.svg" /> <br>
   <img src="https://img.shields.io/badge/Supplmented%20With-PracticeIt! and CodeStepByStep-brown.svg" />
 </p>
@@ -18,7 +18,7 @@
 ## Progress
 
 - [x] <a href="https://bit.ly/3mfBMjO" target="_blank" title="Solutions">Chapter
-  1 Introduction to Java Programming</a>
+  1: Introduction to Java Programming</a>
     - <details>
         <summary>Terms introduced in this chapter:</summary>
         <ul>
@@ -32,7 +32,7 @@
 ---
 
 - [x] <a href="https://bit.ly/3o9IloY" target="_blank" title="Solutions">Chapter
-  2 Primitive Data and Definite Loops</a>
+  2: Primitive Data and Definite Loops</a>
     - <details>
         <summary>Terms introduced in this chapter:</summary>
         <ul>
@@ -57,7 +57,7 @@
 
 ---
 
-- [x] <a href="https://bit.ly/3ljfbC1" target="_blank" title="Solutions">Chapter 3 Introduction to Parameters and Objects</a>
+- [x] <a href="https://bit.ly/3ljfbC1" target="_blank" title="Solutions">Chapter 3: Introduction to Parameters and Objects</a>
     - <details>
         <summary>Terms introduced in this chapter:</summary>
         <ul>
@@ -75,7 +75,7 @@
 
 ---
 
-- [x] <a href="https://bit.ly/3nhUvvV" target="_blank" title="Solutions">Supplement 3G Graphics (Optional)</a>
+- [x] <a href="https://bit.ly/3nhUvvV" target="_blank" title="Solutions">Supplement 3G: Graphics (Optional)</a>
     - <details>
         <summary>Terms introduced in this chapter:</summary>
         <ul>
@@ -90,7 +90,7 @@
 ---
 
 - [x] <a href="https://bit.ly/2INCjeQ" target="_blank" title="Solutions">Chapter
-  4 Conditional Execution</a>
+  4: Conditional Execution</a>
     - <details>
         <summary>Terms introduced in this chapter:</summary>
         <ul>
@@ -110,7 +110,7 @@
 
 ---
 
-- [x] <a href="#" target="_blank" title="Solutions">Chapter 5 Program Logic and Indefinite Loops</a>
+- [x] <a href="https://bit.ly/3sAC0WS" target="_blank" title="Solutions">Chapter 5: Program Logic and Indefinite Loops</a>
     - <details>
         <summary>Terms introduced in this chapter:</summary>
         <ul>
@@ -138,7 +138,7 @@
 
 ---
 
-- [x] <a href="#" target="_blank" title="Solutions">Chapter 6 File Processing</a>
+- [x] <a href="https://bit.ly/38KFDS2" target="_blank" title="Solutions">Chapter 6: File Processing</a>
     - <details>
         <summary>Terms introduced in this chapter:</summary>
         <ul>
@@ -171,7 +171,7 @@
 
 ---
 
-- [ ] Chapter 7 Arrays
+- [x] <a href="#" target="_blank" title="Solutions">Chapter 7: Arrays</a>
     - <details>
       <summary>Terms introduced in this chapter:</summary>
         <ul>
@@ -179,10 +179,12 @@
         <li>Constructing and Traversing an Array</li>
         <li>Accessing an Array</li>
         <li>Random Access</li>
-        <li><code>Arrays</code> and Methods</li>
+        <li><em>Buffer overflow</em></li>
+        <li><code>Arrays</code> and Methods (alter the contents of arrays)</li>
         <li>The <code>For-Each</code> Loop</li>
         <li>Initializing Arrays</li>
         <li>The <code>Arrays</code> Class</li>
+        <li>Value and Reference semantics</li>
         </ul>
         </li>
         <li>7.2 Array-Traversal Algorithms<ul>
@@ -191,6 +193,7 @@
         <li>Testing for Equality</li>
         <li>Reversing an Array</li>
         <li>String Traversal Algorithms</li>
+        <li>Functional Approach</li>
         </ul>
         </li>
         <li>7.4 Advanced Array Techniques<ul>
@@ -203,25 +206,123 @@
         <li>7.5 Multidimensional Arrays<ul>
         <li>Rectangular Two-Dimensional Arrays (Matrix)</li>
         <li>Jagged Arrays</li>
+        <li>Arrays of Pixels</li>
         </ul>
         </li>
         </ul>
       </details>
-    - _7.6 Case Study: `Benford’s Law`_
+    - _7.6 Case Study: `Benford’s Law (Tallying Values)`_
 
 ---
 
-- [ ] Chapter 8 Classes
+- [ ] <a href="#" target="_blank" title="Solutions">Chapter 8 Classes</a>
+    - <details>
+      <summary>Terms introduced in this chapter:</summary>
+        <ul>
+        <li>8.1 Object-Oriented Programming<ul>
+        <li>Classes and Objects</li>
+        <li><code>Point</code> Objects</li>
+        </ul>
+        </li>
+        <li>8.2 Object State and Behavior<ul>
+        <li>Object State: <code>Fields</code></li>
+        <li>Object Behavior: <code>Methods</code></li>
+        <li>The Implicit Parameter</li>
+        <li><code>Mutators</code> and <code>Accessors</code></li>
+        <li>The <code>toString</code> Method</li>
+        </ul>
+        </li>
+        <li>8.3 Object Initialization<ul>
+        <li>Constructors</li>
+        <li>The Keyword <code>this</code></li>
+        <li>Multiple Constructors</li>
+        </ul>
+        </li>
+        <li>8.4 Encapsulation<ul>
+        <li><code>Private</code> Fields</li>
+        <li><code>Class Invariants</code></li>
+        <li>Changing Internal Implementations</li>
+        </ul>
+        </li>
+        </ul>
+      </details>  
+    - _8.5 Case Study: Designing a `Stock` Class_
+---
+
 - [ ] Chapter 9 Inheritance and Interfaces
-- [ ] Chapter 10 ArrayLists
-- [ ] Chapter 11 Java Collections Framework
-- [ ] Chapter 12 Recursion
-- [ ] Chapter 13 Searching and Sorting
-- [ ] Chapter 14 Stacks and Queues
-- [ ] Chapter 15 Implementing a Collection Class
-- [ ] Chapter 16 Linked Lists
-- [ ] Chapter 17 Binary Trees
-- [ ] Chapter 18 Advanced Data Structures
+    - <details>
+        <summary>Terms introduced in this chapter:</summary>
+    </details>  
+
+---
+
+- [ ] Chapter 10: ArrayLists
+    - <details>
+        <summary>Terms introduced in this chapter:</summary>
+    </details>  
+
+---
+
+- [ ] Chapter 11: Java Collections Framework
+    - <details>
+        <summary>Terms introduced in this chapter:</summary>
+    </details>  
+
+---
+
+- [ ] Chapter 12: Recursion
+    - <details>
+        <summary>Terms introduced in this chapter:</summary>
+    </details>  
+
+---
+
+- [ ] Chapter 13: Searching and Sorting
+    - <details>
+        <summary>Terms introduced in this chapter:</summary>
+    </details>  
+
+---
+
+- [ ] Chapter 14: Stacks and Queues
+    - <details>
+        <summary>Terms introduced in this chapter:</summary>
+    </details>  
+
+---
+
+- [ ] Chapter 15: Implementing a Collection Class
+    - <details>
+        <summary>Terms introduced in this chapter:</summary>
+    </details>  
+
+---
+
+- [ ] Chapter 16: Linked Lists
+    - <details>
+        <summary>Terms introduced in this chapter:</summary>
+    </details>  
+
+---
+
+- [ ] Chapter 17: Binary Trees
+    - <details>
+        <summary>Terms introduced in this chapter:</summary>
+    </details>  
+
+---
+
+- [ ] Chapter 18: Advanced Data Structures
+    - <details>
+        <summary>Terms introduced in this chapter:</summary>
+    </details>  
+
+---
+
+- [ ] Chapter 19: Functional Programming with Java 8
+    - <details>
+        <summary>Terms introduced in this chapter:</summary>
+    </details>  
 
 ## Concept Exercises:
 
@@ -246,6 +347,7 @@
         Exercises: 9(wordWrap), 11(wordWrap3), 13(stripComments), 16(mostCommonNames)
                    2(compareFiles), 3(indentJavaFile)
     - Chapter 7:
+        Exercises: 5(mode), 7(kthLargest), 8(median), evenBeforeOdd(18)
 
 ### ToDo's
 
