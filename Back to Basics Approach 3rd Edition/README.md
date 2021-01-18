@@ -6,7 +6,7 @@
   alt="Back to Basics Approach"></a>
 </p>
 <p align="center">
-<img src="https://img.shields.io/badge/In%20Progress-Chapter 8: Classes-blue.svg" />
+<img src="https://img.shields.io/badge/In%20Progress-Chapter 9: Inheritance and Interfaces-blue.svg" />
   <img src="https://img.shields.io/badge/Made%20With-Java 8-purple.svg" /> <br>
   <img src="https://img.shields.io/badge/Supplmented%20With-PracticeIt! and CodeStepByStep-brown.svg" />
 </p>
@@ -14,6 +14,10 @@
 # Building Java Programs A Back to Basics Approach Stuart Reges Marty Stepp | 3rd Edition | 2014
 
 **This repository** contains my personal solutions to **programming exercises**.
+
+- Questions listed here:  
+    - [PracticeIt!](https://practiceit.cs.washington.edu/problem/list)  
+    - [CodeStepByStep](https://www.codestepbystep.com/problem/list/java)
 
 ## Progress
 
@@ -28,6 +32,7 @@
         </ul>
       </details>
     - _1.5 Case Study: `DrawFigures`_
+- [ ] [CodeStepByStep - console output => 18 Questions](#)
 
 ---
 
@@ -54,6 +59,7 @@
         </ul>
       </details>
     - _2.5 Case Study: `Hourglass Figure`_
+- [ ] [CodeStepByStep - parameters and return => 45 Questions](#)
 
 ---
 
@@ -72,6 +78,7 @@
         </ul>
       </details>
     - _3.4 Case Study: `Projectile Trajectory`_
+- [ ] [CodeStepByStep - DrawingPanel => 7 Questions](#)
 
 ---
 
@@ -86,6 +93,7 @@
         </ul>
       </details>
     - _3G.3 Case Study: `Pyramids`_
+- [ ] [CodeStepByStep - DrawingPanel => 7 Questions](#)
 
 ---
 
@@ -107,6 +115,7 @@
         </ul>
       </details>
     - _4.5 Case Study: `Body Mass Index`_
+- [ ] [CodeStepByStep - if else => 12 Questions](#)
 
 ---
 
@@ -135,6 +144,7 @@
         </ul>
       </details>
     - _5.6 Case Study: `NumberGuess`_
+- [ ] [CodeStepByStep - loops => 32 Questions](#)
 
 ---
 
@@ -168,10 +178,11 @@
         </ul>
       </details>
     - _6.6 Case Study: `Zip Code Lookup`_
+- [ ] [CodeStepByStep - file IO => 25 Questions](#)
 
 ---
 
-- [x] <a href="#" target="_blank" title="Solutions">Chapter 7: Arrays</a>
+- [x] <a href="https://bit.ly/35MZezd" target="_blank" title="Solutions">Chapter 7: Arrays</a>
     - <details>
       <summary>Terms introduced in this chapter:</summary>
         <ul>
@@ -212,10 +223,11 @@
         </ul>
       </details>
     - _7.6 Case Study: `Benford’s Law (Tallying Values)`_
-
+- [ ] [CodeStepByStep - arrays => 59 Questions](#)
+- [ ] [CodeStepByStep - strings => 38 Questions](#)
 ---
 
-- [ ] <a href="#" target="_blank" title="Solutions">Chapter 8 Classes</a>
+- [x] <a href="#" target="_blank" title="Solutions">Chapter 8 Classes</a>
     - <details>
       <summary>Terms introduced in this chapter:</summary>
         <ul>
@@ -247,13 +259,57 @@
         </ul>
       </details>  
     - _8.5 Case Study: Designing a `Stock` Class_
+- [x] [CodeStepByStep - classes and objects => 10 Questions](#)
+
 ---
 
 - [ ] Chapter 9 Inheritance and Interfaces
     - <details>
         <summary>Terms introduced in this chapter:</summary>
-    </details>  
-
+        <ul>
+        <li>9.1 Inheritance Basics<ul>
+        <li>Non-programming Hierarchies</li>
+        <li><strong><em>Extending</em></strong> a Class</li>
+        <li><strong><em>Overriding</em></strong> Methods</li>
+        </ul>
+        </li>
+        <li>9.2 Interacting with the Superclass<ul>
+        <li>Calling Overridden Methods</li>
+        <li>Accessing Inherited Fields</li>
+        <li>Calling a Superclass’s Constructor</li>
+        <li><code>DividendStock</code> Behavior</li>
+        <li>The <code>Object</code> Class</li>
+        <li>The <code>equals</code> Method</li>
+        <li>The <code>instanceof</code> Keyword</li>
+        </ul>
+        </li>
+        <li>9.3 <strong><em>Polymorphism</em></strong><ul>
+        <li>Polymorphism Mechanics</li>
+        <li>Interpreting Inheritance Code</li>
+        <li>Interpreting Complex Calls</li>
+        </ul>
+        </li>
+        <li>9.4 Inheritance and Design<ul>
+        <li>A Misuse of Inheritance</li>
+        <li><code>Is-a</code> Versus <code>Has-a</code> Relationships</li>
+        <li><code>Graphics2D</code></li>
+        </ul>
+        </li>
+        <li>9.5 <code>Interfaces</code><ul>
+        <li>An Interface for Shapes</li>
+        <li>Implementing an Interface</li>
+        <li>Benefits of Interfaces</li>
+        </ul>
+        </li>
+        <li>9.6 Case Study: <code>Financial</code> Class Hierarchy<ul>
+        <li>Designing the Classes</li>
+        <li>Redundant Implementation</li>
+        <li><strong><em>Abstract Classes</em></strong></li>
+        </ul>
+        </li>
+        </ul>
+        </details>  
+- [ ] [CodeStepByStep - inheritance => 7 Questions](#)
 ---
 
 - [ ] Chapter 10: ArrayLists
@@ -322,42 +378,4 @@
 - [ ] Chapter 19: Functional Programming with Java 8
     - <details>
         <summary>Terms introduced in this chapter:</summary>
-    </details>  
-
-## Concept Exercises:
-
-    - Chapter 1:
-        - 16. Shining (p.58)
-    - Chapter 2:
-        - 12. In-place Swaping (p.121)
-        - 27. Pyramid (p.125)
-        - 33-35. loopTableConstant, loopTableSlashes, loopTableSlashesConstant
-        - 17. SlashFigure, SlashFigure2
-        - 23. DollarFigure, DollarFigure2
-        - All Programming projects (p. 131 - 135)
-    - Chapter 3G:
-        - 4. printSquare (p. 189)
-    - Chapter 3:
-        - Self-Check: 16(countFactors), 27(medianOf3), 29(printNumOdd)
-    - Chapter 4:
-        Exercises: 2(season), 7(xo), 18(wordCount), 20(numUnique)
-    - Chapter 5:
-        Exercises: 13(consecutive), 14(hasMidpoint), 21(swapDigitPairs)
-    - Chapter 6:
-        Exercises: 9(wordWrap), 11(wordWrap3), 13(stripComments), 16(mostCommonNames)
-                   2(compareFiles), 3(indentJavaFile)
-    - Chapter 7:
-        Exercises: 5(mode), 7(kthLargest), 8(median), evenBeforeOdd(18)
-
-### ToDo's
-
-    - Chapter 2: 
-        - PP: Staircase (5), SeattleNeedle (7), Book(8)
-    - Chapter 3:
-        - PP: Christmas-trees(1), Calendar(6)
-    - Chapter Graphics:
-        - PP: (2 - 5)
-    - Chapter 4:
-        - PP: (3-7)
-    - Chapter 5:
-        - PP: 7 (Pig game)
+    </details>
