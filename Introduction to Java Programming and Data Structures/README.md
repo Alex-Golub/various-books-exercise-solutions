@@ -6,7 +6,7 @@
   alt="Cover"></a>
 </p>
 <p align="center">
-<img src="https://img.shields.io/badge/In%20Progress-Chapter 6 Methods-blue.svg" />
+<img src="https://img.shields.io/badge/In%20Progress-Chapter 7 Single Dimensional Arrays-blue.svg" />
   <img src="https://img.shields.io/badge/Made%20With-Java 8/11-purple.svg" />
 </p>
 
@@ -73,8 +73,8 @@ Eleventh Edition by [Y. Daniel Liang](https://yongdanielliang.github.io/).
 
 ---
 
-- [x] <a href="#" target="_blank" title="Solutions">Chapter 5 Loops => 51
-  Questions</a>
+- [x] <a href="https://bit.ly/3r2l61A" target="_blank" title="Solutions">Chapter
+  5 Loops => 51 Questions</a>
   - <details>
       <summary>Terms introduced in this chapter:</summary>
         <ul>
@@ -100,15 +100,49 @@ Eleventh Edition by [Y. Daniel Liang](https://yongdanielliang.github.io/).
 
 ---
 
-- [ ] <a href="#" target="_blank" title="Solutions">Chapter 6 Methods => 39
+- [x] <a href="#" target="_blank" title="Solutions">Chapter 6 Methods => 39
   Questions</a>
   - <details>
       <summary>Terms introduced in this chapter:</summary>
+        <ul>
+        <li><strong><em>Methods</em></strong> - write common code once and reuse it</li>
+        <li><code>&lt;accessModifier&gt; &lt;modifier&gt; &lt;returnValueType&gt; &lt;methodName&gt;(&lt;listOfParameters&gt;) { // method body; }</code></li>
+        <li>Method <strong><em>signature</em></strong> - <code>&lt;name&gt;(&lt;type&gt;, &lt;type&gt;, ... &lt;type&gt;)</code></li>
+        <li><code>Method</code> as <code>Function</code> (value return) or <code>Procedure</code> (void)</li>
+        <li><code>Caller</code></li>
+        <li><code>Activation record/frame</code></li>
+        <li><code>Call Stack</code> - comprehend how methods are invoked</li>
+        <li><em>Parameter order association</em> - arguments must match the parameters in<br><strong>order</strong>, <strong>number</strong>, and <strong>compatible type</strong></li>
+        <li><strong><em>pass-by-value</em></strong></li>
+        <li><strong><em>Modularizing</em></strong> code is easy to maintain, debug and reused.</li>
+        <li>Case Study: <code>Converting Hexadecimals to Decimals</code> (<strong>Horner’s algorithm</strong>)</li>
+        <li><strong><em>Overloading</em></strong> methods (same name different parameter list)</li>
+        <li><strong><em>Scope</em></strong> - part of the program where the variable can be referenced</li>
+        <li>Case Study: <code>Generating Random Characters</code></li>
+        <li><strong><em>Method Abstraction</em></strong> aka <code>Encapsulation</code> aka <code>Information Hiding</code><ul>
+        <li>separating the use of a method from its implementation</li>
+        </ul>
+        </li>
+        <li><strong><em>Stepwise refinement</em></strong> aka <code>divide-and-conquer</code> strategy<ul>
+        <li><strong><em>Top-Down Design</em></strong></li>
+        <li><strong><em>Top-Down</em></strong> and/or <strong><em>Bottom-Up</em></strong> Implementation</li>
+        <li><strong><em>Stubs</em></strong> simple but incomplete version of a method waiting to be implemented.</li>
+        <li>Benefits<ul>
+        <li>Simpler Program</li>
+        <li>Promotes Code Reuse</li>
+        <li>Easier Developing, Debugging, and Testing</li>
+        <li>Better Facilitating Teamwork</li>
+        </ul>
+        </li>
+        </ul>
+        </li>
+        </ul>
     </details>
 
 ---
 
-- [ ] Chapter 7 Single-Dimensional Arrays
+- [ ] <a href="#" target="_blank" title="Solutions">Chapter 7 Single-Dimensional
+  Arrays => 37 Questions</a>
   - <details>
       <summary>Terms introduced in this chapter:</summary>
     </details>
@@ -380,3 +414,10 @@ Eleventh Edition by [Y. Daniel Liang](https://yongdanielliang.github.io/).
         **3.15 (Game: lottery)
         **3.27 (Geometry: points in triangle?)
         **3.28 (Geometry: two rectangles)
+
+### 🧠
+
+    Chapter 6:
+        **6.22 (Math: approximate the square root)
+        **6.26 (Palindromic prime)
+        **6.31 (Financial: credit card number validation)
