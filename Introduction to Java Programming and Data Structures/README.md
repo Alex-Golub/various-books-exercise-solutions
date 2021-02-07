@@ -6,7 +6,7 @@
   alt="Cover"></a>
 </p>
 <p align="center">
-<img src="https://img.shields.io/badge/In%20Progress-Chapter 7 Single Dimensional Arrays-blue.svg" />
+<img src="https://img.shields.io/badge/In%20Progress-Chapter 8 Multidimensional Arrays-blue.svg" />
   <img src="https://img.shields.io/badge/Made%20With-Java 8/11-purple.svg" />
 </p>
 
@@ -100,7 +100,7 @@ Eleventh Edition by [Y. Daniel Liang](https://yongdanielliang.github.io/).
 
 ---
 
-- [x] <a href="#" target="_blank" title="Solutions">Chapter 6 Methods => 39
+- [x] <a href="https://bit.ly/3oWRGAz" target="_blank" title="Solutions">Chapter 6 Methods => 39
   Questions</a>
   - <details>
       <summary>Terms introduced in this chapter:</summary>
@@ -145,11 +145,90 @@ Eleventh Edition by [Y. Daniel Liang](https://yongdanielliang.github.io/).
   Arrays => 37 Questions</a>
   - <details>
       <summary>Terms introduced in this chapter:</summary>
+        <ul>
+        <li>Array Basics:<ul>
+        <li><strong>fixed-size</strong>, <strong>sequential</strong>, collection of elements of the <strong>same type</strong>.</li>
+        <li>array <strong>reference variable</strong></li>
+        <li><strong>Declaring</strong> Array Variables =&gt; <code>elementType[] arrayRefVar;</code></li>
+        <li><strong>Creating</strong> Arrays =&gt; <code>new elementType[arraySize];</code></li>
+        <li>Declaring, Creating and Assigning =&gt; <code>elementType[] arrRefVar = new elementType[size];</code></li>
+        <li>Array Size and <strong>Default Values</strong><ul>
+        <li>Size can&#39;t be changed once created (fixed)</li>
+        <li><code>arrRefVar.length</code> to obtain array size</li>
+        <li>Once array created elements are assigned the default values: numeric (<code>0</code>),<br>char (<code>\u0000</code>), boolean (<code>false</code>) and Object (<code>null</code>)</li>
+        </ul>
+        </li>
+        <li><strong>access</strong> elements using an index (<strong>zero based</strong>) =&gt; <code>arrRefVar[index];</code></li>
+        <li>Array <strong>Initializers</strong> =&gt; <code>elementType[] arrRefVar = {val_0, val_1, val_2, ..., val_k};</code></li>
+        <li><strong>Processing</strong> Arrays<ul>
+        <li><code>Summing all elements</code></li>
+        <li><code>Initializing arrays with random values</code></li>
+        <li><code>Finding the largest element</code></li>
+        <li><code>Finding the smallest index of the largest element</code></li>
+        <li><code>Random shuffling</code></li>
+        <li><code>Shifting elements</code></li>
+        <li><strong><em>Foreach</em></strong> loop =&gt; <code>for (elementType element : arrReVar) { /* process element */ }</code></li>
+        <li><strong><em>ArrayIndexOutOfBoundsException</em></strong> don&#39;t go beyond <code>arr.length - 1</code></li>
+        </ul>
+        </li>
+        </ul>
+        </li>
+        <li>Case Study: <code>Analyzing Numbers</code></li>
+        <li>Case Study: <code>Deck of Cards</code></li>
+        <li><strong>Copying</strong> Arrays:<ul>
+        <li><ol>
+        <li>Manually copy individual elements one by one</li>
+        </ol>
+        </li>
+        <li><ol>
+        <li>static <code>arraycopy</code> method from <code>System</code> =&gt; <code>System.arraycopy(sourceArray, srcPos, targetArray, tarPos, no_of_elements)</code></li>
+        </ol>
+        </li>
+        <li><ol>
+        <li><code>clone</code> method</li>
+        </ol>
+        </li>
+        </ul>
+        </li>
+        <li><strong><em>Garbage collection</em></strong></li>
+        <li>Passing Arrays to Methods - <strong>reference</strong> of the array is passed<ul>
+        <li><strong><em>anonymous</em></strong> array - <code>new elementType[] {value_1, value_2, ... value_k}</code></li>
+        <li><strong><em>Heap</em></strong> used for <strong><em>dynamic memory allocation</em></strong></li>
+        </ul>
+        </li>
+        <li>Case Study: <code>Counting the Occurrences of Each Letter</code></li>
+        <li><strong>Variable-Length Argument Lists</strong> - <code>typeName... paramName</code></li>
+        <li><strong>Searching</strong> Arrays<ul>
+        <li>Linear</li>
+        <li>Sorted? use <strong><em>binary search</em></strong><ul>
+        <li>if <strong>not found</strong> return <strong><em>-low-1</em></strong></li>
+        <li>insert at <strong>_-(return<em>index + 1)</em></strong></li>
+        </ul>
+        </li>
+        <li>Properties of a method: <strong><em>precondition</em></strong>, <strong><em>postcondition</em></strong></li>
+        </ul>
+        </li>
+        <li><strong>Sorting</strong> Arrays<ul>
+        <li><code>Bubble</code> Sort</li>
+        <li><code>Selection</code> Sort</li>
+        <li><code>Insertion</code> Sort</li>
+        </ul>
+        </li>
+        <li><strong>Arrays</strong> Class - common array operations<ul>
+        <li><code>toString()</code>, <code>deepToString()</code>, <code>sort(type[])</code>, <code>sort(type[], Comparator)</code>, <code>parallelSort()</code>,</li>
+        <li><code>binarySearch(type[], int)</code>, <code>binarySearch(type[], key, Comparator)</code>,</li>
+        <li><code>fill(type[], int)</code>, <code>equals(type[], type[])</code>, <code>deepEquals(Object[], Object[])</code></li>
+        </ul>
+        </li>
+        <li>Command-Line Arguments</li>
+        <li>Case Study: <code>Calculator</code></li>
+        </ul>
     </details>
 
 ---
 
-- [ ] Chapter 8 Multidimensional Arrays
+- [ ] <a href="#" target="_blank" title="Solutions">Chapter 8 Multidimensional
+  Arrays => 37 Questions</a>
   - <details>
       <summary>Terms introduced in this chapter:</summary>
     </details>
@@ -421,3 +500,13 @@ Eleventh Edition by [Y. Daniel Liang](https://yongdanielliang.github.io/).
         **6.22 (Math: approximate the square root)
         **6.26 (Palindromic prime)
         **6.31 (Financial: credit card number validation)
+    Chapter 7:
+        **7.5 (Print distinct numbers)
+        7.6 (The Sieve of Eratosthenes)
+        7.14 (Computing lcm)
+        *7.21 (Normalizing integers)
+        **7.23 (Game: locker puzzle)
+        7.27 (Identical arrays)
+        *7.28 (Math: permutations) ❓
+        **7.32 (Partition of a list)
+        ***7.37 (Game: bean machine)
