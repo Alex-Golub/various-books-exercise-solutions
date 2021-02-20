@@ -6,7 +6,7 @@
   alt="Cover"></a>
 </p>
 <p align="center">
-<img src="https://img.shields.io/badge/In%20Progress-Chapter 8 Multidimensional Arrays-blue.svg" />
+<img src="https://img.shields.io/badge/In%20Progress-Chapter 9 Objects and Classes-blue.svg" />
   <img src="https://img.shields.io/badge/Made%20With-Java 8/11-purple.svg" />
 </p>
 
@@ -22,6 +22,9 @@ Eleventh Edition by [Y. Daniel Liang](https://yongdanielliang.github.io/).
 
 - [x] <a href="https://bit.ly/3pAW6yw" target="_blank" title="Solutions">Chapter
   1 Introduction to Computers, Programs, and Java™ => 13 Questions</a>
+  - <details>
+      <summary>Questions</summary>
+    </details>
 
 ---
 
@@ -33,6 +36,9 @@ Eleventh Edition by [Y. Daniel Liang](https://yongdanielliang.github.io/).
         <li>Displaying the Current Time</li>
         <li>Counting Monetary Units <code>(int) (x * 100 + 0.5) / 100.0</code></li>
         </ul>
+    </details>
+  - <details>
+      <summary>Questions</summary>
     </details>
 
 ---
@@ -48,6 +54,9 @@ Eleventh Edition by [Y. Daniel Liang](https://yongdanielliang.github.io/).
         <li>Lottery</li>
         <li>Bitwise Operations <code>&amp;, |, ^, ~, &lt;&lt;, &gt;&gt;, &gt;&gt;&gt;</code></li>
         </ul>
+    </details>
+  - <details>
+      <summary>Questions</summary>
     </details>
 
 ---
@@ -69,6 +78,9 @@ Eleventh Edition by [Y. Daniel Liang](https://yongdanielliang.github.io/).
       <li>Case Studies: <code>GuessBirthday</code>, <code>BaseConverting</code>, <code>Lottery revised</code></li>
       <li>Formatting <code>System.out.printf()</code>, <code>%&lt;±field_width&gt;,.&lt;precision&gt;&lt;format_specifier&gt;</code></li>
       </ul>
+    </details>
+  - <details>
+      <summary>Questions</summary>
     </details>
 
 ---
@@ -97,11 +109,14 @@ Eleventh Edition by [Y. Daniel Liang](https://yongdanielliang.github.io/).
         <li>Case Study: <code>Displaying Prime Numbers</code> between?(2, number/2)</li>
         </ul>
     </details>
+  - <details>
+      <summary>Questions</summary>
+    </details>
 
 ---
 
-- [x] <a href="https://bit.ly/3oWRGAz" target="_blank" title="Solutions">Chapter 6 Methods => 39
-  Questions</a>
+- [x] <a href="https://bit.ly/3oWRGAz" target="_blank" title="Solutions">Chapter
+  6 Methods => 39 Questions</a>
   - <details>
       <summary>Terms introduced in this chapter:</summary>
         <ul>
@@ -138,11 +153,55 @@ Eleventh Edition by [Y. Daniel Liang](https://yongdanielliang.github.io/).
         </li>
         </ul>
     </details>
+  - <details>
+      <summary>Questions</summary>
+        <ul>
+        <li>6.1 (Math: pentagonal numbers)</li>
+        <li>*6.2 (Sum the digits in an integer)</li>
+        <li><code>**6.3 (Palindrome integer)</code></li>
+        <li><code>*6.4 (Display an integer reversed)</code></li>
+        <li>*6.5 (Sort three numbers)</li>
+        <li>*6.6 (Display patterns)</li>
+        <li>*6.7 (Financial application: compute the future investment value)</li>
+        <li>6.8 (Conversions between Celsius and Fahrenheit)</li>
+        <li>6.9 (Conversions between feet and meters)</li>
+        <li>6.10 (Use the isPrime Method)</li>
+        <li>6.11 (Financial application: compute commissions)</li>
+        <li><code>6.12 (Display characters)</code></li>
+        <li>*6.13 (Sum series)</li>
+        <li>*6.14 (Estimate PI)</li>
+        <li>*6.15 (Financial application: print a tax table)</li>
+        <li>*6.16 (Number of days in a year)</li>
+        <li>*6.17 (Display matrix of 0s and 1s)</li>
+        <li><code>**6.18 (Check password)</code></li>
+        <li>*6.19 (Triangles)</li>
+        <li>*6.20 (Count the letters in a string)</li>
+        <li><code>*6.21 (Phone keypads)</code></li>
+        <li><code>**6.22 (Math: approximate the square root)</code> <strong><em>Babylonian method</em></strong></li>
+        <li>*6.23 (Occurrences of a specified character)</li>
+        <li>**6.24 (Display current date and time)</li>
+        <li>**6.25 (Convert milliseconds to hours, minutes, and seconds)</li>
+        <li><code>**6.26 (Palindromic prime)</code></li>
+        <li><code>**6.27 (Emirp)</code></li>
+        <li>**6.28 (Mersenne prime)</li>
+        <li>**6.29 (Twin primes)</li>
+        <li>**6.30 (Game: craps)</li>
+        <li><code>**6.31 (Financial: credit card number validation)</code></li>
+        <li>**6.32 (Game: chance of winning at craps)</li>
+        <li><code>**6.33 (Current date and time)</code></li>
+        <li><code>**6.34 (Print calendar)</code></li>
+        <li>6.35 (Geometry: area of a pentagon)</li>
+        <li>*6.36 (Geometry: area of a regular polygon)</li>
+        <li><code>6.37 (Format an integer)</code></li>
+        <li>*6.38 (Generate random characters)</li>
+        <li>6.39 (Geometry: point position)</li>
+        </ul>
+    </details>
 
 ---
 
-- [ ] <a href="#" target="_blank" title="Solutions">Chapter 7 Single-Dimensional
-  Arrays => 37 Questions</a>
+- [ ] <a href="https://bit.ly/2NGOiwW" target="_blank" title="Solutions">Chapter
+  7 Single-Dimensional Arrays => 37 Questions</a>
   - <details>
       <summary>Terms introduced in this chapter:</summary>
         <ul>
@@ -224,6 +283,48 @@ Eleventh Edition by [Y. Daniel Liang](https://yongdanielliang.github.io/).
         <li>Case Study: <code>Calculator</code></li>
         </ul>
     </details>
+  - <details>
+      <summary>Questions</summary>
+        <ul>
+        <li>*7.1 (Assign grades)</li>
+        <li>7.2 (Reverse the numbers entered)</li>
+        <li>**7.3 (Count occurrence of numbers)</li>
+        <li>7.4 (Analyze scores)</li>
+        <li><code>**7.5 (Print distinct numbers)</code></li>
+        <li><code>*7.6 (Revise Listing 5.15, PrimeNumber.java)</code></li>
+        <li>*7.7 (Count single digits)</li>
+        <li>7.8 (Average an array)</li>
+        <li>7.9 (Find the smallest element)</li>
+        <li>7.10 (Find the index of the smallest element)</li>
+        <li>*7.11 (Statistics: compute deviation)</li>
+        <li>*7.12 (Reverse an array)</li>
+        <li>*7.13 (Random number chooser)</li>
+        <li><code>7.14 (Compute gcd)</code></li>
+        <li>7.15 (Eliminate duplicates)</li>
+        <li>7.16 (Execution time)</li>
+        <li><code>**7.17 (Sort students)</code></li>
+        <li>**7.18 (Bubble sort)</li>
+        <li>**7.19 (Sorted?)</li>
+        <li>*7.20 (Revise selection sort)</li>
+        <li>*7.21 (Sum integers)</li>
+        <li>*7.22 (Find the number of uppercase letters in a string)</li>
+        <li><code>**7.23 (Game: locker puzzle)</code></li>
+        <li><code>**7.24 (Simulation: coupon collector’s problem)</code></li>
+        <li>7.25 (Algebra: solve quadratic equations)</li>
+        <li>7.26 (Strictly identical arrays)</li>
+        <li>7.27 (Identical arrays)</li>
+        <li><code>**7.28 (Math: combinations)</code></li>
+        <li><code>**7.29 (Game: pick four cards)</code></li>
+        <li>*7.30 (Pattern recognition: consecutive four equal numbers)</li>
+        <li><code>**7.31 (Merge two sorted lists)</code></li>
+        <li><code>**7.32 (Partition of a list)</code></li>
+        <li>*7.33 (Culture: Chinese Zodiac)</li>
+        <li>**7.34 (Sort characters in a string)</li>
+        <li><code>***7.35 (Game: hangman)</code></li>
+        <li><code>***7.36 (Game: Eight Queens)</code></li>
+        <li><code>***7.37 (Game: bean machine)</code></li>
+        </ul>
+    </details>
 
 ---
 
@@ -231,6 +332,100 @@ Eleventh Edition by [Y. Daniel Liang](https://yongdanielliang.github.io/).
   Arrays => 37 Questions</a>
   - <details>
       <summary>Terms introduced in this chapter:</summary>
+        <ul>
+        <li><strong>Declaring</strong> Variables of Two-Dimensional Arrays<ul>
+        <li><code>elementType[][] arrayRefVar;</code></li>
+        </ul>
+        </li>
+        <li><strong>Creating</strong> Two-Dimensional Arrays<ul>
+        <li><code>new elementType[&lt;row_index&gt;][&lt;colum_index&gt;]</code><ul>
+        <li><strong><em>NB</em></strong>: each subscript must be enclosed in a pair of square brackets</li>
+        </ul>
+        </li>
+        </ul>
+        </li>
+        <li>Declare, Create, and Initialize<ul>
+        <li><code>int[][] matrix = { {1, 2, 3}, {4, 5, 6}, {7, 8, 9} };</code></li>
+        </ul>
+        </li>
+        <li>Obtaining the <strong>Lengths</strong> of Two-Dimensional Arrays<pre><code class="lang-java">int[<span class="hljs-string"></span>] matrix = new int[<span class="hljs-string">5</span>][<span class="hljs-symbol">4</span>];
+        matrix.length     // =&gt; 5
+        matrix[0].length  // =&gt; 4
+        </code></pre>
+        </li>
+        <li><strong>Ragged</strong> Arrays<ul>
+        <li>rows can have different lengths</li>
+        <li><code>elementType[][] ragged = new elementType[&lt;rows&gt;][]</code>;<pre><code class="lang-java">int[][] triangle = { {1, 2, 3, 4}, {5, 6, 7}, {8, 9}, {10} };
+        // or
+        int[<span class="hljs-string"></span>][<span class="hljs-symbol"></span>] triangleArr = new int[<span class="hljs-string">4</span>][<span class="hljs-symbol"></span>];
+        triangleArr[0] = new int[4];
+        triangleArr[1] = new int[3];
+        triangleArr[2] = new int[2];
+        triangleArr[3] = new int[1];
+        </code></pre>
+        </li>
+        </ul>
+        </li>
+        <li><strong>Processing</strong> Two-Dimensional Arrays<ul>
+        <li><code>Initializing arrays with input/random values</code></li>
+        <li><code>Printing arrays</code></li>
+        <li><code>Summing all elements</code></li>
+        <li><code>Summing elements by column</code></li>
+        <li><code>Which row has the largest sum?</code></li>
+        <li><code>Random shuffling</code></li>
+        </ul>
+        </li>
+        <li>Case Study: <code>Grading a Multiple-Choice Test</code></li>
+        <li>Case Study: <code>Finding the Closest Pair</code></li>
+        <li>Case Study: <code>Sudoku</code> (<strong>challenging</strong>)</li>
+        <li>Multidimensional (<strong>n-dimensional</strong> data structures) Arrays<ul>
+        <li>Case Study: <code>Daily Temperature and Humidity</code></li>
+        <li>Case Study: <code>Guessing Birthdays</code></li>
+        </ul>
+        </li>
+        </ul>
+    </details>
+  - <details>
+      <summary>Questions</summary>
+        <ul>
+        <li>*8.1 (Sum elements column by column)</li>
+        <li>*8.2 (Sum the major diagonal in a matrix)</li>
+        <li>*8.3 (Sort students on grades)</li>
+        <li><code>**8.4 (Compute the weekly hours for each employee)</code></li>
+        <li>8.5 (Algebra: add two matrices)</li>
+        <li>**8.6 (Algebra: multiply two matrices)</li>
+        <li>*8.7 (Points nearest to each other)</li>
+        <li>**8.8 (All closest pairs of points)</li>
+        <li><code>***8.9 (Game: play a tic-tac-toe game)</code></li>
+        <li>*8.10 (Largest row and column)</li>
+        <li><code>**8.11 (Game: nine heads and tails)</code></li>
+        <li>**8.12 (Financial application: compute tax)</li>
+        <li>*8.13 (Locate the largest and smallest elements)</li>
+        <li><code>**8.14 (Explore matrix)</code></li>
+        <li>*8.15 (Geometry: same line?)</li>
+        <li><code>*8.16 (Sort two-dimensional array)</code></li>
+        <li><code>***8.17 (Financial tsunami)</code></li>
+        <li>*8.18 (Shuffle rows)</li>
+        <li><code>**8.19 (Pattern recognition: four consecutive equal numbers)</code></li>
+        <li><code>***8.20 (Game: connect four)</code></li>
+        <li>*8.21 (Central city)</li>
+        <li>*8.22 (Even number of 1s)</li>
+        <li>*8.23 (Game: find the flipped cell)</li>
+        <li><code>*8.24 (Check Sudoku solution)</code></li>
+        <li>*8.25 (Markov matrix)</li>
+        <li>*8.26 (Row sorting)</li>
+        <li>*8.27 (Column sorting)</li>
+        <li>8.28 (Strictly identical arrays)</li>
+        <li>8.29 (Identical arrays)</li>
+        <li>*8.30 (Algebra: solve linear equations)</li>
+        <li>*8.31 (Geometry: intersecting point <strong><em>Crammer</em></strong>)</li>
+        <li>*8.32 (Geometry: area of a triangle)</li>
+        <li>*8.33 (Geometry: polygon subareas <strong><em>transposing matrix</em></strong>)</li>
+        <li>*8.34 (Geometry: rightmost lowest point)</li>
+        <li><code>**8.35 (Largest block memoization approach)</code></li>
+        <li>**8.36 (Latin square)</li>
+        <li>**8.37 (Guess the capitals)</li>
+        </ul>
     </details>
 
 ---
@@ -238,6 +433,9 @@ Eleventh Edition by [Y. Daniel Liang](https://yongdanielliang.github.io/).
 - [ ] Chapter 9 Objects and Classes
   - <details>
       <summary>Terms introduced in this chapter:</summary>
+    </details>
+  - <details>
+      <summary>Questions</summary>
     </details>
 
 ---
@@ -486,27 +684,3 @@ Eleventh Edition by [Y. Daniel Liang](https://yongdanielliang.github.io/).
     </details>
 
 ---
-
-### Fixing Required
-
-    Chapter 3:
-        **3.15 (Game: lottery)
-        **3.27 (Geometry: points in triangle?)
-        **3.28 (Geometry: two rectangles)
-
-### 🧠
-
-    Chapter 6:
-        **6.22 (Math: approximate the square root)
-        **6.26 (Palindromic prime)
-        **6.31 (Financial: credit card number validation)
-    Chapter 7:
-        **7.5 (Print distinct numbers)
-        7.6 (The Sieve of Eratosthenes)
-        7.14 (Computing lcm)
-        *7.21 (Normalizing integers)
-        **7.23 (Game: locker puzzle)
-        7.27 (Identical arrays)
-        *7.28 (Math: permutations) ❓
-        **7.32 (Partition of a list)
-        ***7.37 (Game: bean machine)
