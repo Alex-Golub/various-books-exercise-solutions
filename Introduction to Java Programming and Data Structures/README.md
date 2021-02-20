@@ -200,7 +200,7 @@ Eleventh Edition by [Y. Daniel Liang](https://yongdanielliang.github.io/).
 
 ---
 
-- [ ] <a href="https://bit.ly/2NGOiwW" target="_blank" title="Solutions">Chapter
+- [x] <a href="https://bit.ly/2NGOiwW" target="_blank" title="Solutions">Chapter
   7 Single-Dimensional Arrays => 37 Questions</a>
   - <details>
       <summary>Terms introduced in this chapter:</summary>
@@ -328,8 +328,8 @@ Eleventh Edition by [Y. Daniel Liang](https://yongdanielliang.github.io/).
 
 ---
 
-- [ ] <a href="#" target="_blank" title="Solutions">Chapter 8 Multidimensional
-  Arrays => 37 Questions</a>
+- [x] <a href="https://bit.ly/3blJSUl" target="_blank" title="Solutions">Chapter
+  8 Multidimensional Arrays => 37 Questions</a>
   - <details>
       <summary>Terms introduced in this chapter:</summary>
         <ul>
@@ -430,7 +430,8 @@ Eleventh Edition by [Y. Daniel Liang](https://yongdanielliang.github.io/).
 
 ---
 
-- [ ] Chapter 9 Objects and Classes
+- [ ] <a href="#" target="_blank" title="Solutions">Chapter 9 Objects and
+  Classes => 13 Questions</a>
   - <details>
       <summary>Terms introduced in this chapter:</summary>
     </details>
