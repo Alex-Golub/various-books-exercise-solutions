@@ -32,7 +32,7 @@
         </ul>
       </details>
     - _1.5 Case Study: `DrawFigures`_
-- [ ] [CodeStepByStep - console output => 18 Questions](#)
+- [x] [CodeStepByStep - console output => 18 Questions](#)
 
 ---
 
@@ -227,7 +227,7 @@
 - [ ] [CodeStepByStep - strings => 38 Questions](#)
 ---
 
-- [x] <a href="#" target="_blank" title="Solutions">Chapter 8 Classes</a>
+- [x] <a href="https://bit.ly/3sf3dxk" target="_blank" title="Solutions">Chapter 8 Classes</a>
     - <details>
       <summary>Terms introduced in this chapter:</summary>
         <ul>
