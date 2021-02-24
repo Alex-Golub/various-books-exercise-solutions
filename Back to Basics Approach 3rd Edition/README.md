@@ -32,7 +32,8 @@
         </ul>
       </details>
     - _1.5 Case Study: `DrawFigures`_
-- [x] [CodeStepByStep - console output => 18 Questions](#)
+- [x] [CodeStepByStep - console output => 18Q](#)
+- [x] [CodeStepByStep - expressions => 16Q](#)
 
 ---
 
@@ -58,9 +59,8 @@
         <li>Class Constants</li>
         </ul>
       </details>
-    - _2.5 Case Study: `Hourglass Figure`_
-- [ ] [CodeStepByStep - parameters and return => 45 Questions](#)
-
+    - _2.5 Case Study: `Hourglass Figure`
+  
 ---
 
 - [x] <a href="https://bit.ly/3ljfbC1" target="_blank" title="Solutions">Chapter 3: Introduction to Parameters and Objects</a>
@@ -78,7 +78,7 @@
         </ul>
       </details>
     - _3.4 Case Study: `Projectile Trajectory`_
-- [ ] [CodeStepByStep - DrawingPanel => 7 Questions](#)
+- [ ] [CodeStepByStep - parameters and return => 45Q](#)
 
 ---
 
@@ -93,7 +93,7 @@
         </ul>
       </details>
     - _3G.3 Case Study: `Pyramids`_
-- [ ] [CodeStepByStep - DrawingPanel => 7 Questions](#)
+- [ ] [CodeStepByStep - DrawingPanel => 7Q](#)
 
 ---
 
@@ -115,7 +115,7 @@
         </ul>
       </details>
     - _4.5 Case Study: `Body Mass Index`_
-- [ ] [CodeStepByStep - if else => 12 Questions](#)
+- [ ] [CodeStepByStep - if else => 12Q](#)
 
 ---
 
@@ -144,7 +144,7 @@
         </ul>
       </details>
     - _5.6 Case Study: `NumberGuess`_
-- [ ] [CodeStepByStep - loops => 32 Questions](#)
+- [ ] [CodeStepByStep - loops => 32Q](#)
 
 ---
 
@@ -178,7 +178,7 @@
         </ul>
       </details>
     - _6.6 Case Study: `Zip Code Lookup`_
-- [ ] [CodeStepByStep - file IO => 25 Questions](#)
+- [ ] [CodeStepByStep - file IO => 25Q](#)
 
 ---
 
@@ -223,11 +223,11 @@
         </ul>
       </details>
     - _7.6 Case Study: `Benford’s Law (Tallying Values)`_
-- [ ] [CodeStepByStep - arrays => 59 Questions](#)
-- [ ] [CodeStepByStep - strings => 38 Questions](#)
+- [ ] [CodeStepByStep - arrays => 59Q](#)
+- [ ] [CodeStepByStep - strings => 38Q](#)
 ---
 
-- [x] <a href="https://bit.ly/3sf3dxk" target="_blank" title="Solutions">Chapter 8 Classes</a>
+- [x] <a href="#" target="_blank" title="Solutions">Chapter 8 Classes</a>
     - <details>
       <summary>Terms introduced in this chapter:</summary>
         <ul>
@@ -259,7 +259,7 @@
         </ul>
       </details>  
     - _8.5 Case Study: Designing a `Stock` Class_
-- [x] [CodeStepByStep - classes and objects => 10 Questions](#)
+- [x] [CodeStepByStep - classes and objects => 10Q](#)
 
 ---
 
@@ -309,7 +309,7 @@
         </li>
         </ul>
         </details>  
-- [ ] [CodeStepByStep - inheritance => 7 Questions](#)
+- [ ] [CodeStepByStep - inheritance => 7Q](#)
 ---
 
 - [ ] Chapter 10: ArrayLists
