@@ -16,8 +16,8 @@
 **This repository** contains my personal solutions to **programming exercises**.
 
 - Questions listed here:  
-    - [PracticeIt!](https://practiceit.cs.washington.edu/problem/list)  
-    - [CodeStepByStep](https://www.codestepbystep.com/problem/list/java)
+    - [PracticeIt! | 1623 Questions (Book + CS1 + CS2 + 143X + 373)](https://practiceit.cs.washington.edu/problem/list)  
+    - [CodeStepByStep | 621 Questions](https://www.codestepbystep.com/problem/list/java)
 
 ## Progress
 
@@ -32,8 +32,8 @@
         </ul>
       </details>
     - _1.5 Case Study: `DrawFigures`_
-- [x] [CodeStepByStep - console output => 18Q](#)
-- [x] [CodeStepByStep - expressions => 16Q](#)
+- [x] [CodeStepByStep - console output => 18Q](https://bit.ly/3kvcqit)
+- [x] [CodeStepByStep - expressions => 16Q](https://bit.ly/3byVRxJ)
 
 ---
 
@@ -78,7 +78,7 @@
         </ul>
       </details>
     - _3.4 Case Study: `Projectile Trajectory`_
-- [ ] [CodeStepByStep - parameters and return => 45Q](#)
+- [x] [CodeStepByStep - parameters and return => 45Q](#)
 
 ---
 
