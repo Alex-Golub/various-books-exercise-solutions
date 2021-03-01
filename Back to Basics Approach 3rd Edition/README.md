@@ -115,7 +115,7 @@
         </ul>
       </details>
     - _4.5 Case Study: `Body Mass Index`_
-- [ ] [CodeStepByStep - if else => 12Q](#)
+- [x] [CodeStepByStep - if else => 12Q](#)
 
 ---
 
