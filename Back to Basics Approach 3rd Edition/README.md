@@ -78,7 +78,7 @@
         </ul>
       </details>
     - _3.4 Case Study: `Projectile Trajectory`_
-- [x] [CodeStepByStep - parameters and return => 45Q](#)
+- [x] [CodeStepByStep - parameters and return => 45Q](https://bit.ly/3bYxoSV)
 
 ---
 
@@ -115,7 +115,7 @@
         </ul>
       </details>
     - _4.5 Case Study: `Body Mass Index`_
-- [x] [CodeStepByStep - if else => 12Q](#)
+- [x] [CodeStepByStep - if else => 12Q](https://bit.ly/3rhDDHQ)
 
 ---
 
@@ -144,7 +144,7 @@
         </ul>
       </details>
     - _5.6 Case Study: `NumberGuess`_
-- [ ] [CodeStepByStep - loops => 32Q](#)
+- [x] [CodeStepByStep - loops => 32Q](#)
 
 ---
 
