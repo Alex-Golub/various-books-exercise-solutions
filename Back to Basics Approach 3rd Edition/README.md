@@ -144,7 +144,7 @@
         </ul>
       </details>
     - _5.6 Case Study: `NumberGuess`_
-- [x] [CodeStepByStep - loops => 32Q](#)
+- [x] [CodeStepByStep - loops => 32Q](https://bit.ly/3bEpOxN)
 
 ---
 
@@ -178,7 +178,7 @@
         </ul>
       </details>
     - _6.6 Case Study: `Zip Code Lookup`_
-- [ ] [CodeStepByStep - file IO => 25Q](#)
+- [x] [CodeStepByStep - file IO => 25Q](#)
 
 ---
 
@@ -222,9 +222,10 @@
         </li>
         </ul>
       </details>
-    - _7.6 Case Study: `Benford’s Law (Tallying Values)`_
+    - _7.6 Case Study: `Benford’s Law (Tallying Values)`
 - [ ] [CodeStepByStep - arrays => 59Q](#)
 - [ ] [CodeStepByStep - strings => 38Q](#)
+
 ---
 
 - [x] <a href="#" target="_blank" title="Solutions">Chapter 8 Classes</a>
@@ -310,12 +311,14 @@
         </ul>
         </details>  
 - [ ] [CodeStepByStep - inheritance => 7Q](#)
+
 ---
 
 - [ ] Chapter 10: ArrayLists
     - <details>
         <summary>Terms introduced in this chapter:</summary>
     </details>  
+- [ ] [CodeStepByStep - collections: ArrayList => 32Q](#)
 
 ---
 
@@ -330,13 +333,15 @@
     - <details>
         <summary>Terms introduced in this chapter:</summary>
     </details>  
+- [ ] [CodeStepByStep - recursion => 55Q](#)
 
 ---
 
 - [ ] Chapter 13: Searching and Sorting
     - <details>
         <summary>Terms introduced in this chapter:</summary>
-    </details>  
+    </details>
+- [ ] [CodeStepByStep - searching and sorting => 12Q](#)
 
 ---
 
@@ -344,13 +349,14 @@
     - <details>
         <summary>Terms introduced in this chapter:</summary>
     </details>  
+- [ ] [CodeStepByStep - collections: Stack and Queue => 16Q](#)
 
 ---
 
 - [ ] Chapter 15: Implementing a Collection Class
     - <details>
         <summary>Terms introduced in this chapter:</summary>
-    </details>  
+    </details>
 
 ---
 
