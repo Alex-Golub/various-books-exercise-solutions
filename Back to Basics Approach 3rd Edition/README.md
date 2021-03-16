@@ -16,12 +16,12 @@
 **This repository** contains my personal solutions to **programming exercises**.
 
 - Questions listed here:  
-    - [PracticeIt! | 1623 Questions (Book + CS1 + CS2 + 143X + 373)](https://practiceit.cs.washington.edu/problem/list)  
-    - [CodeStepByStep | 621 Questions](https://www.codestepbystep.com/problem/list/java)
+    - [⬜] [PracticeIt! | 1623 Questions (Book + CS1 + CS2 + 143X + 373)](https://practiceit.cs.washington.edu/problem/list)  
+    - [⬜] [CodeStepByStep | 621 Questions](https://www.codestepbystep.com/problem/list/java)
 
 ## Progress
 
-- [x] <a href="https://bit.ly/3mfBMjO" target="_blank" title="Solutions">Chapter
+- [✅] <a href="https://bit.ly/3mfBMjO" target="_blank" title="Solutions">Chapter
   1: Introduction to Java Programming</a>
     - <details>
         <summary>Terms introduced in this chapter:</summary>
@@ -32,12 +32,12 @@
         </ul>
       </details>
     - _1.5 Case Study: `DrawFigures`_
-- [x] [CodeStepByStep - console output => 18Q](https://bit.ly/3kvcqit)
-- [x] [CodeStepByStep - expressions => 16Q](https://bit.ly/3byVRxJ)
+- [✅] [CodeStepByStep - console output => 18Q](https://bit.ly/3kvcqit)
+- [✅] [CodeStepByStep - expressions => 16Q](https://bit.ly/3byVRxJ)
 
 ---
 
-- [x] <a href="https://bit.ly/3o9IloY" target="_blank" title="Solutions">Chapter
+- [✅] <a href="https://bit.ly/3o9IloY" target="_blank" title="Solutions">Chapter
   2: Primitive Data and Definite Loops</a>
     - <details>
         <summary>Terms introduced in this chapter:</summary>
@@ -63,7 +63,7 @@
   
 ---
 
-- [x] <a href="https://bit.ly/3ljfbC1" target="_blank" title="Solutions">Chapter 3: Introduction to Parameters and Objects</a>
+- [✅] <a href="https://bit.ly/3ljfbC1" target="_blank" title="Solutions">Chapter 3: Introduction to Parameters and Objects</a>
     - <details>
         <summary>Terms introduced in this chapter:</summary>
         <ul>
@@ -78,11 +78,11 @@
         </ul>
       </details>
     - _3.4 Case Study: `Projectile Trajectory`_
-- [x] [CodeStepByStep - parameters and return => 45Q](https://bit.ly/3bYxoSV)
+- [✅] [CodeStepByStep - parameters and return => 45Q](https://bit.ly/3bYxoSV)
 
 ---
 
-- [x] <a href="https://bit.ly/3nhUvvV" target="_blank" title="Solutions">Supplement 3G: Graphics (Optional)</a>
+- [✅] <a href="https://bit.ly/3nhUvvV" target="_blank" title="Solutions">Supplement 3G: Graphics (Optional)</a>
     - <details>
         <summary>Terms introduced in this chapter:</summary>
         <ul>
@@ -93,11 +93,11 @@
         </ul>
       </details>
     - _3G.3 Case Study: `Pyramids`_
-- [ ] [CodeStepByStep - DrawingPanel => 7Q](#)
+- [🟨] [CodeStepByStep - DrawingPanel => 7Q](#)
 
 ---
 
-- [x] <a href="https://bit.ly/2INCjeQ" target="_blank" title="Solutions">Chapter
+- [✅] <a href="https://bit.ly/2INCjeQ" target="_blank" title="Solutions">Chapter
   4: Conditional Execution</a>
     - <details>
         <summary>Terms introduced in this chapter:</summary>
@@ -115,11 +115,11 @@
         </ul>
       </details>
     - _4.5 Case Study: `Body Mass Index`_
-- [x] [CodeStepByStep - if else => 12Q](https://bit.ly/3rhDDHQ)
+- [✅] [CodeStepByStep - if else => 12Q](https://bit.ly/3rhDDHQ)
 
 ---
 
-- [x] <a href="https://bit.ly/3sAC0WS" target="_blank" title="Solutions">Chapter 5: Program Logic and Indefinite Loops</a>
+- [✅] <a href="https://bit.ly/3sAC0WS" target="_blank" title="Solutions">Chapter 5: Program Logic and Indefinite Loops</a>
     - <details>
         <summary>Terms introduced in this chapter:</summary>
         <ul>
@@ -144,11 +144,11 @@
         </ul>
       </details>
     - _5.6 Case Study: `NumberGuess`_
-- [x] [CodeStepByStep - loops => 32Q](https://bit.ly/3bEpOxN)
+- [✅] [CodeStepByStep - loops => 32Q](https://bit.ly/3bEpOxN)
 
 ---
 
-- [x] <a href="https://bit.ly/38KFDS2" target="_blank" title="Solutions">Chapter 6: File Processing</a>
+- [✅] <a href="https://bit.ly/38KFDS2" target="_blank" title="Solutions">Chapter 6: File Processing</a>
     - <details>
         <summary>Terms introduced in this chapter:</summary>
         <ul>
@@ -178,11 +178,11 @@
         </ul>
       </details>
     - _6.6 Case Study: `Zip Code Lookup`_
-- [x] [CodeStepByStep - file IO => 25Q](#)
+- [✅] [CodeStepByStep - file IO => 25Q](#)
 
 ---
 
-- [x] <a href="https://bit.ly/35MZezd" target="_blank" title="Solutions">Chapter 7: Arrays</a>
+- [✅] <a href="https://bit.ly/35MZezd" target="_blank" title="Solutions">Chapter 7: Arrays</a>
     - <details>
       <summary>Terms introduced in this chapter:</summary>
         <ul>
@@ -223,12 +223,12 @@
         </ul>
       </details>
     - _7.6 Case Study: `Benford’s Law (Tallying Values)`
-- [ ] [CodeStepByStep - arrays => 59Q](#)
-- [ ] [CodeStepByStep - strings => 38Q](#)
+- [🟨] [CodeStepByStep - arrays => 59Q](#)
+- [🟨] [CodeStepByStep - strings => 38Q](#)
 
 ---
 
-- [x] <a href="#" target="_blank" title="Solutions">Chapter 8 Classes</a>
+- [✅] <a href="#" target="_blank" title="Solutions">Chapter 8 Classes</a>
     - <details>
       <summary>Terms introduced in this chapter:</summary>
         <ul>
@@ -260,11 +260,11 @@
         </ul>
       </details>  
     - _8.5 Case Study: Designing a `Stock` Class_
-- [x] [CodeStepByStep - classes and objects => 10Q](#)
+- [✅] [CodeStepByStep - classes and objects => 10Q](#)
 
 ---
 
-- [ ] Chapter 9 Inheritance and Interfaces
+- [⬜] Chapter 9 Inheritance and Interfaces
     - <details>
         <summary>Terms introduced in this chapter:</summary>
         <ul>
@@ -310,78 +310,78 @@
         </li>
         </ul>
         </details>  
-- [ ] [CodeStepByStep - inheritance => 7Q](#)
+- [⬜] [CodeStepByStep - inheritance => 7Q](#)
 
 ---
 
-- [ ] Chapter 10: ArrayLists
+- [⬜] Chapter 10: ArrayLists
     - <details>
         <summary>Terms introduced in this chapter:</summary>
     </details>  
-- [ ] [CodeStepByStep - collections: ArrayList => 32Q](#)
+- [⬜] [CodeStepByStep - collections: ArrayList => 32Q](#)
 
 ---
 
-- [ ] Chapter 11: Java Collections Framework
+- [⬜] Chapter 11: Java Collections Framework
     - <details>
         <summary>Terms introduced in this chapter:</summary>
     </details>  
 
 ---
 
-- [ ] Chapter 12: Recursion
+- [⬜] Chapter 12: Recursion
     - <details>
         <summary>Terms introduced in this chapter:</summary>
     </details>  
-- [ ] [CodeStepByStep - recursion => 55Q](#)
+- [⬜] [CodeStepByStep - recursion => 55Q](#)
 
 ---
 
-- [ ] Chapter 13: Searching and Sorting
+- [⬜] Chapter 13: Searching and Sorting
     - <details>
         <summary>Terms introduced in this chapter:</summary>
     </details>
-- [ ] [CodeStepByStep - searching and sorting => 12Q](#)
+- [⬜] [CodeStepByStep - searching and sorting => 12Q](#)
 
 ---
 
-- [ ] Chapter 14: Stacks and Queues
+- [⬜] Chapter 14: Stacks and Queues
     - <details>
         <summary>Terms introduced in this chapter:</summary>
     </details>  
-- [ ] [CodeStepByStep - collections: Stack and Queue => 16Q](#)
+- [⬜] [CodeStepByStep - collections: Stack and Queue => 16Q](#)
 
 ---
 
-- [ ] Chapter 15: Implementing a Collection Class
+- [⬜] Chapter 15: Implementing a Collection Class
     - <details>
         <summary>Terms introduced in this chapter:</summary>
     </details>
 
 ---
 
-- [ ] Chapter 16: Linked Lists
+- [⬜] Chapter 16: Linked Lists
     - <details>
         <summary>Terms introduced in this chapter:</summary>
     </details>  
 
 ---
 
-- [ ] Chapter 17: Binary Trees
+- [⬜] Chapter 17: Binary Trees
     - <details>
         <summary>Terms introduced in this chapter:</summary>
     </details>  
 
 ---
 
-- [ ] Chapter 18: Advanced Data Structures
+- [⬜] Chapter 18: Advanced Data Structures
     - <details>
         <summary>Terms introduced in this chapter:</summary>
     </details>  
 
 ---
 
-- [ ] Chapter 19: Functional Programming with Java 8
+- [⬜] Chapter 19: Functional Programming with Java 8
     - <details>
         <summary>Terms introduced in this chapter:</summary>
     </details>
