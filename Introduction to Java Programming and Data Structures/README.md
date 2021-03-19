@@ -6,7 +6,7 @@
   alt="Cover"></a>
 </p>
 <p align="center">
-<img src="https://img.shields.io/badge/In%20Progress-Chapter 9 Objects and Classes-blue.svg" />
+<img src="https://img.shields.io/badge/In%20Progress-Chapter 10 Object Oriented Thinking-blue.svg" />
   <img src="https://img.shields.io/badge/Made%20With-Java 8/11-purple.svg" />
 </p>
 
@@ -20,18 +20,18 @@ Eleventh Edition by [Y. Daniel Liang](https://yongdanielliang.github.io/).
 
 ## Progress
 
-- [x] <a href="https://bit.ly/3pAW6yw" target="_blank" title="Solutions">Chapter
-  1 Introduction to Computers, Programs, and Java™ => 13 Questions</a>
+- ✅ <a href="https://bit.ly/3pAW6yw" target="_blank" title="Solutions">Chapter 1
+  Introduction to Computers, Programs, and Java™ => 13 Questions</a>
   - <details>
       <summary>Questions</summary>
     </details>
 
 ---
 
-- [x] <a href="https://bit.ly/2IIaZOM" target="_blank" title="Solutions">Chapter
-  2 Elementary Programming => 23 Questions</a>
+- ✅ <a href="https://bit.ly/2IIaZOM" target="_blank" title="Solutions">Chapter 2
+  Elementary Programming => 23 Questions</a>
   - <details>
-        <summary>Terms introduced in this chapter:</summary>
+        <summary>Terms introduced in this chapter</summary>
         <ul>
         <li>Displaying the Current Time</li>
         <li>Counting Monetary Units <code>(int) (x * 100 + 0.5) / 100.0</code></li>
@@ -43,10 +43,10 @@ Eleventh Edition by [Y. Daniel Liang](https://yongdanielliang.github.io/).
 
 ---
 
-- [x] <a href="https://bit.ly/3f8q5cy" target="_blank" title="Solutions">Chapter
-  3 Selections => 35 Questions</a>
+- ✅ <a href="https://bit.ly/3f8q5cy" target="_blank" title="Solutions">Chapter 3
+  Selections => 35 Questions</a>
   - <details>
-        <summary>Terms introduced in this chapter:</summary>
+        <summary>Terms introduced in this chapter</summary>
         <ul>
         <li>Equality Test of Two Floating-Point Values <code>epsilon</code></li>
         <li>Generating Random Numbers <code>System.currentTimeMillis(), Math.random(), Random</code></li>
@@ -61,10 +61,10 @@ Eleventh Edition by [Y. Daniel Liang](https://yongdanielliang.github.io/).
 
 ---
 
-- [x] <a href="https://bit.ly/2UwhtD5" target="_blank" title="Solutions">Chapter
-  4 Mathematical Functions, Characters, and Strings => 26 Questions</a>
+- ✅ <a href="https://bit.ly/2UwhtD5" target="_blank" title="Solutions">Chapter 4
+  Mathematical Functions, Characters, and Strings => 26 Questions</a>
   - <details>
-      <summary>Terms introduced in this chapter:</summary>
+      <summary>Terms introduced in this chapter</summary>
       <ul>
       <li>Distance between two points <code>Distance Formula</code></li>
       <li>Computing Angles of a Triangle <code>Cosine Theorem</code></li>
@@ -85,10 +85,10 @@ Eleventh Edition by [Y. Daniel Liang](https://yongdanielliang.github.io/).
 
 ---
 
-- [x] <a href="https://bit.ly/3r2l61A" target="_blank" title="Solutions">Chapter
-  5 Loops => 51 Questions</a>
+- ✅ <a href="https://bit.ly/3r2l61A" target="_blank" title="Solutions">Chapter 5
+  Loops => 51 Questions</a>
   - <details>
-      <summary>Terms introduced in this chapter:</summary>
+      <summary>Terms introduced in this chapter</summary>
         <ul>
         <li>Case Study: <code>Guessing Numbers</code></li>
         <li><strong><em>Think before coding</em></strong> - solve the problem without writing a program</li>
@@ -115,10 +115,10 @@ Eleventh Edition by [Y. Daniel Liang](https://yongdanielliang.github.io/).
 
 ---
 
-- [x] <a href="https://bit.ly/3oWRGAz" target="_blank" title="Solutions">Chapter
-  6 Methods => 39 Questions</a>
+- ✅ <a href="https://bit.ly/3oWRGAz" target="_blank" title="Solutions">Chapter 6
+  Methods => 39 Questions</a>
   - <details>
-      <summary>Terms introduced in this chapter:</summary>
+      <summary>Terms introduced in this chapter</summary>
         <ul>
         <li><strong><em>Methods</em></strong> - write common code once and reuse it</li>
         <li><code>&lt;accessModifier&gt; &lt;modifier&gt; &lt;returnValueType&gt; &lt;methodName&gt;(&lt;listOfParameters&gt;) { // method body; }</code></li>
@@ -200,10 +200,10 @@ Eleventh Edition by [Y. Daniel Liang](https://yongdanielliang.github.io/).
 
 ---
 
-- [x] <a href="https://bit.ly/2NGOiwW" target="_blank" title="Solutions">Chapter
-  7 Single-Dimensional Arrays => 37 Questions</a>
+- ✅ <a href="https://bit.ly/2NGOiwW" target="_blank" title="Solutions">Chapter 7
+  Single-Dimensional Arrays => 37 Questions</a>
   - <details>
-      <summary>Terms introduced in this chapter:</summary>
+      <summary>Terms introduced in this chapter</summary>
         <ul>
         <li>Array Basics:<ul>
         <li><strong>fixed-size</strong>, <strong>sequential</strong>, collection of elements of the <strong>same type</strong>.</li>
@@ -328,10 +328,10 @@ Eleventh Edition by [Y. Daniel Liang](https://yongdanielliang.github.io/).
 
 ---
 
-- [x] <a href="https://bit.ly/3blJSUl" target="_blank" title="Solutions">Chapter
-  8 Multidimensional Arrays => 37 Questions</a>
+- ✅ <a href="https://bit.ly/3blJSUl" target="_blank" title="Solutions">Chapter 8
+  Multidimensional Arrays => 37 Questions</a>
   - <details>
-      <summary>Terms introduced in this chapter:</summary>
+      <summary>Terms introduced in this chapter</summary>
         <ul>
         <li><strong>Declaring</strong> Variables of Two-Dimensional Arrays<ul>
         <li><code>elementType[][] arrayRefVar;</code></li>
@@ -430,10 +430,51 @@ Eleventh Edition by [Y. Daniel Liang](https://yongdanielliang.github.io/).
 
 ---
 
-- [ ] <a href="#" target="_blank" title="Solutions">Chapter 9 Objects and
-  Classes => 13 Questions</a>
+- ✅ <a href="#" target="_blank" title="Solutions">Chapter 9 Objects and Classes
+  => 13 Questions</a>
   - <details>
-      <summary>Terms introduced in this chapter:</summary>
+      <summary>Terms introduced in this chapter</summary>
+      <ul>
+        <li>Defining <strong><em>Classes</em></strong> for <strong><em>Objects</em></strong></li>
+        <li>Example: Defining Classes and Creating Objects</li>
+        <li>Constructing Objects Using <strong><em>Constructors</em></strong></li>
+        <li>Accessing Objects via <strong><em>Reference Variables</em></strong></li>
+        <li>Using Classes from the Java Library</li>
+        <li><code>Static</code> Variables, <code>Constants</code>, and <code>Methods</code></li>
+        <li>Visibility Modifiers</li>
+        <li>Data Field <strong><em>Encapsulation</em></strong></li>
+        <li>Passing Objects to Methods</li>
+        <li>Array of Objects</li>
+        <li><strong><em>Immutable</em></strong> Objects and Classes</li>
+        <li>The <strong><em>Scope</em></strong> of Variables</li>
+        <li>The <code>this</code> Reference</li>
+      </ul>
+    </details>
+  - <details>
+      <summary>Questions</summary>
+      <ul>
+        <li>9.1 (The Rectangle class)</li>
+        <li>9.2 (The Stock class)</li>
+        <li>*9.3 (Use the Date class) </li>
+        <li>*9.4 (Use the Random class) </li>
+        <li>*9.5 (Use the GregorianCalendar class)</li>
+        <li>*9.6 (Stopwatch)</li>
+        <li>9.7 (The Account class)</li>
+        <li>9.8 (The Fan class)</li>
+        <li>**9.9 (Geometry: n-sided regular polygon)</li>
+        <li>*9.10 (Algebra: quadratic equations) </li>
+        <li>*9.11 (Algebra: 2 x 2 linear equations)</li>
+        <li>**9.12 (Geometry: intersecting point)</li>
+        <li>**9.13 (The Location class)</li>
+      </ul>
+    </details>
+
+---
+
+- ⬜ <a href="#" target="_blank" title="Solutions">Chapter 10 Object-Oriented
+  Thinking => 28 Questions</a>
+  - <details>
+      <summary>Terms introduced in this chapter</summary>
     </details>
   - <details>
       <summary>Questions</summary>
@@ -441,247 +482,342 @@ Eleventh Edition by [Y. Daniel Liang](https://yongdanielliang.github.io/).
 
 ---
 
-- [ ] Chapter 10 Object-Oriented Thinking
+- ⬜ Chapter 11 Inheritance and Polymorphism
   - <details>
-      <summary>Terms introduced in this chapter:</summary>
+      <summary>Terms introduced in this chapter</summary>
+    </details>
+  - <details>
+      <summary>Questions</summary>
     </details>
 
 ---
 
-- [ ] Chapter 11 Inheritance and Polymorphism
+- ⬜ Chapter 12 Exception Handling and Text I/O
   - <details>
-      <summary>Terms introduced in this chapter:</summary>
+      <summary>Terms introduced in this chapter</summary>
+    </details>
+  - <details>
+      <summary>Questions</summary>
     </details>
 
 ---
 
-- [ ] Chapter 12 Exception Handling and Text I/O
+- ⬜ Chapter 13 Abstract Classes and Interfaces
   - <details>
-      <summary>Terms introduced in this chapter:</summary>
+      <summary>Terms introduced in this chapter</summary>
+    </details>
+  - <details>
+      <summary>Questions</summary>
     </details>
 
 ---
 
-- [ ] Chapter 13 Abstract Classes and Interfaces
+- ⬜ Chapter 14 JavaFX Basics
   - <details>
-      <summary>Terms introduced in this chapter:</summary>
+      <summary>Terms introduced in this chapter</summary>
+    </details>
+  - <details>
+      <summary>Questions</summary>
     </details>
 
 ---
 
-- [ ] Chapter 14 JavaFX Basics
+- ⬜ Chapter 15 Event-Driven Programming and Animations
   - <details>
-      <summary>Terms introduced in this chapter:</summary>
+      <summary>Terms introduced in this chapter</summary>
+    </details>
+  - <details>
+      <summary>Questions</summary>
     </details>
 
 ---
 
-- [ ] Chapter 15 Event-Driven Programming and Animations
+- ⬜ Chapter 16 JavaFX UI Controls and Multimedia
   - <details>
-      <summary>Terms introduced in this chapter:</summary>
+      <summary>Terms introduced in this chapter</summary>
+    </details>
+  - <details>
+      <summary>Questions</summary>
     </details>
 
 ---
 
-- [ ] Chapter 16 JavaFX UI Controls and Multimedia
+- ⬜ Chapter 17 Binary I/O
   - <details>
-      <summary>Terms introduced in this chapter:</summary>
+      <summary>Terms introduced in this chapter</summary>
+    </details>
+  - <details>
+      <summary>Questions</summary>
     </details>
 
 ---
 
-- [ ] Chapter 17 Binary I/O
+- ⬜ Chapter 18 Recursion
   - <details>
-      <summary>Terms introduced in this chapter:</summary>
+      <summary>Terms introduced in this chapter</summary>
+    </details>
+  - <details>
+      <summary>Questions</summary>
     </details>
 
 ---
 
-- [ ] Chapter 18 Recursion
+- ⬜ Chapter 19 Generics
   - <details>
-      <summary>Terms introduced in this chapter:</summary>
+      <summary>Terms introduced in this chapter</summary>
+    </details>
+  - <details>
+      <summary>Questions</summary>
     </details>
 
 ---
 
-- [ ] Chapter 19 Generics
+- ⬜ Chapter 20 Lists, Stacks, Queues, and Priority Queues
   - <details>
-      <summary>Terms introduced in this chapter:</summary>
+      <summary>Terms introduced in this chapter</summary>
+    </details>
+  - <details>
+      <summary>Questions</summary>
     </details>
 
 ---
 
-- [ ] Chapter 20 Lists, Stacks, Queues, and Priority Queues
+- ⬜ Chapter 21 Sets and Maps
   - <details>
-      <summary>Terms introduced in this chapter:</summary>
+      <summary>Terms introduced in this chapter</summary>
+    </details>
+  - <details>
+      <summary>Questions</summary>
     </details>
 
 ---
 
-- [ ] Chapter 21 Sets and Maps
+- ⬜ Chapter 22 Developing Efficient Algorithms
   - <details>
-      <summary>Terms introduced in this chapter:</summary>
+      <summary>Terms introduced in this chapter</summary>
+    </details>
+  - <details>
+      <summary>Questions</summary>
     </details>
 
 ---
 
-- [ ] Chapter 22 Developing Efficient Algorithms
+- ⬜ Chapter 23 Sorting
   - <details>
-      <summary>Terms introduced in this chapter:</summary>
+      <summary>Terms introduced in this chapter</summary>
+    </details>
+  - <details>
+      <summary>Questions</summary>
     </details>
 
 ---
 
-- [ ] Chapter 23 Sorting
+- ⬜ Chapter 24 Implementing Lists, Stacks, Queues, and Priority Queues
   - <details>
-      <summary>Terms introduced in this chapter:</summary>
+      <summary>Terms introduced in this chapter</summary>
+    </details>
+  - <details>
+      <summary>Questions</summary>
     </details>
 
 ---
 
-- [ ] Chapter 24 Implementing Lists, Stacks, Queues, and Priority Queues
+- ⬜ Chapter 25 Binary Search Trees
   - <details>
-      <summary>Terms introduced in this chapter:</summary>
+      <summary>Terms introduced in this chapter</summary>
+    </details>
+  - <details>
+      <summary>Questions</summary>
     </details>
 
 ---
 
-- [ ] Chapter 25 Binary Search Trees
+- ⬜ Chapter 26 AVL Trees
   - <details>
-      <summary>Terms introduced in this chapter:</summary>
+      <summary>Terms introduced in this chapter</summary>
+    </details>
+  - <details>
+      <summary>Questions</summary>
     </details>
 
 ---
 
-- [ ] Chapter 26 AVL Trees
+- ⬜ Chapter 27 Hashing
   - <details>
-      <summary>Terms introduced in this chapter:</summary>
+      <summary>Terms introduced in this chapter</summary>
+    </details>
+  - <details>
+      <summary>Questions</summary>
     </details>
 
 ---
 
-- [ ] Chapter 27 Hashing
+- ⬜ Chapter 28 Graphs and Applications
   - <details>
-      <summary>Terms introduced in this chapter:</summary>
+      <summary>Terms introduced in this chapter</summary>
+    </details>
+  - <details>
+      <summary>Questions</summary>
     </details>
 
 ---
 
-- [ ] Chapter 28 Graphs and Applications
+- ⬜ Chapter 29 Weighted Graphs and Applications
   - <details>
-      <summary>Terms introduced in this chapter:</summary>
+      <summary>Terms introduced in this chapter</summary>
+    </details>
+  - <details>
+      <summary>Questions</summary>
     </details>
 
 ---
 
-- [ ] Chapter 29 Weighted Graphs and Applications
+- ⬜ Chapter 30 Aggregate Operations for Collection Streams
   - <details>
-      <summary>Terms introduced in this chapter:</summary>
+      <summary>Terms introduced in this chapter</summary>
+    </details>
+  - <details>
+      <summary>Questions</summary>
     </details>
 
 ---
 
-- [ ] Chapter 30 Aggregate Operations for Collection Streams
+- ⬜ Chapter 31 Advanced JavaFX and FXML
   - <details>
-      <summary>Terms introduced in this chapter:</summary>
+      <summary>Terms introduced in this chapter</summary>
+    </details>
+  - <details>
+      <summary>Questions</summary>
     </details>
 
 ---
 
-- [ ] Chapter 31 Advanced JavaFX and FXML
+- ⬜ Chapter 32 Multithreading and Parallel Programming
   - <details>
-      <summary>Terms introduced in this chapter:</summary>
+      <summary>Terms introduced in this chapter</summary>
+    </details>
+  - <details>
+      <summary>Questions</summary>
     </details>
 
 ---
 
-- [ ] Chapter 32 Multithreading and Parallel Programming
+- ⬜ Chapter 33 Networking
   - <details>
-      <summary>Terms introduced in this chapter:</summary>
+      <summary>Terms introduced in this chapter</summary>
+    </details>
+  - <details>
+      <summary>Questions</summary>
     </details>
 
 ---
 
-- [ ] Chapter 33 Networking
+- ⬜ Chapter 34 Java Database Programming
   - <details>
-      <summary>Terms introduced in this chapter:</summary>
+      <summary>Terms introduced in this chapter</summary>
+    </details>
+  - <details>
+      <summary>Questions</summary>
     </details>
 
 ---
 
-- [ ] Chapter 34 Java Database Programming
+- ⬜ Chapter 35 Advanced Database Programming
   - <details>
-      <summary>Terms introduced in this chapter:</summary>
+      <summary>Terms introduced in this chapter</summary>
+    </details>
+  - <details>
+      <summary>Questions</summary>
     </details>
 
 ---
 
-- [ ] Chapter 35 Advanced Database Programming
+- ⬜ Chapter 36 Internationalization
   - <details>
-      <summary>Terms introduced in this chapter:</summary>
+      <summary>Terms introduced in this chapter</summary>
+    </details>
+  - <details>
+      <summary>Questions</summary>
     </details>
 
 ---
 
-- [ ] Chapter 36 Internationalization
+- ⬜ Chapter 37 Servlets
   - <details>
-      <summary>Terms introduced in this chapter:</summary>
+      <summary>Terms introduced in this chapter</summary>
+    </details>
+  - <details>
+      <summary>Questions</summary>
     </details>
 
 ---
 
-- [ ] Chapter 37 Servlets
+- ⬜ Chapter 38 JavaServer Pages
   - <details>
-      <summary>Terms introduced in this chapter:</summary>
+      <summary>Terms introduced in this chapter</summary>
+    </details>
+  - <details>
+      <summary>Questions</summary>
     </details>
 
 ---
 
-- [ ] Chapter 38 JavaServer Pages
+- ⬜ Chapter 39 JavaServer Faces
   - <details>
-      <summary>Terms introduced in this chapter:</summary>
+      <summary>Terms introduced in this chapter</summary>
+    </details>
+  - <details>
+      <summary>Questions</summary>
     </details>
 
 ---
 
-- [ ] Chapter 39 JavaServer Faces
+- ⬜ Chapter 40 RMI
   - <details>
-      <summary>Terms introduced in this chapter:</summary>
+      <summary>Terms introduced in this chapter</summary>
+    </details>
+  - <details>
+      <summary>Questions</summary>
     </details>
 
 ---
 
-- [ ] Chapter 40 RMI
+- ⬜ Chapter 41 Web Services
   - <details>
-      <summary>Terms introduced in this chapter:</summary>
+      <summary>Terms introduced in this chapter</summary>
+    </details>
+  - <details>
+      <summary>Questions</summary>
     </details>
 
 ---
 
-- [ ] Chapter 41 Web Services
+- ⬜ Chapter 42 2-4 Trees and B-Trees
   - <details>
-      <summary>Terms introduced in this chapter:</summary>
+      <summary>Terms introduced in this chapter</summary>
+    </details>
+  - <details>
+      <summary>Questions</summary>
     </details>
 
 ---
 
-- [ ] Chapter 42 2-4 Trees and B-Trees
+- ⬜ Chapter 43 Red-Black Trees
   - <details>
-      <summary>Terms introduced in this chapter:</summary>
+      <summary>Terms introduced in this chapter</summary>
+    </details>
+  - <details>
+      <summary>Questions</summary>
     </details>
 
 ---
 
-- [ ] Chapter 43 Red-Black Trees
+- ⬜ Chapter 44 Testing Using JUnit
   - <details>
-      <summary>Terms introduced in this chapter:</summary>
+      <summary>Terms introduced in this chapter</summary>
     </details>
-
----
-
-- [ ] Chapter 44 Testing Using JUnit
   - <details>
-      <summary>Terms introduced in this chapter:</summary>
+      <summary>Questions</summary>
     </details>
 
 ---
