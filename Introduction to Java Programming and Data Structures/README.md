@@ -6,7 +6,7 @@
   alt="Cover"></a>
 </p>
 <p align="center">
-<img src="https://img.shields.io/badge/In%20Progress-Chapter 10 Object Oriented Thinking-blue.svg" />
+<img src="https://img.shields.io/badge/In%20Progress-Chapter 11/44 Inheritance and Polymorphism-blue.svg" />
   <img src="https://img.shields.io/badge/Made%20With-Java 8/11-purple.svg" />
 </p>
 
@@ -111,6 +111,59 @@ Eleventh Edition by [Y. Daniel Liang](https://yongdanielliang.github.io/).
     </details>
   - <details>
       <summary>Questions</summary>
+      <ul>
+        <li>*5.1 (Count positive and negative numbers and compute the average of numbers)</li>
+        <li>5.2 (Repeat additions) </li>
+        <li>5.3 (Conversion from kilograms to pounds)</li>
+        <li>5.4 (Conversion from miles to kilometers)</li>
+        <li>5.5 (Conversion from kilograms to pounds and pounds to kilograms)</li>
+        <li>5.6 (Conversion from miles to kilometers) </li>
+        <li>**5.7 (Financial application: compute future tuition)</li>
+        <li>5.8 (Find the highest score)</li>
+        <li><code>*5.9 (Find the two highest scores)</code></li>
+        <li>5.10 (Find numbers divisible by 5 and 6) </li>
+        <li><code>5.11 (Find numbers divisible by 5 or 6, but not both)</code></li>
+        <li>5.12 (Find the smallest n such that n^2 &gt; 12,000) </li>
+        <li>5.13 (Find the largest n such that n^3 &lt; 12,000) </li>
+        <li><code>*5.14 (Compute the greatest common divisor)</code></li>
+        <li>*5.15 (Display the ASCII character table)</li>
+        <li><code>*5.16 (Find the factors of an integer)</code></li>
+        <li><code>**5.17 (Display pyramid)</code></li>
+        <li><code>*5.18 (Display four patterns using loops)</code></li>
+        <li><code>**5.19 (Display numbers in a pyramid pattern)</code></li>
+        <li>*5.20 (Display prime numbers between 2 and 1,000) </li>
+        <li>**5.21 (Financial application: compare loans with various interest rates)</li>
+        <li>**5.22 (Financial application: loan amortization schedule)</li>
+        <li>*5.23 (Demonstrate cancellation errors)</li>
+        <li>*5.24 (Sum a series)</li>
+        <li>**5.25 (Compute p)</li>
+        <li>**5.26 (Compute e) </li>
+        <li>**5.27 (Display leap years)</li>
+        <li>**5.28 (Display the first days of each month) </li>
+        <li><code>**5.29 (Display calendars)</code></li>
+        <li>*5.30 (Financial application: compound value) </li>
+        <li>*5.31 (Financial application: compute CD value)</li>
+        <li>**5.32 (Game: lottery) </li>
+        <li><code>**5.33 (Perfect number)</code></li>
+        <li><code>***5.34 (Game: scissor, rock, paper)</code></li>
+        <li>*5.35 (Summation)</li>
+        <li>**5.36 (Business application: checking ISBN)</li>
+        <li><code>**5.37 (Decimal to binary)</code></li>
+        <li><code>**5.38 (Decimal to octal)</code></li>
+        <li>*5.39 (Financial application: find the sales amount)</li>
+        <li>5.40 (Simulation: heads or tails) </li>
+        <li>*5.41 (Occurrence of max numbers)</li>
+        <li>*5.42 (Financial application: find the sales amount)</li>
+        <li><code>*5.43 (Math: combinations)</code></li>
+        <li><code>*5.44 (Computer architecture: bit-level operations)</code></li>
+        <li>**5.45 (Statistics: compute mean and standard deviation)</li>
+        <li><code>*5.46 (Reverse a string)</code></li>
+        <li>*5.47 (Business: check ISBN-13)</li>
+        <li>*5.48 (Process string)</li>
+        <li>*5.49 (Count vowels and consonants) </li>
+        <li>*5.50 (Count uppercase letters)</li>
+        <li><code>*5.51 (Longest common prefix)</code></li>
+      </ul>
     </details>
 
 ---
@@ -430,8 +483,8 @@ Eleventh Edition by [Y. Daniel Liang](https://yongdanielliang.github.io/).
 
 ---
 
-- ✅ <a href="#" target="_blank" title="Solutions">Chapter 9 Objects and Classes
-  => 13 Questions</a>
+- ✅ <a href="https://bit.ly/39cpxAE" target="_blank" title="Solutions">Chapter 9
+  Objects and Classes => 13 Questions</a>
   - <details>
       <summary>Terms introduced in this chapter</summary>
       <ul>
@@ -471,18 +524,68 @@ Eleventh Edition by [Y. Daniel Liang](https://yongdanielliang.github.io/).
 
 ---
 
-- ⬜ <a href="#" target="_blank" title="Solutions">Chapter 10 Object-Oriented
+- ✅ <a href="#" target="_blank" title="Solutions">Chapter 10 Object-Oriented
   Thinking => 28 Questions</a>
   - <details>
       <summary>Terms introduced in this chapter</summary>
+      <ul>
+        <li>Apply <strong><em>class abstraction</em></strong> to develop software (abstract data type (<strong><em>ADT</em></strong>))</li>
+        <li>Explore the differences between the <strong><em>procedural</em></strong> paradigm and <strong><em>object-oriented paradigm</em></strong></li>
+        <li>Discover the <strong><em>relationships between classes</em></strong><ul>
+        <li><strong><em>Association</em></strong> - binary relationship that describes an activity between two classes.</li>
+        <li><strong><em>Aggregation</em></strong> - special form of association that represents an ownership relationship between<br>two objects. i.e. <code>has-a</code> relationship.</li>
+        <li><strong><em>Composition</em></strong> - relationship is composition, the aggregated object cannot exist on its own.</li>
+        </ul>
+        </li>
+        <li>Design programs using the object-oriented paradigm</li>
+        <li>Case Study: <code>Designing the Course Class</code></li>
+        <li>Case Study: <code>Designing a Class for Stacks</code></li>
+        <li>Create objects for primitive values using the <strong><em>wrapper classes</em></strong></li>
+        <li>Simplify programming using <strong><em>automatic conversion</em></strong> between primitive types and wrapper class types</li>
+        <li>Use the <code>BigInteger</code> and <code>BigDecimal</code> classes for computing very large numbers with arbitrary precisions</li>
+        <li>Use the <code>String</code> class to process <strong><em>immutable</em></strong> strings</li>
+        <li>Use the <code>StringBuilder</code> and <code>StringBuffer</code> classes to process <strong><em>mutable strings</em></strong></li>
+        <li>Case Study: <code>Ignoring Non-alphanumeric Characters When Checking Palindromes</code></li>
+      </ul>
     </details>
   - <details>
       <summary>Questions</summary>
+      <ul>
+        <li>*10.1 (The <code>Time</code> class)</li>
+        <li>10.2 (The <code>BMI</code> class)</li>
+        <li>10.3 (The <code>MyInteger</code> class)</li>
+        <li>10.4 (The <code>MyPoint</code> class)</li>
+        <li>*10.5 (Display the prime factors)</li>
+        <li>*10.6 (Display the prime numbers)</li>
+        <li>**10.7 (<code>Game: ATM machine</code>)</li>
+        <li><em>*</em>10.8 (Financial: the <code>Tax</code> class)</li>
+        <li>**10.9 (The <code>Course</code> class)</li>
+        <li><code>*10.10 (The Queue class)</code></li>
+        <li>*10.11 (Geometry: the Circle2D class)</li>
+        <li><code>***10.12 (Geometry: the Triangle2D class)</code></li>
+        <li>*10.13 (Geometry: the MyRectangle2D class)</li>
+        <li>*10.14 (The MyDate class) </li>
+        <li>*10.15 (Geometry: the bounding rectangle)</li>
+        <li>*10.16 (Divisible by 2 or 3) </li>
+        <li>*10.17 (Square numbers)</li>
+        <li><code>*10.18 (Large prime numbers)</code></li>
+        <li>*10.19 (Mersenne prime)</li>
+        <li>*10.20 (Approximate e)</li>
+        <li>10.21 (Divisible by 5 or 6)</li>
+        <li><code>**10.22 (Implement the String class)</code></li>
+        <li>**10.23 (Implement the String class)</li>
+        <li>10.24 (Implement the Character class)</li>
+        <li><code>**10.25 (New string split method)</code></li>
+        <li><code>*10.26 (Calculator)</code></li>
+        <li><code>**10.27 (Implement the StringBuilder class)</code></li>
+        <li>**10.28 (Implement the StringBuilder class)</li>
+      </ul>
     </details>
 
 ---
 
-- ⬜ Chapter 11 Inheritance and Polymorphism
+- ⬜ <a href="#" target="_blank" title="Solutions">Chapter 11 Inheritance and
+  Polymorphism => 19 Questions</a>
   - <details>
       <summary>Terms introduced in this chapter</summary>
     </details>
