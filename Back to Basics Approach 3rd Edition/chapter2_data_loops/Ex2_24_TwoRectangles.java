@@ -17,21 +17,28 @@ package chapter2_data_loops;
  *        *******
  *        *******
  *        *******
- * FIXME
+ *
  * Created by ag on 04-Nov-20 1:03 PM
  */
 class Ex2_24_TwoRectangles {
-  public static final int WIDTH = 7;
-  public static final int HEIGHT = 4;
+  public static final int WIDTH = 8;
+  public static final int HEIGHT = 10;
 
   public static void main(String[] args) {
-    for (int i = 0; i < 2 * HEIGHT; i++) {
+    print(0, WIDTH, HEIGHT);
+    print(WIDTH, WIDTH, HEIGHT);
+  }
 
-      for (int j = 0; j < WIDTH; j++) {
+  public static void print(int offset, int width, int height) {
+    for (int i = 0; i < height; i++) {
+      for (int j = 0; j < offset; j++) {
+        System.out.print(" ");
+      }
+
+      for (int j = 0; j < width; j++) {
         System.out.print("*");
       }
       System.out.println();
     }
-
   }
 }
