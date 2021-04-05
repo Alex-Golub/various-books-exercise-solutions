@@ -261,7 +261,7 @@
 
 ---
 
-- [✅] [Chapter 9 Inheritance and Interfaces => 11Q]()
+- [✅] [Chapter 9 Inheritance and Interfaces => 11Q](https://bit.ly/3dtlmBw)
   - <details>
       <summary>Terms introduced in this chapter:</summary>
       <ul>
@@ -317,9 +317,9 @@
   - <details>
       <summary>Problems used in the CS1 course:</summary>
       <ul>
-          <li>CS1 Sections(69Q)</li>
-          <li>CS1 Labs(59Q)</li>
-          <li>CS1 Exams(221Q)</li>
+          <li>✅ CS1 Sections(69Q)</li>
+          <li>⬜ CS1 Labs(59Q)</li>
+          <li>⬜ CS1 Exams(221Q)</li>
       </ul>
     </details>
 
