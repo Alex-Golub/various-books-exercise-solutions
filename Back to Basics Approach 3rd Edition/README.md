@@ -318,8 +318,8 @@
       <summary>Problems used in the CS1 course:</summary>
       <ul>
           <li>✅ CS1 Sections(69Q)</li>
-          <li>⬜ CS1 Labs(59Q)</li>
-          <li>⬜ CS1 Exams(221Q)</li>
+          <li>✅ CS1 Labs(59Q)</li>
+          <li>⬜ CS1 Exams(Midterm + Final)(221Q)</li>
       </ul>
     </details>
 

@@ -1,0 +1,217 @@
+=== Lab 1 (Java basics, static methods) ===
+
+1. Testing
+Testing, testing,
+one two three.
+
+How much output
+
+will there be?
+
+2. What is the name of the command that Java
+uses to produce output to the console? => System.out.println
+
+3. What is the base-10 value of the binary number 101010? => 42
+   What is the binary value of the base-10 number 167?    => 10100111
+
+=== stringExpressions ===
+//       index 0123456789012345
+String str1 = "Frodo Baggins";
+String str2 = "Gandalf the GRAY";
+
+str1.length()                    => 13
+str1.charAt(7)                   => 'a'
+str2.charAt(0)                   => 'G'
+str1.indexOf("o")                => 2
+str2.toUpperCase()               => "GANDALF THE GRAY"
+str1.toLowerCase().indexOf("B")  => -1
+str1.substring(4)                => "o Baggins"
+str2.substring(3, 14)            => "dalf the GR"
+str2.replace("a", "oo")          => "Goondoolf the GRAY"
+str2.replace("gray", "white")    => "Gandalf the GRAY"
+"str1".replace("r", "range")     => "strange1"
+
+
+=== arrayDeclarationSyntax ===
+Which of the following choices is the correct syntax for declaring/initializing
+an array of ten integers?
+ []int a = [10]int;        // syntax error
+ int[] a = new int[10];    // ✔
+ int a[10];                //
+ int[10] a = new int[10];  //
+ int a[10] = new int[10];  //
+
+Which of the following choices is the correct syntax for quickly
+declaring/initializing an array of six integers to store a particular
+list of values?
+ int[] a = {17, -3, 42, 5, 9, 28}; // ✔
+ int[6] a = {17, -3, 42, 5, 9, 28};
+ int[] a = new {17, -3, 42, 5, 9, 28} [6];
+ int[] a = new int[6] {17, -3, 42, 5, 9, 28};
+ int a {17, -3, 42, 5, 9, 28};
+
+
+=== arrayCodeTracing ===             0  1  2  3  4  5  6  7
+int[] data = new int[8];      // => [0, 0, 0, 0, 0, 0, 0, 0]
+data[0] = 3;                  // => [3, 0, 0, 0, 0, 0, 0, 0]
+data[7] = -18;                // => [3, 0, 0, 0, 0, 0, 0, -18]
+data[4] = 5;                  // => [3, 0, 0, 0, 5, 0, 0, -18]
+data[1] = data[0];            // => [3, 3, 0, 0, 5, 0, 0, -18]
+
+int x = data[4];              // => x = 5
+data[4] = 6;                  // => [3, 3, 0, 0, 6, 0, 0, -18]
+data[x] = data[0] * data[1];  // => [3, 3, 0, 0, 6, 9, 0, -18]
+
+data[0] => 3
+data[1] => 3
+data[2] => 0
+data[3] => 0
+data[4] => 6
+data[5] => 9
+data[6] => 0
+data[7] => -18
+
+
+=== arrayCodeTracing2 ===
+int[] list = {2, 18, 6, -4, 5, 1};
+for (int i = 0; i < list.length; i++) {
+  list[i] = list[i] + (list[i] / list[0]);
+}
+
+list[0] => 3
+list[1] => 24
+list[2] => 8
+list[3] => -5
+list[4] => 6
+list[5] => 1
+
+
+=== arrayReferenceMystery ===
+public class ArrayReference {
+    public static void main(String[] args) {
+        int[] nums = {2, 4, -1, 3};
+        incrementAll(nums);
+
+        // HERE!
+    }
+
+    public static void incrementAll(int[] data) {
+        for (int i = 0; i < data.length; i++) {
+            data[i]++;
+        }
+    }
+}
+
+nums[0] => 3
+nums[1] => 5
+nums[2] => 0
+nums[3] => 4
+
+
+=== methodCallSyntax ===
+Suppose a method in the BankAccount class is defined as:
+
+public double computeInterest(int rate)
+And suppose the client code has declared a BankAccount variable named acct.
+
+Which of the following would be a valid call to the above method?
+[ ] acct.computeInterest(42.0, 15);
+[ ] int result = BankAccount.computeInterest(42);
+[✔] double result = acct.computeInterest(42);
+[ ] double result = computeInterest(acct, 42);
+
+
+=== pointCoordinates ===
+What are the x- and y-coordinates of the Points referred to as p1, p2, and p3
+after the following code executes? Give your answer as an x-y pair such as (0, 0).
+p1 => (20, 10)
+p2 => (46, 4)
+p3 => (46, 4)
+
+
+=== printingObjects ===
+The above println statement (the entire line) is equivalent to what?
+[ ] p1.toString();
+[✔] System.out.println(p1.toString());
+[ ] System.out.println(p1.string());
+[ ] System.out.println(toString(p1));
+[ ] System.out.println(Point.toString());
+
+
+=== pointMystery ===
+public class PointMystery {
+    public static void main(String[] args) {
+        Point p1 = new Point(5, 2);
+        Point p2 = new Point(-3, 6);
+
+        silly(p1);
+        silly(p2);
+        Point p3 = p1;
+        silly(p3);
+
+        System.out.println("(" + p1.x + ", " + p1.y + ")");  // Statement 1
+        System.out.println("(" + p2.x + ", " + p2.y + ")");  // Statement 2
+        System.out.println("(" + p3.x + ", " + p3.y + ")");  // Statement 3
+    }
+
+    public static void silly(Point p) {
+        int temp = p.x;
+        p.x = p.y;
+        p.y = temp;
+    }
+}
+
+Statement 1 => (5, 2)
+Statement 2 => (6, -3)
+Statement 3 => (5, 2)
+
+
+=== CarTruck ===
+Consider the following two classes:
+
+public class Car {
+    public void m1() { System.out.println("car 1"); }
+    public void m2() { System.out.println("car 2"); }
+    public String toString() { return "vroom"; }
+}
+
+public class Truck extends Car {
+    public void m1() { System.out.println("truck 1"); }
+}
+And assuming that the following variables have been declared:
+
+Car mycar = new Car();
+Truck mytruck = new Truck();
+
+What is the output from the following statements?
+System.out.println(mycar);    // => vroom
+mycar.m1();                   // => car 1
+mycar.m2();                   // => car 2
+System.out.println(mytruck);  // => vroom
+mytruck.m1();                 // => truck 1
+mytruck.m2();                 // => car 2
+
+
+=== CarTruck2 ===
+Consider the following two classes:
+
+public class Car {
+    public void m1() { System.out.println("car 1"); }
+    public void m2() { System.out.println("car 2"); }
+    public String toString() { return "vroom"; }
+}
+
+public class Truck extends Car {
+    public void m1() { System.out.println("truck 1"); }
+    public void m2() { super.m1(); }
+    public String toString() { return super.toString() + super.toString(); }
+}
+
+And assuming that the following variable has been declared:
+
+Truck mytruck = new Truck();
+What is the output from the following statements?
+
+System.out.println(mytruck);  // => vroomvroom
+mytruck.m1();                 // => truck 1
+mytruck.m2();                 // => car 1
