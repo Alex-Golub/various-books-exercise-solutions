@@ -1,0 +1,219 @@
+██████████ Practice Midterm 1 (06au) ██████████
+public static void mystery(int i, int j) {
+  while (i != 0 && j != 0) {
+    i = i / j;
+    j = (j - 1) / 2;
+    System.out.print(i + " " + j + " ");
+  }
+
+  System.out.println(i);
+}
+
+mystery(5, 0);      // => 5
+mystery(3, 2);      // => 1 0 1
+mystery(16, 5);     // => 3 2 1 0 1
+mystery(80, 9);     // => 8 4 2 1 2 0 2
+mystery(1600, 40);  // => 40 19 2 9 0 4 0
+
+
+██████████ Practice Midterm 2 (07au) ██████████
+public static int mystery(int i, int j) {
+  int k = 0;
+  while (i > j) {
+    i = i - j;
+    k = k + (i - 1);
+  }
+
+  return k;
+}
+
+mystery(2, 9)   => 0
+mystery(5, 1)   => 6
+mystery(38, 5)  => 119
+mystery(5, 9)   => 0
+mystery(40, 10) => 57
+
+
+██████████ Practice Midterm 4 (08su) ██████████
+public static void whileMystery(int x, int y) {
+  int s = 0;
+
+  while (x > 0 && 2 * y >= x) {
+    System.out.print(s + " ");
+    y = y - x;
+    x--;
+    s = s + x;
+  }
+
+  System.out.println(s);
+}
+
+whileMystery(-2, -6); => 0
+whileMystery(2, 3);   => 0 1 1
+whileMystery(4, 8);   => 0 3 5 6
+whileMystery(5, 40);  => 0 4 7 9 10 10
+whileMystery(10, 31); => 0 9 17 24 30
+
+
+██████████ Practice Midterm 5 (08wi) ██████████
+public static int mystery(int x) {
+  int a = 1;
+  int c = 0;
+  while (x > 0) {
+    a = x % 2;
+    if (a == 1) {
+      c++;
+    }
+    x = x / 2;
+  }
+  return c;
+}
+
+mystery(2);  => 1
+mystery(-1); => 0
+mystery(7);  => 3
+mystery(18); => 2
+mystery(43); => 4
+
+
+██████████ Practice Midterm 6 (08au) ██████████
+public static void whileMystery(int x, int y, int z) {
+    while (x < z || y < z) {
+        x = x + y;
+        y = y * 2;
+        System.out.print(x + " " + y + " ");
+    }
+
+    System.out.println();
+}
+
+whileMystery(0, 5, 10);  => 5 10 15 20
+whileMystery(4, 2, 12);  => 6 4 10 8 18 16
+whileMystery(10, 1, 14); => 11 2 13 4 17 8 25 16
+
+
+██████████ Practice Midterm 7 (09wi) ██████████
+public static void mystery(int n) {
+    int x = 1;
+    int y = 1;
+    while (n > 2) {
+        x = x + y;
+        y = x - y;
+        n--;
+    }
+    System.out.println(x);
+}
+
+mystery(1); => 1
+mystery(3); => 2
+mystery(5); => 5
+mystery(7); => 13
+
+
+██████████ Practice Midterm 8 (09sp) ██████████
+public static void whileMystery(int n) {
+    int x = 0;
+    int y = 1;
+    while (n > x && n > y) {
+        n--;
+        x = x + 2;
+        y = y + x;
+    }
+    System.out.println(x);
+}
+
+whileMystery(5);  => 4
+whileMystery(10); => 6
+whileMystery(4);  => 2
+
+
+██████████ Practice Midterm 9 (09su) ██████████
+public static void whileMystery(int x, int y) {
+    int z = 0;
+    while (x < y && z < 4) {
+        x = x * 2;
+        y = y + 2;
+        z++;
+    }
+    System.out.println(x + " " + y + " " + z);
+}
+
+whileMystery(4, 3);  => 4 3 0
+whileMystery(5, 7);  => 10 9 1
+whileMystery(3, 18); => 24 24 3
+whileMystery(0, 4);  => 0 12 4
+
+
+██████████ Practice Midterm 10 (09au) ██████████
+public static void whileMystery(int x, int y) {
+    int z = 0;
+    while (x % y != 0) {
+        x = x / y;
+        z++;
+        System.out.print(x + ", ");
+    }
+
+    System.out.println(z);
+}
+
+whileMystery(25, 2);     => 12, 1
+whileMystery(32, 4);     => 0
+whileMystery(10345, 10); => 1034, 103, 10, 3
+whileMystery(63, 2);     => 31, 15, 7, 3, 1, 0, 6
+
+
+██████████ Practice Midterm 12 (10su) ██████████
+public static void whileMystery(int i, int j) {
+    int k = 0;
+    while (i < j && k < j) {
+        i = i + k;
+        j--;
+        k++;
+        System.out.print(i + ", ");
+    }
+
+    System.out.println(k);
+}
+
+whileMystery(3, 5);   => 3, 4, 2
+whileMystery(5, 3);   => 0
+whileMystery(-3, 6);  => -3, -2, 0, 3
+whileMystery(2, 12);  => 2, 3, 5, 8, 4
+whileMystery(-9, 10); => -9, -8, -6, -3, 1, 5
+
+
+██████████ Practice Midterm 13 (10au) ██████████
+public static void whileMystery(int x, int y) {
+    while (x > 0 && y > 0) {
+        x = x - y;
+        y--;
+        System.out.print(x + " ");
+    }
+
+    System.out.println(y);
+}
+
+whileMystery(7, 5);   => 2 -2 3
+whileMystery(20, 4);  => 16 13 11 10 0
+whileMystery(40, 10); => 30 21 13 6 0 5
+
+
+██████████ Practice Midterm 14 (09wi) ██████████
+public static void mystery(int n) {
+    int x = 1;
+    int y = 2;
+    while (y < n) {
+        if (n % y == 0) {
+            n = n / y;
+            x++;
+        } else {
+            y++;
+        }
+    }
+    System.out.println(x + " " + n);
+}
+
+mystery(2);  => 1 2
+mystery(5);  => 1 5
+mystery(24); => 4 3
+mystery(28); => 3 7

@@ -1,0 +1,352 @@
+██████████ Practice Midterm 1 (06au) ██████████
+public class ParameterMystery {
+  public static void main(String[] args) {
+    String x = "java";
+    String y = "tyler";
+    String z = "tv";
+    String rugby = "hamburger";
+    String java = "donnie";
+
+    hamburger(x, y, z);
+    hamburger(z, x, y);
+    hamburger("rugby", z, java);
+    hamburger(y, rugby, "x");
+    hamburger(y, y, "java");
+  }
+
+  public static void hamburger(String y, String z, String x) {
+    System.out.println(z + " and " + x + " like " + y);
+  }
+}
+
+hamburger(x, y, z);           // => tyler and tv like java
+hamburger(z, x, y);           // => java and tyler like tv
+hamburger("rugby", z, java);  // => tv and donnie like rugby
+hamburger(y, rugby, "x");     // => hamburger and x like tyler
+hamburger(y, y, "java");      // => tyler and java like tyler
+
+
+██████████ Practice Midterm 2 (07au) ██████████
+public class ParameterMystery {
+  public static void main(String[] args) {
+    String x = "happy";
+    String y = "pumpkin";
+    String z = "orange";
+    String pumpkin = "sleepy";
+    String orange = "vampire";
+
+    orange(y, x, z);            // #1
+    orange(x, z, y);            // #2
+    orange(pumpkin, z, "y");    // #3
+
+    z = "green";
+    orange("x", "pumpkin", z);  // #4
+
+    orange(y, z, orange);       // #5
+  }
+
+  public static void orange(String z, String y, String x) {
+    System.out.println(y + " and " + z + " were " + x);
+  }
+}
+
+#1 => happy and pumpkin were orange
+#2 => orange and happy were pumpkin
+#3 => orange and sleepy were y
+#4 => pumpkin and x were green
+#5 => green and pumpkin were vampire
+
+
+██████████ Practice Midterm 4 (08su) ██████████
+public class ParameterMystery {
+  public static void main(String[] args) {
+    int one = 4;
+    int two = 3;
+    int three = 10;
+    int num = 17;
+    int four = 3;
+
+    racket(one, two, three);
+    racket(three, four, 5);
+    racket(2, two * 2, num);
+    racket(num, three * one, four);
+    racket(three - four, one, two);
+  }
+
+  public static void racket(int two, int one, int three) {
+    System.out.println(three + " is roughly " + two + " plus " + one);
+  }
+}
+
+racket(one, two, three);        => 10 is roughly 4 plus 3
+racket(three, four, 5);         => 5 is roughly 10 plus 3
+racket(2, two * 2, num);        => 17 is roughly 2 plus 6
+racket(num, three * one, four); => 3 is roughly 17 plus 40
+racket(three - four, one, two); => 3 is roughly 7 plus 4
+
+
+██████████ Practice Midterm 5 (08wi) ██████████
+public static void main(String[] args) {
+  String p = "cause";
+  String q = "support";
+  String r = "troops";
+  String support = "hillary";
+  String cause = "rudy";
+
+  troops(p, q, r);
+  troops(q, r, p);
+  troops(support, p, cause);
+  troops(r, "p", support);
+  troops(q, "cause", q);
+}
+
+public static void troops(String r, String p, String q) {
+  System.out.println(q + " gave " + r + " to the " + p);
+}
+
+troops(p, q, r);           => troops gave cause to the support
+troops(q, r, p);           => cause gave support to the troops
+troops(support, p, cause); => rudy gave hillary to the cause
+troops(r, "p", support);   => hillary gave troops to the p
+troops(q, "cause", q);     => support gave support to the cause
+
+
+██████████ Practice Midterm 6 (08au) ██████████
+public static void main(String[] args) {
+  String i = "j";
+  int j = -1;
+  int k = 2;
+  String x = "5";
+  int y = 7;
+
+  silly(k, i, j);
+  silly(y, x, k);
+  silly(k, "y", 4);
+  silly(j + 1, x + 1, j);
+}
+
+public static void silly(int k, String i, int j) {
+  System.out.println(j + " + " + k + " + " + i);
+}
+
+silly(k, i, j);         => -1 + 2 + j
+silly(y, x, k);         => 2 + 7 + 5
+silly(k, "y", 4);       => 4 + 2 + y
+silly(j + 1, x + 1, j); => -1 + 0 + 51
+
+
+██████████ Practice Midterm 7 (09wi) ██████████
+public class Mystery {
+  public static void main(String[] args) {
+      String she = "it";
+      String it = "her";
+      String her = "you";
+      String you = "she";
+
+      saying(you, it, you);
+      saying(it, her, she);
+      saying(she, "you", her);
+      saying(it, "him", "fred");
+  }
+
+  public static void saying(String it, String her, String she) {
+      System.out.println(she + " can't take " + it + " with " + her);
+  }
+}
+
+saying(you, it, you);      => she can't take she with her
+saying(it, her, she);      => it can't take her with you
+saying(she, "you", her);   => you can't take it with you
+saying(it, "him", "fred"); => fred can't take her with him
+
+
+██████████ Practice Midterm 8 (09sp) ██████████
+public class ParameterMystery {
+    public static void main(String[] args) {
+        String head = "shoulders";
+        String knees = "toes";
+        String elbow = "head";
+        String eye = "eyes and ears";
+        String ear = "eye";
+
+        touch(ear, elbow);
+        touch(elbow, ear);
+        touch(head, "elbow");
+        touch(eye, eye);
+        touch(knees, "Toes");
+        touch(head, "knees " + knees);
+    }
+
+    public static void touch(String elbow, String ear) {
+        System.out.println("touch your " + elbow + " to your " + ear);
+    }
+}
+
+touch(ear, elbow);             => touch your eye to your head
+touch(elbow, ear);             => touch your head to your eye
+touch(head, "elbow");          => touch your shoulders to your elbow
+touch(eye, eye);               => touch your eyes and ears to your eyes and ears
+touch(knees, "Toes");          => touch your toes to your Toes
+touch(head, "knees " + knees); => touch your shoulders to your knees toes
+
+
+██████████ Practice Midterm 9 (09su) ██████████
+public class ParameterMystery {
+    public static void main(String[] args) {
+        String soda = "coke";
+        String pop = "pepsi";
+        String coke = "pop";
+        String pepsi = "soda";
+        String say = pop;
+        carbonated(coke, soda, pop);
+        carbonated(pop, pepsi, pepsi);
+        carbonated("pop", pop, "koolaid");
+        carbonated(say, "say", pop);
+    }
+
+    public static void carbonated(String coke, String soda, String pop) {
+        System.out.println("say " + soda + " not " + pop + " or " + coke);
+    }
+}
+
+
+carbonated(coke, soda, pop);       => say coke not pepsi or pop
+carbonated(pop, pepsi, pepsi);     => say soda not soda or pepsi
+carbonated("pop", pop, "koolaid"); => say pepsi not koolaid or pop
+carbonated(say, "say", pop);       => say say not pepsi or pepsi
+
+
+██████████ Practice Midterm 10 (09au) ██████████
+public class ParameterMystery {
+    public static void main(String[] args) {
+        String literal = "8";
+        String brace = "semi";
+        String paren = brace;
+        String semi = "brace";
+        String java = "42";
+
+        param(java, brace, semi);
+        param(literal, paren, java);
+        param(brace, semi, "literal");
+        param("cse", literal + 4, "1");
+    }
+
+    public static void param(String semi, String java, String brace) {
+        System.out.println(java + " missing a " + brace + " and " + semi);
+    }
+}
+
+param(java, brace, semi);       => semi missing a brace and 42
+param(literal, paren, java);    => semi missing a 42 and 8
+param(brace, semi, "literal");  => brace missing a literal and semi
+param("cse", literal + 4, "1"); => 84 missing a 1 and cse
+
+
+██████████ Practice Midterm 11 (10sp) ██████████
+public class ParameterMystery {
+    public static void main(String[] args) {
+        String butters = "kenny";
+        String friends = "butters";
+        String kenny = "friends";
+        String kyle = "stan";
+        String ike = "cartman";
+
+        stotch(kenny, friends, butters);
+        stotch(ike, friends, kyle);
+        stotch(kyle, ike, "ike");
+        stotch(friends, "kyle", kenny);
+    }
+
+    public static void stotch(String kenny, String butters, String friends) {
+        System.out.println(butters + " is " + friends + " with " + kenny);
+    }
+}
+
+stotch(kenny, friends, butters); => butters is kenny with friends
+stotch(ike, friends, kyle);      => butters is stan with cartman
+stotch(kyle, ike, "ike");        => cartman is ike with stan
+stotch(friends, "kyle", kenny);  => kyle is friends with butters
+
+
+██████████ Practice Midterm 12 (10su) ██████████
+public class ParameterMystery {
+    public static void main(String[] args) {
+        String scarlett = "mustard";
+        String suspect = "peacock";
+        String lounge = "ballroom";
+        String pipe = "study";
+        String dagger = "pipe";
+        String weapon = "dagger";
+
+        clue(weapon, suspect, pipe);
+        clue(scarlett, pipe, suspect);
+        clue(dagger, "lounge", scarlett);
+        clue(lounge, dagger, "dagger");
+        clue(pipe, "miss " + scarlett, lounge);
+    }
+
+    public static void clue(String suspect, String room, String weapon) {
+        System.out.println(room + " in the " + weapon + " with the " + suspect);
+    }
+}
+
+clue(weapon, suspect, pipe);            => peacock in the study with the dagger
+clue(scarlett, pipe, suspect);          => study in the peacock with the mustard
+clue(dagger, "lounge", scarlett);       => lounge in the mustard with the pipe
+clue(lounge, dagger, "dagger");         => pipe in the dagger with the ballroom
+clue(pipe, "miss " + scarlett, lounge); => miss mustard in the ballroom with the study
+
+
+██████████ Practice Midterm 13 (10au) ██████████
+public class ParameterMystery {
+    public static void main(String[] args) {
+        int a = 5;
+        int b = 1;
+        int c = 3;
+        int three = a;
+        int one = b + 1;
+
+        axiom(a, b, c);
+        axiom(c, three, 10);
+        axiom(b + c, one + three, a + one);
+        a++;
+        b = 0;
+        axiom(three, 2, one);
+    }
+
+    public static void axiom(int c, int b, int a) {
+        System.out.println(a + " + " + c + " = " + b);
+    }
+}
+
+
+axiom(a, b, c);                     => 3 + 5 = 1
+axiom(c, three, 10);                => 10 + 3 = 5
+axiom(b + c, one + three, a + one); => 7 + 4 = 7
+axiom(three, 2, one);               => 2 + 5 = 2
+
+
+██████████ Practice Midterm 14 (09wi) ██████████
+public class Mystery {
+    public static void main(String[] args) {
+        String hear = "bad";
+        String song = "good";
+        String good = "hear";
+        String walk = "talk";
+        String talk = "feel";
+        String feel = "walk";
+        claim(feel, song, feel);
+        claim(good, hear, song);
+        claim(talk, "song", feel);
+        claim("claim", talk, walk);
+    }
+
+    public static void claim(String hear, String good, String song) {
+        System.out.println("to " + hear + " the " + song + " is " + good);
+    }
+}
+
+claim(feel, song, feel);    => to walk the walk is good
+claim(good, hear, song);    => to hear the good is bad
+claim(talk, "song", feel);  => to feel the walk is song
+claim("claim", talk, walk); => to claim the talk is feel

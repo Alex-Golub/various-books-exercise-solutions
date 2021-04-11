@@ -1,0 +1,409 @@
+██████████ Practice Midterm 1 (06au) ██████████
+public static int mystery(int x) {
+  int y = 1;
+  int z = 0;
+
+  // Point A
+  while (y <= x) {
+    // Point B
+    y *= 10;
+    z++;
+
+    // Point C
+  }
+
+  // Point D
+  z--;
+
+  // Point E
+  return z;
+}
+
+           y > x           z < 0           z > 0
+Point A |  SOMETIMES       NEVER           NEVER
+Point B |  NEVER           NEVER           SOMETIMES
+Point C |  SOMETIMES       NEVER           ALWAYS
+Point D |  ALWAYS          NEVER           SOMETIMES
+Point E |  ALWAYS          SOMETIMES       SOMETIMES
+
+
+██████████ Practice Midterm 2 (07au) ██████████
+public static int mystery(Scanner console) {
+  int y = 0;
+  int z = 1;
+  int next = console.nextInt(); // user input can be any number
+
+  // Point A
+  while (next >= 0) {
+    // Point B
+    if (y > z) {
+      // Point C
+      z = y;
+    }
+
+    y++;
+    next = console.nextInt();
+    // Point D
+  }
+
+  // Point E
+  return z;
+}
+
+           next < 0        y > z           y == 0
+Point A |  SOMETIMES       NEVER           ALWAYS
+Point B |  NEVER           SOMETIMES       SOMETIMES
+Point C |  NEVER           ALWAYS          NEVER
+Point D |  SOMETIMES       SOMETIMES       NEVER
+Point E |  ALWAYS          SOMETIMES       SOMETIMES
+
+
+██████████ Practice Midterm 4 (08su) ██████████
+  public static int mystery(int a) {
+    int b = 0;
+    int c = 0;
+
+    // Point A
+    while (a != 0) {
+      // Point B
+      c = a % 10;
+
+      if (c % 2 == 0) {
+        b++;
+      } else {
+        b = 0;
+        // Point C
+      }
+
+      a = a / 10;
+      // Point D
+    }
+
+    // Point E
+    return b;
+  }
+
+           a != 0        c % 2 == 0           b > 0
+Point A |  SOMETIMES     ALWAYS               NEVER
+Point B |  ALWAYS        SOMETIMES            SOMETIMES
+Point C |  ALWAYS        NEVER                NEVER
+Point D |  SOMETIMES     SOMETIMES            SOMETIMES
+Point E |  NEVER         SOMETIMES            SOMETIMES
+
+
+██████████ Practice Midterm 5 (08wi) ██████████
+public static int threeHeads(Random rand) {
+  int flip = 1;
+  int heads = 0;
+  int count = 0;
+
+  // Point A
+  while (heads < 3) {
+    // Point B
+    flip = rand.nextInt(2); // flip coin
+
+    if (flip == 0) { // heads
+      heads++;
+      // Point C
+    } else {
+      // Point D
+      heads = 0;
+    }
+
+    count++;
+  }
+
+  // Point E
+  return count;
+}
+
+           flip == 0     heads == 0           flip > heads
+Point A |  NEVER         ALWAYS               ALWAYS
+Point B |  SOMETIMES     SOMETIMES            SOMETIMES
+Point C |  ALWAYS        NEVER                NEVER
+Point D |  NEVER         SOMETIMES            SOMETIMES
+Point E |  ALWAYS        NEVER                NEVER
+
+
+██████████ Practice Midterm 6 (08au) ██████████
+public static int randomWalk(int steps) {
+  Random rand = new Random();
+  int x = 0;
+  int r = rand.nextInt(2);
+
+  // Point A
+  while (steps > 0 || x == 0) {
+    // Point B
+    if (r == 0) {
+      x++;
+      // Point C
+    } else {
+      x = 0;
+      // Point D
+    }
+
+    steps--;
+    r = rand.nextInt(2);
+  }
+
+  // Point E
+  return x;
+}
+
+           steps > 0     x > 0           r > 0
+Point A |  SOMETIMES     NEVER           SOMETIMES
+Point B |  SOMETIMES     SOMETIMES       SOMETIMES
+Point C |  SOMETIMES     ALWAYS          NEVER
+Point D |  SOMETIMES     NEVER           ALWAYS
+Point E |  NEVER         ALWAYS          SOMETIMES
+
+
+██████████ Practice Midterm 7 (09wi) ██████████
+public static int numOddDigits(int n) {
+  int x = 0;
+
+  // Point A
+  while (n != 0) {
+    // Point B
+    if (n % 2 == 1) {
+      x++;
+      // Point C
+    }
+
+    n = n / 10;
+    // Point D
+  }
+
+  // Point E
+  return x;
+}
+
+           n == 0        n % 2 == 1      x == 0
+Point A |  SOMETIMES     SOMETIMES       ALWAYS
+Point B |  NEVER         SOMETIMES       SOMETIMES
+Point C |  NEVER         ALWAYS          NEVER
+Point D |  SOMETIMES     SOMETIMES       SOMETIMES
+Point E |  ALWAYS        NEVER           SOMETIMES
+
+
+██████████ Practice Midterm 8 (09sp) ██████████
+public static int assertionMystery(Scanner console) {
+  int a = -1;
+  int b = 0;
+  int next = console.nextInt();
+
+  // Point A
+  while (next != 0) {
+    // Point B
+    b = Math.max(a, next);
+    a = next;
+
+    // Point C
+    if (a == 42) {
+      // Point D
+      a++;
+    }
+
+    next = console.nextInt();
+  }
+
+  // Point E
+  return b;
+}
+
+          next == 0     a > 0           b >= next
+Point A | SOMETIMES     NEVER           SOMETIMES
+Point B | NEVER         SOMETIMES       SOMETIMES
+Point C | NEVER         SOMETIMES       ALWAYS
+Point D | NEVER         ALWAYS          ALWAYS
+Point E | ALWAYS        SOMETIMES       SOMETIMES
+
+
+██████████ Practice Midterm 9 (09su) ██████████
+public static int antCrawl(int max) {
+  Random rand = new Random();
+  int height = 0;
+  int falls = 0;
+
+  // Point A
+  while (height < max) {
+    int r = rand.nextInt(4);
+
+    // Point B
+    if (r == 0 && height > 0) {
+      height--;
+      falls++;
+      // Point C
+    } else {
+      height++;
+      // Point D
+    }
+  }
+
+  // Point E
+  return falls;
+}
+
+          falls == 0    height > 0      height < max
+Point A | ALWAYS        NEVER           SOMETIMES
+Point B | SOMETIMES     SOMETIMES       ALWAYS
+Point C | NEVER         SOMETIMES       ALWAYS
+Point D | SOMETIMES     ALWAYS          SOMETIMES
+Point E | SOMETIMES     SOMETIMES       NEVER
+
+
+██████████ Practice Midterm 10 (09au) ██████████
+public static int count(int n) {
+  int even = 0;
+  int odd = 0;
+
+  // Point A
+  while (n != 0 && even <= odd) {
+    if (n % 2 == 0) {
+      even++;
+      // Point B
+    } else {
+      // Point C
+      odd++;
+    }
+
+    n = n / 2;
+    // Point D
+  }
+
+  // Point E
+  return even - odd;
+}
+
+          n == 0        even <= odd     n % 2 == 0
+Point A | SOMETIMES     ALWAYS          SOMETIMES
+Point B | NEVER         SOMETIMES       ALWAYS
+Point C | NEVER         ALWAYS          NEVER
+Point D | SOMETIMES     SOMETIMES       SOMETIMES
+Point E | SOMETIMES     SOMETIMES       SOMETIMES
+
+
+██████████ Practice Midterm 11 (10sp) ██████████
+public static int funky(int a, int digit) {
+  int count = 0;
+
+  // Point A
+  while (a != 0) {
+    // Point B
+    if (a % 10 == digit) {
+      count++;
+      // Point C
+    } else if (count > 0) {
+      count--;
+      // Point D
+    }
+    a = a / 10;
+  }
+
+  // Point E
+  return count;
+}
+
+          a == 0        a % 10 == digit    count > 0
+Point A | SOMETIMES     SOMETIMES          NEVER
+Point B | NEVER         SOMETIMES          SOMETIMES
+Point C | NEVER         ALWAYS             ALWAYS
+Point D | NEVER         NEVER              SOMETIMES
+Point E | ALWAYS        SOMETIMES          SOMETIMES
+
+
+██████████ Practice Midterm 12 (10su) ██████████
+// Reads many integers from Scanner;
+// returns the second smallest integer read.
+public static int secondSmallest(Scanner console) {
+  int num = console.nextInt();
+  int first = num;
+  int second = num;
+
+  // Point A
+  while (num >= 0) {
+    // Point B
+    if (num < first) {
+      second = first;
+      first = num;
+      // Point C
+    } else if (num < second) {
+      second = num;
+    }
+
+    // Point D
+    num = console.nextInt();
+  }
+
+  // Point E
+  return second;
+}
+
+          num < 0       first < second     num >= second
+Point A | SOMETIMES     NEVER              ALWAYS
+Point B | NEVER         SOMETIMES          SOMETIMES
+Point C | NEVER         ALWAYS             NEVER
+Point D | NEVER         SOMETIMES          SOMETIMES
+Point E | ALWAYS        SOMETIMES          SOMETIMES
+
+
+██████████ Practice Midterm 13 (10au) ██████████
+public static int stuff(Random r, int m) {
+  int c = 0;
+  int t = 0;
+  int d = r.nextInt(m);
+
+  // Point A
+  while (c <= 3) {
+    // Point B
+    d = r.nextInt(6) + 1;
+    if (d <= m) {
+      c++;
+      // Point C
+    } else {
+      c = 0;
+      // Point D
+    }
+    t++;
+  }
+
+  // Point E
+  return t;
+}
+
+          c > 3         d <= m             c == 0
+Point A | NEVER         ALWAYS             ALWAYS
+Point B | NEVER         SOMETIMES          SOMETIMES
+Point C | SOMETIMES     ALWAYS             NEVER
+Point D | NEVER         NEVER              ALWAYS
+Point E | ALWAYS        ALWAYS             NEVER
+
+
+██████████ Practice Midterm 14 (09wi) ██████████
+public static void mystery(int x, int y) {
+  int z = 0;
+
+  // Point A
+  while (x != y) {
+    // Point B
+    z++;
+
+    if (x > y) {
+      // Point C
+      x = x / 10;
+    } else {
+      // Point D
+      y = y / 10;
+    }
+  }
+
+  // Point E
+  System.out.println(x + " " + y + " " + z);
+}
+
+          x > y         z == 0             x == y
+Point A | SOMETIMES     ALWAYS             SOMETIMES
+Point B | SOMETIMES     SOMETIMES          NEVER
+Point C | ALWAYS        NEVER              NEVER
+Point D | NEVER         NEVER              NEVER
+Point E | NEVER         SOMETIMES          ALWAYS
