@@ -1,0 +1,289 @@
+██████████ Practice Final 1 (05sp) ██████████
+public class BasicPoint {
+    int x;
+    int y;
+
+    public BasicPoint() {
+        x = 2;
+        y = 2;
+    }
+}
+
+public class ReferenceMystery {
+    public static void main(String[] args) {
+        int a = 7;
+        int b = 9;
+        BasicPoint p1 = new BasicPoint();
+        BasicPoint p2 = new BasicPoint();
+
+        addToXTwice(a, p1);
+        System.out.println(a + " " + b + " " + p1.x + " " + p2.x);
+
+        addToXTwice(b, p2);
+        System.out.println(a + " " + b + " " + p1.x + " " + p2.x);
+    }
+
+    public static void addToXTwice(int a, BasicPoint p1) {
+        a = a + a;
+        p1.x = a;
+        System.out.println(a + " " + p1.x);
+    }
+}
+
+line 1 => 14 14
+line 2 => 7 9 14 2
+line 3 => 18 18
+line 4 => 7 9 14 18
+
+
+██████████ Practice Final 2 (05wi) ██████████
+public class ReferenceMystery {
+    public static void main(String[] args) {
+        int y = 1;
+        int x = 3;
+        int[] a = new int[4];
+
+        mystery(a, y, x);
+        System.out.println(x + " " + y + " " + Arrays.toString(a));
+
+        x = y - 1;
+        mystery(a, y, x);
+        System.out.println(x + " " + y + " " + Arrays.toString(a));
+    }
+
+    public static void mystery(int[] a, int x, int y) {
+        if (x < y) {
+            x++;
+            a[x] = 17;
+        } else {
+            a[y] = 17;
+        }
+        System.out.println(x + " " + y + " " + Arrays.toString(a));
+    }
+}
+
+line 1 => 2 3 [0, 0, 17, 0]
+line 2 => 3 1 [0, 0, 17, 0]
+line 3 => 1 0 [17, 0, 17, 0]
+line 4 => 0 1 [17, 0, 17, 0]
+
+
+██████████ Practice Final 9 (09au) ██████████
+import java.util.*;   // for Arrays class
+
+public class BasicPoint {
+    int x;
+    int y;
+
+    public BasicPoint(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+}
+
+public class ReferenceMystery {
+    public static void main(String[] args) {
+        int n = 10;
+        int[] a = {20};  // an array with just one element
+        BasicPoint p = new BasicPoint(30, 40);
+
+        mystery(n, a, p);
+        System.out.println(n + " " + Arrays.toString(a) + " " + p.x + "," + p.y);
+
+        a[0]++;
+        p.x++;
+        mystery(n, a, p);
+        System.out.println(n + " " + Arrays.toString(a) + " " + p.x + "," + p.y);
+    }
+
+    public static int mystery(int n, int[] a, BasicPoint p) {
+        n++;
+        a[0]++;
+        p.y++;
+        System.out.println(n + " " + Arrays.toString(a) + " " + p.x + "," + p.y);
+        return n;
+    }
+}
+
+line 1 => 11 [21] 30,41
+line 2 => 10 [21] 30,41
+line 3 => 11 [23] 31,42
+line 4 => 10 [23] 31,42
+
+
+██████████ Practice Final 10 (10sp) ██████████
+import java.util.*;   // for Arrays class
+
+public class BasicPoint {
+    int x;
+    int y;
+
+    public BasicPoint(int initialX, int initialY) {
+        x = initialX;
+        y = initialY;
+    }
+}
+
+public class ReferenceMystery {
+    public static void main(String[] args) {
+        BasicPoint p = new BasicPoint(11, 22);
+        int[] a = {33, 44};
+        int n = 55;
+
+        System.out.println(p.x + "," + p.y + " " + Arrays.toString(a) + " " + n);
+        mystery(p, a, n);
+        System.out.println(p.x + "," + p.y + " " + Arrays.toString(a) + " " + n);
+
+        a[0] = a[1];
+        p.x = p.y;
+
+        mystery(p, a, n);
+        System.out.println(p.x + "," + p.y + " " + Arrays.toString(a) + " " + n);
+    }
+
+    public static int mystery(BasicPoint p, int[] a, int n) {
+        n = 0;
+        a[0] = a[0] + 11;
+        a[1] = 77;
+        p.x = p.x + 33;
+        System.out.println(p.x + "," + p.y + " " + Arrays.toString(a) + " " + n);
+        return n;
+    }
+}
+
+line 1 => 11,22 [33, 44] 55
+line 2 => 44,22 [44, 77] 0
+line 3 => 44,22 [44, 77] 55
+line 4 => 55,22 [88, 77] 0
+line 5 => 55,22 [88, 77] 55
+
+
+██████████ Practice Final 11 (10su) ██████████
+public class Island {
+  int lat;
+  int lng;
+
+  public Island(int initialLat, int initialLng) {
+    lat = initialLat;
+    lng = initialLng;
+  }
+}
+
+class ReferenceMystery {
+  public static void main(String[] args) {
+    int n = 4;
+    int[] a = {8, 15};
+    Island isle = new Island(16, 23);
+
+    mystery(n, a, isle);
+    System.out.println(n + " " + Arrays.toString(a) + " " + isle.lat + " " + isle.lng);
+
+    n++;
+    a[0] += 2;
+    isle.lat = 42;
+
+    mystery(n, a, isle);
+    System.out.println(n + " " + Arrays.toString(a) + " " + isle.lat + " " + isle.lng);
+  }
+
+  public static void mystery(int n, int[] a, Island isle) {
+    n = n - 2;
+    a[1]++;
+    isle.lng += 100;
+    System.out.println(n + " " + Arrays.toString(a) + " " + isle.lat + " " + isle.lng);
+  }
+}
+
+line 1 => 2 [8, 16] 16 123
+line 2 => 4 [8, 16] 16 123
+line 3 => 3 [10, 17] 42 223
+line 4 => 5 [10, 17] 42 223
+
+
+██████████ Practice Final 12 (10au) ██████████
+public class Location {
+    int lat;
+    int lng;
+
+    public Location(int initialLat, int initialLng) {
+        lat = initialLat;
+        lng = initialLng;
+    }
+
+    public String toString() {
+        return lat + "," + lng;
+    }
+}
+
+public class ReferenceMystery {
+    public static void main(String[] args) {
+        int a = 2;
+        int b = 7;
+        Location home = new Location(47, 122);         // Seattle!
+
+        mystery(a, b, home);
+        System.out.println(a + " " + b + " " + home);
+
+        home.lng += b;
+        a = a * 2;
+
+        mystery(a, b, home);
+        System.out.println(a + " " + b + " " + home);
+    }
+
+    public static void mystery(int a, int b, Location loc) {
+        loc.lat = loc.lng - 10;
+        b--;
+
+        System.out.println(a + " " + b + " " + loc);
+    }
+}
+
+line 1 => 2 6 112,122
+line 2 => 2 7 112,122
+line 3 => 4 6 119,129
+line 4 => 4 7 119,129
+
+
+██████████ Practice Final 13 (11au) ██████████
+public class ReferenceMystery {
+    public static void main(String[] args) {
+        String name = "Janet";
+        int money = 30;
+        Account a = new Account(name, money);
+
+        mystery(name, money, a);
+        System.out.println(name + ", " + money + ", " + a);
+
+        money = money + 10;
+        a.name = "Billy";
+
+        mystery(name, money, a);
+        System.out.println(name + ", " + money + ", " + a);
+    }
+
+    public static void mystery(String name, int money, Account a) {
+        a.money++;
+        name = "Susan";
+        System.out.println(name + ", " + money + ", " + a);
+    }
+}
+
+public class Account {
+    String name;
+    int money;
+
+    public Account(String name, int money) {
+        this.name = name;
+        this.money = money;
+    }
+
+    public String toString() {
+        return name + ": $" + money;
+    }
+}
+
+line 1 => Susan, 30, Janet: $31
+line 2 => Janet, 30, Janet: $31
+line 3 => Susan, 40, Billy: $32
+line 4 => Janet, 40, Billy: $32

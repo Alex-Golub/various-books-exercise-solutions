@@ -16,7 +16,7 @@
 **This repository** contains my personal solutions to **programming exercises**.
 
 - Questions listed here:
-  - [⬜] [PracticeIt! | 1623 Questions (⏳ Book + ⏳ CS1 + ⏳ CS2 + ⏳ 143X + ⏳ 373)](https://practiceit.cs.washington.edu/problem/list)
+  - [⬜] [PracticeIt! | 1623 Questions (⏳ Book + ✅ CS1 + ⏳ CS2 + ⏳ 143X + ⏳ 373)](https://practiceit.cs.washington.edu/problem/list)
   - [⬜] [CodeStepByStep | 621 Questions](https://www.codestepbystep.com/problem/list/java)
 
 ## Progress
@@ -313,7 +313,7 @@
 
 ---
 
-- [⬜ 💪] [University of Washington CSE 142 (CS1) => 349 Exercises](https://bit.ly/3sdzAMi)
+- [✅ 💪] [University of Washington CSE 142 (CS1) => 349 Exercises](https://bit.ly/3sdzAMi)
   - <details>
       <summary>Problems used in the CS1 course:</summary>
       <ul>
@@ -361,19 +361,19 @@
         </ul>
         </li>
         <li>CS1 Final Exams(114)<ul>
-        <li>⬜ Practice Final 1 (05sp)(10)</li>
-        <li>⬜ Practice Final 2 (05wi)(10)</li>
-        <li>⬜ Practice Final 3 (07au)(9)</li>
-        <li>⬜ Practice Final 4 (08wi)(9)</li>
-        <li>⬜ Practice Final 5 (06au)(9)</li>
-        <li>⬜ Practice Final 6 (08su)(9)</li>
-        <li>⬜ Practice Final 7 (08au)(9)</li>
-        <li>⬜ Practice Final 8 (09su)(7)</li>
-        <li>⬜ Practice Final 9 (09au)(9)</li>
-        <li>⬜ Practice Final 10 (10sp)(8)</li>
-        <li>⬜ Practice Final 11 (10su)(8)</li>
-        <li>⬜ Practice Final 12 (10au)(8)</li>
-        <li>⬜ Practice Final 13 (11au)</li>
+        <li>✅ Practice Final 1 (05sp)(10/10)</li>
+        <li>✅ Practice Final 2 (05wi)(10/10)</li>
+        <li>✅ Practice Final 3 (07au)(9/9)</li>
+        <li>✅ Practice Final 4 (08wi)(9/9)</li>
+        <li>✅ Practice Final 5 (06au)(9/9)</li>
+        <li>✅ Practice Final 6 (08su)(9/9)</li>
+        <li>✅ Practice Final 7 (08au)(9/9)</li>
+        <li>✅ Practice Final 8 (09su)(7/7)</li>
+        <li>✅ Practice Final 9 (09au)(9/9)</li>
+        <li>✅ Practice Final 10 (10sp)(8/8)</li>
+        <li>✅ Practice Final 11 (10su)(8/8)</li>
+        <li>✅ Practice Final 12 (10au)(8/8)</li>
+        <li>✅ Practice Final 13 (11au)(9/9)</li>
         </ul>
         </li>
         </ul>

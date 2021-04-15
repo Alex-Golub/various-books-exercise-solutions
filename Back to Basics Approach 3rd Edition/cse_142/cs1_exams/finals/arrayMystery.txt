@@ -1,0 +1,197 @@
+██████████ Practice Final 1 (05sp) ██████████
+public static void arrayMystery(int[] array) {
+    for (int i = 0; i < array.length; i++) {
+        array[i] = i * array[i];
+    }
+}
+
+int[] a1 = {};           arrayMystery(a1); => []
+int[] a2 = {7};          arrayMystery(a2); => [0]
+int[] a3 = {3, 2};       arrayMystery(a3); => [0, 2]
+int[] a4 = {5, 4, 3};    arrayMystery(a4); => [0, 4, 6]
+int[] a5 = {2, 4, 6, 8}; arrayMystery(a5); => [0, 4, 12, 24]
+
+
+██████████ Practice Final 2 (05wi) ██████████
+public static int arrayMystery(int[] array) {
+    int x = 0;
+    for (int i = 0; i < array.length - 1; i++) {
+        if (array[i] > array[i + 1]) {
+            x++;
+        }
+    }
+    return x;
+}
+
+int[] a1 = {8};                 int result1 = arrayMystery(a1); => 0
+int[] a2 = {14, 7};             int result2 = arrayMystery(a2); => 1
+int[] a3 = {7, 1, 3, 2, 0, 4};  int result3 = arrayMystery(a3); => 3
+int[] a4 = {10, 8, 9, 5, 6};    int result4 = arrayMystery(a4); => 2
+int[] a5 = {8, 10, 8, 6, 4, 2}; int result5 = arrayMystery(a5); => 4
+
+
+██████████ Practice Final 3 (07au) ██████████
+public static void arrayMystery(int[] a) {
+    for (int i = a.length - 2; i > 0; i--) {
+        if (a[i + 1] <= a[i - 1]) {
+            a[i]++;
+        }
+    }
+}
+
+int[] a1 = {42};                  arrayMystery(a1); => [42]
+int[] a2 = {1, 8, 3, 6};          arrayMystery(a2); => [1, 8, 4, 6]
+int[] a3 = {5, 5, 5, 5, 5};       arrayMystery(a3); => [5, 6, 5, 6, 5]
+int[] a4 = {10, 7, 9, 6, 8, 5};   arrayMystery(a4); => [10, 8, 10, 7, 9, 5]
+int[] a5 = {1, 0, 1, 0, 0, 1, 0}; arrayMystery(a5); => [1, 1, 1, 1, 0, 2, 0]
+
+
+██████████ Practice Final 4 (08wi) ██████████
+public static void arrayMystery(int[] a) {
+    for (int i = a.length - 1; i >= 0; i--) {
+        if (a[i] == a[a.length - i - 1]) {
+            a[i]++;
+            a[a.length - i - 1]++;
+        }
+    }
+}
+
+int[] a1 = {1, 8, 3, 8, 7};             arrayMystery(a1); => [1, 10, 5, 10, 7]
+int[] a2 = {4, 0, 0, 4, 0, 0, 4, 0};    arrayMystery(a2); => [4, 0, 2, 4, 0, 2, 4, 0]
+int[] a3 = {9, 8, 7, 6, 4, 6, 2, 9, 9}; arrayMystery(a3); => [11, 8, 7, 8, 6, 8, 2, 9, 11]
+int[] a4 = {42};                        arrayMystery(a4); => [44]
+int[] a5 = {5, 5, 5, 6, 5, 5, 5};       arrayMystery(a5); => [7, 7, 7, 8, 7, 7, 7]
+
+
+██████████ Practice Final 5 (06au) ██████████
+public static void arrayMystery(int[] array) {
+    for (int i = 0; i < array.length - 1; i++) {
+        if (array[i] < array[i + 1]) {
+            array[i] = array[i + 1];
+        }
+    }
+}
+
+int[] a1 = {2, 4};             arrayMystery(a1); => [4, 4]
+int[] a2 = {1, 3, 6};          arrayMystery(a2); => [3, 6, 6]
+int[] a3 = {7, 2, 8, 4};       arrayMystery(a3); => [7, 8, 8, 4]
+int[] a4 = {5, 2, 7, 2, 4};    arrayMystery(a4); => [5, 7, 7, 4, 4]
+int[] a5 = {2, 4, 6, 3, 7, 9}; arrayMystery(a5); => [4, 6, 6, 7, 9, 9]
+
+
+██████████ Practice Final 6 (08su) ██████████
+public static void arrayMystery(String[] a) {
+    for (int i = 0; i < a.length; i++) {
+        a[i] += a[a.length - 1 - i];
+    }
+}
+
+String[] a1 = {"a", "b", "c"};               arrayMystery(a1); => ["ac", "bb", "cac"]
+String[] a2 = {"a", "bb", "c", "dd"};        arrayMystery(a2); => ["add", "bbc", "cbbc", "ddadd"]
+String[] a3 = {"z", "y", "142", "w", "xx"};  arrayMystery(a3); => ["zxx", "yw", "142142", "wyw", "xxzxx"]
+
+
+██████████ Practice Final 7 (08au) ██████████
+public static void arrayMystery(int[] a) {
+     for (int i = a.length - 2; i > 0; i--) {
+          if (a[i - 1] < a[i + 1]) {
+                a[i] += a[i - 1];
+          } else {
+                a[i] += a[i + 1];
+          }
+     }
+}
+
+int[] a1 = {1, 2, 3};                   arrayMystery(a1); => [1, 3, 3]
+int[] a2 = {8, 2, 3, 1, 6};             arrayMystery(a2); => [8, 7, 5, 4, 6]
+int[] a3 = {1, 1, 1, 1, 1, 1};          arrayMystery(a3); => [1, 2, 2, 2, 2, 1]
+int[] a4 = {40, 10, 25, 5, 10, 30};     arrayMystery(a4); => [40, 45, 35, 20, 15, 30]
+int[] a5 = {15, 6, -1, 4, 8, -2, 7, 4}; arrayMystery(a5); => [15, 8, 2, 3, 11, 3, 5, 4]
+
+
+██████████ Practice Final 8 (09su) ██████████
+public static void arrayMystery(int[] a) {
+    for (int i = 1; i < a.length - 1; i++) {
+        a[i] = a[i + 1] + a[i - 1];
+    }
+}
+
+int[] a1 = {3, 7};                 arrayMystery(a1); => [3, 7]
+int[] a2 = {4, 7, 4, 2, 10, 9};    arrayMystery(a2); => [4, 8, 10, 20, 29, 9]
+int[] a3 = {1, 5, 0, 0, 5, 0};     arrayMystery(a3); => [1, 1, 1, 6, 6, 0]
+int[] a4 = {13, 0, -4, -2, 0, -1}; arrayMystery(a4); => [13, 9, 7, 7, 6, -1]
+int[] a5 = {2, 4, 6, 8, 16};       arrayMystery(a5); => [2, 8, 16, 32, 16]
+
+
+██████████ Practice Final 9 (09au) ██████████
+public static void arrayMystery(int[] a) {
+    for (int i = 1; i < a.length - 1; i++) {
+        a[i] = a[i - 1] - a[i] + a[i + 1];
+    }
+}
+
+int[] a1 = {42, 42};                arrayMystery(a1); => [42, 42]
+int[] a2 = {6, 2, 4};               arrayMystery(a2); => [6, 8, 4]
+int[] a3 = {7, 7, 3, 8, 2};         arrayMystery(a3); => [7, 3, 8, 2, 2]
+int[] a4 = {4, 2, 3, 1, 2, 5};      arrayMystery(a4); => [4, 5, 3, 4, 7, 5]
+int[] a5 = {6, 0, -1, 3, 5, 0, -3}; arrayMystery(a5); => [6, 5, 9, 11, 6, 3, -3]
+
+
+██████████ Practice Final 10 (10sp) ██████████
+public static void arrayMystery(int[] a) {
+    for (int i = 1; i < a.length - 1; i++) {
+        if (a[i] > a[i + 1]) {
+            a[i] = a[i + 1] + a[i - 1];
+        }
+    }
+}
+
+int[] a1 = {42, 99, 42};             arrayMystery(a1); => [42, 84, 42]
+int[] a2 = {6, 8, 4, 2};             arrayMystery(a2); => [6, 10, 12, 2]
+int[] a3 = {7, 7, 20, 8, 1};         arrayMystery(a3); => [7, 7, 15, 16, 1]
+int[] a4 = {4, 5, 3, 2, 1, 0};       arrayMystery(a4); => [4, 7, 9, 10, 10, 0]
+int[] a5 = {6, 0, -1, 80, 5, 0, -3}; arrayMystery(a5); => [6, 5, -1, 4, 4, 1, -3]
+
+
+██████████ Practice Final 11 (10su) ██████████
+public static void arrayMystery(int[] a) {
+    for (int i = 1; i < a.length; i++) {
+        a[i] = a[a.length - 1 - i] - a[i - 1];
+    }
+}
+
+int[] a1 = {42, 42};                => arrayMystery(a1); => [42, 0]
+int[] a2 = {6, 2, 4};               => arrayMystery(a2); => [6, -4, 10]
+int[] a3 = {7, 7, 3, 8, 2};         => arrayMystery(a3); => [7, 1, 2, -1, 8]
+int[] a4 = {4, 2, 3, 1, 2, 5};      => arrayMystery(a4); => [4, -2, 3, 0, -2, 6]
+int[] a5 = {6, 0, -1, 3, -2, 0, 4}; => arrayMystery(a5); => [6, -6, 4, -1, 5, -11, 17]
+
+
+██████████ Practice Final 12 (10au) ██████████
+public static void arrayMystery(int[] a) {
+    for (int i = a.length - 1; i >= 1; i--) {
+        if (a[i] > a[i - 1] + 10) {
+            a[i - 1] = a[i - 1] + 5;
+        }
+    }
+}
+
+int[] a1 = {42, 42, 99};                arrayMystery(a1); => [42, 47, 99]
+int[] a2 = {6, 18, 4, 25};              arrayMystery(a2); => [11, 18, 9, 25]
+int[] a3 = {5, 10, 20, 35, 40};         arrayMystery(a3); => [5, 15, 25, 35, 40]
+int[] a4 = {-20, 20, 26, 32, 50, 3};    arrayMystery(a4); => [-15, 25, 31, 37, 50, 3]
+int[] a5 = {5, 10, 16, 21, 27, 40, 55}; arrayMystery(a5); => [5, 10, 16, 26, 32, 45, 55]
+
+
+██████████ Practice Final 13 (11au) ██████████
+public static void arrayMystery(int[] a) {
+    for (int i = 1; i < a.length - 1; i++) {
+        a[i] = (a[i - 1] + a[i + 1]) / 2;
+    }
+}
+
+int[] a1 = {1, 1, 3};            arrayMystery(a1); => [1, 2, 3]
+int[] a2 = {2, 1, 2, 4};         arrayMystery(a2); => [2, 2, 3, 4]
+int[] a3 = {6, 13, 0, 3, 7};     arrayMystery(a3); => [6, 3, 3, 5, 7]
+int[] a4 = {-1, 6, 3, 5, -3};    arrayMystery(a4); => [-1, 1, 3, 0, -3]
+int[] a5 = {7, 2, 3, 1, -3, 12}; arrayMystery(a5); => [7, 5, 3, 0, 6, 12]
