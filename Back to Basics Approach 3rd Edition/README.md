@@ -383,7 +383,7 @@
 
 ---
 
-- [✅] [Chapter 10: ArrayLists => 47Q](#)
+- [✅] [Chapter 10: ArrayLists => 47Q](https://bit.ly/3sUI1fH)
     - <details>
         <summary>Terms introduced in this chapter:</summary>
           <ul>
@@ -397,14 +397,40 @@
             <li>Implementing the Comparable Interface</li>
           </ul>
       </details>  
-- [⬜] [CodeStepByStep - collections: ArrayList => 32Q](#)
+- [🟨] [CodeStepByStep - collections: ArrayList => 30/32Q](https://bit.ly/3sYNORP)
 
 ---
 
-- [⬜] Chapter 11: Java Collections Framework => 17Q
+- [⬜] Chapter 11: Java Collections Framework => 45Q
     - <details>
         <summary>Terms introduced in this chapter:</summary>
+        <ul>
+            <li><strong><em>Lists</em></strong><ul>
+            <li>Collections</li>
+            <li>LinkedList vs. ArrayList</li>
+            <li>Iterators</li>
+            <li>Abstract Data Types (ADTs)</li>
+            <li>LinkedList <code>Case Study: Sieve</code></li>
+            </ul>
+            </li>
+            <li><strong><em>Sets</em></strong><ul>
+            <li>Set Concepts</li>
+            <li>TreeSet vs. HashSet</li>
+            <li>Set Operations</li>
+            <li>Set <code>Case Study: Lottery</code></li>
+            </ul>
+            </li>
+            <li><strong><em>Maps</em></strong><ul>
+            <li>Basic Map Operations</li>
+            <li>Map Views (<code>keySet</code> and <code>values</code>)</li>
+            <li>TreeMap vs. HashMap</li>
+            <li>Map <code>Case Study: WordCount</code></li>
+            <li>Collection Overview</li>
+            </ul>
+            </li>
+        </ul>
       </details>  
+- [🟨] CodeStepByStep - collections: Stack, Queue, Set, Map => 54Q
 
 ---
 
@@ -412,7 +438,7 @@
     - <details>
         <summary>Terms introduced in this chapter:</summary>
       </details>  
-- [⬜] [CodeStepByStep - recursion => 55Q](#)
+- [⬜] CodeStepByStep - recursion => 55Q
 
 ---
 
@@ -420,7 +446,7 @@
     - <details>
         <summary>Terms introduced in this chapter:</summary>
       </details>
-- [⬜] [CodeStepByStep - searching and sorting => 12Q](#)
+- [⬜] CodeStepByStep - searching and sorting => 12Q
 
 ---
 
@@ -428,7 +454,7 @@
     - <details>
         <summary>Terms introduced in this chapter:</summary>
       </details>  
-- [⬜] [CodeStepByStep - collections: Stack and Queue => 16Q](#)
+- [⬜] CodeStepByStep - collections: Stack and Queue => 16Q
 
 ---
 
@@ -467,7 +493,7 @@
 
 ---
 
-- [⬜ 💪] [University of Washington CSE 143 (CS2) => 435 Questions](#)
+- [⬜ 💪] [University of Washington CSE 143 (CS2) => 435 Questions](https://bit.ly/3tQ5Pmh)
     - <details>
         <summary>Problems used in the CS2 course at Washington, focusing on  
       usage / implementation of data structures, OOP, and algorithms:</summary>
@@ -560,7 +586,7 @@
 
 ---
 
-- [⬜ 💪] [University of Washington CSE 373 => 53 Questions](#)
+- [⬜ 💪] University of Washington CSE 373 => 53 Questions
     - <details>
         <summary>Problems used in the advanced data structures course:</summary>
         <ul>
