@@ -6,7 +6,7 @@
   alt="Back to Basics Approach"></a>
 </p>
 <p align="center">
-<img src="https://img.shields.io/badge/In%20Progress-Java Collections Framework-blue.svg" />
+<img src="https://img.shields.io/badge/In%20Progress-Recursion-blue.svg" />
   <img src="https://img.shields.io/badge/Made%20With-Java 11-purple.svg" /> <br>
   <img src="https://img.shields.io/badge/Supplmented%20With-PracticeIt! and CodeStepByStep-brown.svg" />
 </p>
@@ -401,7 +401,7 @@
 
 ---
 
-- [⬜] Chapter 11: Java Collections Framework => 45Q
+- [✅] [Chapter 11: Java Collections Framework => 45Q](#)
     - <details>
         <summary>Terms introduced in this chapter:</summary>
         <ul>
@@ -430,13 +430,45 @@
             </li>
         </ul>
       </details>  
-- [🟨] CodeStepByStep - collections: Stack, Queue, Set, Map => 54Q
+- [🟨] [CodeStepByStep - collections: Set, Map => 36/38Q](#)
 
 ---
 
 - [⬜] Chapter 12: Recursion => 26Q
     - <details>
         <summary>Terms introduced in this chapter:</summary>
+        <ul>
+            <li>Thinking Recursively<ul>
+            <li>A Nonprogramming Example</li>
+            <li>An Iterative Solution Converted to Recursion</li>
+            <li>Structure of Recursive Solutions</li>
+            </ul>
+            </li>
+            <li>A Better Example of Recursion<ul>
+            <li>Mechanics of Recursion</li>
+            </ul>
+            </li>
+            <li>Recursive Functions and Data<ul>
+            <li><code>Integer Exponentiation</code></li>
+            <li><code>Greatest Common Divisor</code></li>
+            <li><code>Directory Crawler</code></li>
+            <li>Helper Methods</li>
+            </ul>
+            </li>
+            <li>Recursive Graphics</li>
+            <li>Recursive <strong><em>Backtracking</em></strong><ul>
+            <li>A Simple Example: <code>Traveling North/East</code></li>
+            <li><code>8 Queens Puzzle</code></li>
+            <li>Solving <code>Sudoku</code> Puzzles</li>
+            </ul>
+            </li>
+            <li><code>Case Study: Prefix Evaluator</code><ul>
+            <li><code>Infix</code>, <code>Prefix</code>, and <code>Postfix</code> Notation</li>
+            <li>Evaluating Prefix Expressions</li>
+            <li>Complete Program</li>
+            </ul>
+            </li>
+        </ul>
       </details>  
 - [⬜] CodeStepByStep - recursion => 55Q
 
