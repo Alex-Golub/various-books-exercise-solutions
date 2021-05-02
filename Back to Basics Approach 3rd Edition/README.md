@@ -533,12 +533,12 @@
         <li>⬜ CS2 Sections(311)<ul>
         <li>✅ Section 1 (ArrayIntList)(5/5)</li>
         <li>✅ Section 2 (Bad ArrayIntList)(3/3)</li>
-        <li>⬜ Section 3 (Lists and Sets)(1/9)</li>
+        <li>✅ Section 3 (Lists and Sets)(9/9)</li>
         <li>⬜ Section 4 (Stacks and Queues)(7)</li>
         <li>⬜ Section 5 (ListNode Manipulation)(20)</li>
         <li>⬜ Section 6 (LinkedList 1)(6)</li>
         <li>⬜ Section 7 (LinkedList 2)(8)</li>
-        <li>⬜ Section 8 (Maps)(9)</li>
+        <li>✅ Section 8 (Maps)(9/9)</li>
         <li>⬜ Section 9 (Recursive Tracing)(10)</li>
         <li>⬜ Section 10 (Recursive Programming)(10)</li>
         <li>⬜ Section 11 (Inheritance)(5)</li>
@@ -557,7 +557,7 @@
         <li>⬜ Linked Nodes(13)</li>
         <li>⬜ Linked Lists(23)</li>
         <li>⬜ Linked List of E(3)</li>
-        <li>⬜ Sets and Maps(11)</li>
+        <li>✅ Sets and Maps(11/11)</li>
         <li>⬜ Recursion Tracing(9)</li>
         <li>⬜ Recursion(13)</li>
         <li>⬜ Recursive Backtracking(12)</li>
