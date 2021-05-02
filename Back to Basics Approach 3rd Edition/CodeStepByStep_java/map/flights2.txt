@@ -1,0 +1,17 @@
+Chicago -> Orlando
+Chicago -> Seattle
+Cleveland -> Orlando
+Cleveland -> Seattle
+Houston -> Cleveland
+Houston -> Las Vegas
+Houston -> Minneapolis
+Houston -> Orlando
+Las Vegas -> Seattle
+Minneapolis -> Houston
+Minneapolis -> Orlando
+Orlando -> Chicago
+Orlando -> Houston
+Orlando -> Minneapolis
+Orlando -> Seattle
+Seattle -> Chicago
+Seattle -> Houston

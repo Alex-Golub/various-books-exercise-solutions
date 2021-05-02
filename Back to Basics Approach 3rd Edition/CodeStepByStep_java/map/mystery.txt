@@ -1,0 +1,122 @@
+public static void collectionMystery1(HashMap<String, String> map) {
+  HashMap<String, String> result = new HashMap<>();
+  for (String k : map.keySet()) {
+    String v = map.get(k);
+    if (k.charAt(0) <= v.charAt(0)) {
+      result.put(k, v);
+    } else {
+      result.put(v, k);
+    }
+  }
+  System.out.println(result);
+}
+
+
+{two=deux, five=cinq, one=un, three=trois, four=quatre}                   => {deux=two, cinq=five, one=un, three=trois, four=quatre}
+{skate=board, drive=car, program=computer, play=computer}                 => {board=skate, car=drive, computer=play}
+{siskel=ebert, girl=boy, heads=tails, ready=begin, first=last, begin=end} => {ebert=siskel, boy=girl, heads=tails, begin=end, first=last}
+{cotton=shirt, tree=violin, seed=tree, light=tree, rain=cotton}           => {cotton=rain, tree=violin, seed=tree, light=tree}
+
+
+██████████████████████████████████████████████████████████████████████████████████████████
+public HashMap<String, String> collectionMystery2(HashMap<String, Integer> map1,
+                                                  HashMap<Integer, String> map2) {
+  HashMap<String, String> result = new HashMap<>();
+  for (String s1 : map1.keySet()) {
+    if (map2.containsKey(map1.get(s1))) {
+      result.put(s1, map2.get(map1.get(s1)));
+    }
+  }
+  return result;
+}
+
+
+map1={bar=1, baz=2, foo=3, mumble=4},
+map2={1=earth, 2=wind, 3=air, 4=fire}
+  => {bar=earth, baz=wind, foo=air, mumble=fire}
+
+map1={five=105, four=104, one=101, six=106, three=103, two=102},
+map2={99=uno, 101=dos, 103=tres, 105=cuatro}
+  => {five=cuatro, one=dos, three=tres}
+
+map1={a=42, b=9, c=7, d=15, e=11, f=24, g=7},
+map2={1=four, 3=score, 5=and, 7=seven, 9=years, 11=ago}
+  => {b=years, c=seven, e=ago, g=seven}
+
+
+██████████████████████████████████████████████████████████████████████████████████████████
+public static void collectionMystery3(HashMap<String, String> map) {
+  ArrayList<String> list = new ArrayList<>();
+  for (String key : map.keySet()) {
+    if (map.get(key).length() > key.length()) {
+      list.add(map.get(key));
+    } else {
+      list.add(0, key);
+      list.remove(map.get(key));
+    }
+  }
+  System.out.println(list);
+}
+
+
+{horse=cow, cow=horse, dog=cat, ok=yo}
+ => [ok, dog, horse, horse]
+
+{bye=hello, bird=dog, hi=hello, hyena=apple, fruit=meat}
+ => [fruit, hyena, bird, hello, hello]
+
+{a=b, c=d, e=a, ff=a, gg=c, hhh=ff}
+ => [hhh, gg, e]
+
+
+██████████████████████████████████████████████████████████████████████████████████████████
+public static void collectionMystery4(HashMap<String, String> map,
+                                      ArrayList<String> list) {
+  HashMap<String, String> result = new HashMap<>();
+  for (String s : list) {
+    if (result.containsKey(s)) {
+      result.put(s, result.get(s) + result.get(s));
+    } else if (map.containsKey(s)) {
+      result.put(map.get(s), s);
+    }
+  }
+  System.out.println(result);
+}
+
+
+map = {Marty=Stepp, Cynthia=Lee, Keith=Schwarz, Bruce=Lee, Mehran=Sahami};
+list = [Cynthia, Bruce, Lee, Eric, Schwarz, Keith, Sahami]
+ => {Lee=BruceBruce, Schwarz=Keith}
+
+map = {dog=woof, cat=meow, horse=whinny, frog=ribbit, duck=dog};
+list = [dog, horse, dog, woof, meow, cat, meow, woof]
+ => {woof=dogdogdogdog, whinny=horse, meow=catcat}
+
+
+██████████████████████████████████████████████████████████████████████████████████████████
+public static void collectionMystery5(ArrayList<String> list1,
+                                      ArrayList<String> list2) {
+  HashMap<String, String> result = new HashMap<>();
+
+  for (int i = 0; i < list1.size(); i++) {
+    String s1 = list1.get(i);
+    String s2 = list2.get(i);
+
+    if (!result.containsKey(s1)) {
+      result.put(s1, s2);
+    } else if (!result.containsKey(s2)) {
+      result.put(s2, s1);
+    } else {
+      result.put(s1 + s2, s1);
+    }
+  }
+  System.out.println(result);
+}
+
+list1 = ["cat", "cat",  "long", "long", "longcat"]
+list2 = ["mew", "purr", "cat",  "cat",  "purr"   ]
+  => {cat=mew, purr=cat, long=cat, longcat=long, longcatpurr=longcat}
+
+list1 = ["a", "b", "a", "ab", "ab", "y",   "abb"]
+list2 = ["b", "c", "b", "b",  "c",  "abb", "y"  ]
+  => {a=b, b=c, ab=a, abb=ab, c=ab, y=abb, abby=abb}
