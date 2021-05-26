@@ -6,7 +6,7 @@
   alt="Back to Basics Approach"></a>
 </p>
 <p align="center">
-<img src="https://img.shields.io/badge/In%20Progress-Searching and Sorting-blue.svg" />
+<img src="https://img.shields.io/badge/In%20Progress-Stacks and Queues-blue.svg" />
   <img src="https://img.shields.io/badge/Made%20With-Java 11-purple.svg" /> <br>
   <img src="https://img.shields.io/badge/Supplmented%20With-PracticeIt! and CodeStepByStep-brown.svg" />
 </p>
@@ -434,7 +434,7 @@
 
 ---
 
-- [✅] [Chapter 12: Recursion => 58Q](#)
+- [✅] [Chapter 12: Recursion => 58Q](https://bit.ly/3vBDPne)
   - <details>
       <summary>Terms introduced in this chapter:</summary>
       <ul>
@@ -470,24 +470,77 @@
           </li>
       </ul>
     </details>  
-- [✅] [CodeStepByStep - recursion => 55Q](#)
+- [✅] [CodeStepByStep - recursion => 55Q](https://bit.ly/3oQHpYp)
 - [⬜] [CodeStepByStep - backtracking => 41Q](#)
 
 ---
 
-- [⬜] Chapter 13: Searching and Sorting => 10Q
+- [✅] [Chapter 13: Searching and Sorting => 10Q](https://bit.ly/3uoXbdZ)
   - <details>
       <summary>Terms introduced in this chapter:</summary>
+        <ul>
+          <li>Searching and Sorting in the Java Class Libraries<ul>
+          <li><code>Binary Search</code></li>
+          <li>Sorting</li>
+          <li>Shuffling</li>
+          <li>Custom Ordering with Comparators</li>
+          </ul>
+          </li>
+          <li>Program <code>Complexity</code><ul>
+          <li>Empirical Analysis</li>
+          <li>Complexity Classes</li>
+          </ul>
+          </li>
+          <li>Implementing Searching and Sorting Algorithms<ul>
+          <li><code>Sequential</code> Search</li>
+          <li><code>Binary</code> Search</li>
+          <li><code>Recursive</code> Binary Search</li>
+          <li>Searching Objects</li>
+          <li>Selection Sort</li>
+          </ul>
+          </li>
+          <li>Case Study: <code>Implementing Merge Sort</code><ul>
+          <li>Splitting and Merging Arrays</li>
+          <li>Recursive Merge Sort</li>
+          <li>Complete Program</li>
+          </ul>
+          </li>
+        </ul>
     </details>
-- [⬜] CodeStepByStep - searching and sorting => 12Q
+- [✅] [CodeStepByStep - bigoh => 10Q](https://bit.ly/34jT607)
+- [✅] [CodeStepByStep - searching => 6Q](https://bit.ly/3wzdmqH)
+- [✅] [CodeStepByStep - sorting => 6Q](https://bit.ly/3yEIA1w)
 
 ---
 
-- [⬜] Chapter 14: Stacks and Queues => 28Q
+- [⬜] [Chapter 14: Stacks and Queues => 28Q](#)
   - <details>
       <summary>Terms introduced in this chapter:</summary>
+        <ul>
+          <li>Stack/Queue Basics<ul>
+          <li><code>Stack</code> Concepts</li>
+          <li><code>Queue</code> Concepts</li>
+          </ul>
+          </li>
+          <li>Common Stack/Queue Operations<ul>
+          <li>Transferring Between Stacks and Queues</li>
+          <li>Sum of a Queue</li>
+          <li>Sum of a Stack</li>
+          </ul>
+          </li>
+          <li>Complex Stack/Queue Operations<ul>
+          <li>Removing Values from a Queue</li>
+          <li>Comparing Two Stacks for Similarity</li>
+          </ul>
+          </li>
+          <li><code>Case Study: Expression Evaluator</code><ul>
+          <li>Splitting into Tokens</li>
+          <li>The Evaluator</li>
+          </ul>
+          </li>
+        </ul>
     </details>  
-- [⬜] CodeStepByStep - collections: Stack and Queue => 16Q
+- [⬜] [CodeStepByStep - collections: Stack and Queue => 16Q](#)
 
 ---
 
