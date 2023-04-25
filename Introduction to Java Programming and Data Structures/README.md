@@ -584,8 +584,7 @@ Eleventh Edition by [Y. Daniel Liang](https://yongdanielliang.github.io/).
 
 ---
 
-- ⬜ <a href="#" target="_blank" title="Solutions">Chapter 11 Inheritance and
-  Polymorphism => 19 Questions</a>
+- ⬜ <a href="#" target="_blank" title="Solutions">Chapter 11 Inheritance and Polymorphism => 19 Questions</a>
   - <details>
       <summary>Terms introduced in this chapter</summary>
     </details>
