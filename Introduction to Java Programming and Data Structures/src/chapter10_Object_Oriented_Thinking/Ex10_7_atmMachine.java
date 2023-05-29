@@ -1,5 +1,7 @@
 package chapter10_Object_Oriented_Thinking;
 
+import utils.chapter_11.Account;
+
 import java.util.Scanner;
 
 /**
@@ -91,7 +93,7 @@ import java.util.Scanner;
 
     Account[] accounts = new Account[numberOfAccounts];
     for (int i = 0; i < numberOfAccounts; i++) {
-      accounts[i] = new Account(i, initialBalance);
+      accounts[i] = new Account(i, initialBalance, 10);
     }
 
     return accounts;

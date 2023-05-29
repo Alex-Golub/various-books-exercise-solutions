@@ -1,6 +1,6 @@
 package chapter11_Inheritance_and_Polymorphism.dynamic_binding;
 
-public class DynamicBindingDemo {
+class DynamicBindingDemo {
   public static void main(String[] args) {
     m(new GraduateStudent());
     m(new Student());

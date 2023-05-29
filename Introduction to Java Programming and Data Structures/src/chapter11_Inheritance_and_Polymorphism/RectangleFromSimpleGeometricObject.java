@@ -1,6 +1,8 @@
 package chapter11_Inheritance_and_Polymorphism;
 
-public class RectangleFromSimpleGeometricObject
+import utils.chapter_11.SimpleGeometricObject;
+
+class RectangleFromSimpleGeometricObject
         extends SimpleGeometricObject {
     private double width;
     private double height;

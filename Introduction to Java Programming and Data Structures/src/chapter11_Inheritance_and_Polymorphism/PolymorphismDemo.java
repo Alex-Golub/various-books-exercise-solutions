@@ -1,6 +1,9 @@
 package chapter11_Inheritance_and_Polymorphism;
 
-public class PolymorphismDemo {
+import utils.chapter_11.CircleFromSimpleGeometricObject;
+import utils.chapter_11.SimpleGeometricObject;
+
+class PolymorphismDemo {
     /**
      * Main method
      */

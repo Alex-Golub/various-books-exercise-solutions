@@ -1,6 +1,8 @@
 package chapter11_Inheritance_and_Polymorphism;
 
-public class TestCircleRectangle {
+import utils.chapter_11.CircleFromSimpleGeometricObject;
+
+class TestCircleRectangle {
     public static void main(String[] args) {
         CircleFromSimpleGeometricObject circle = new CircleFromSimpleGeometricObject(1);
         System.out.printf("A circle %s%n", circle);
