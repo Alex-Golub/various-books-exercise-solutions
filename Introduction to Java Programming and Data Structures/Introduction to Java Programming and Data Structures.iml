@@ -9,6 +9,16 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="lib" level="project" />
-    <orderEntry type="library" name="lib" level="project" />
+    <orderEntry type="library" name="lombok-1.18.28-sources" level="project" />
+    <orderEntry type="library" name="commons-collections4-4.4-javadoc" level="project" />
+    <orderEntry type="library" name="commons-io-2.12.0-javadoc" level="project" />
+    <orderEntry type="library" name="commons-lang3-3.12.0-javadoc" level="project" />
+    <orderEntry type="library" name="groovy-4.0.3-sources" level="project" />
+    <orderEntry type="library" name="commons-collections4-4.4" level="project" />
+    <orderEntry type="library" name="commons-collections4-4.4-sources" level="project" />
+    <orderEntry type="library" name="commons-io-2.12.0-sources" level="project" />
+    <orderEntry type="library" name="commons-lang3-3.12.0-sources" level="project" />
+    <orderEntry type="library" name="groovy-4.0.3-javadoc" level="project" />
+    <orderEntry type="library" name="lombok-1.18.28-javadoc" level="project" />
   </component>
 </module>
