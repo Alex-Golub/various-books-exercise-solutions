@@ -6,91 +6,70 @@ import java.util.Date;
 
 @ToString
 public class Loan {
-  private final Date loanDate;
-  private double annualInterestRate;
-  private int numberOfYears;
-  private double loanAmount;
 
-  /**
-   * Default constructor
-   */
-  public Loan() {
-    this(2.5, 1, 1000);
-  }
+    private final Date loanDate;
+    private double annualInterestRate;
+    private int numberOfYears;
+    private double loanAmount;
 
-  /**
-   * Construct a loan with specified annual interest rate,
-   * number of years, and loan amount
-   */
-  public Loan(double annualInterestRate, int numberOfYears, double loanAmount) {
-    this.annualInterestRate = annualInterestRate;
-    this.numberOfYears = numberOfYears;
-    this.loanAmount = loanAmount;
-    this.loanDate = new Date();
-  }
+    public Loan() {
+        this(2.5, 1, 1000);
+    }
 
-  /**
-   * Return annualInterestRate
-   */
-  public double getAnnualInterestRate() {
-    return annualInterestRate;
-  }
+    public Loan(double annualInterestRate, int numberOfYears, double loanAmount) {
+        setLoanAmount(loanAmount);
+        setNumberOfYears(numberOfYears);
+        setAnnualInterestRate(annualInterestRate);
+        this.loanDate = new Date();
+    }
 
-  /**
-   * Set a new annualInterestRate
-   */
-  public void setAnnualInterestRate(double annualInterestRate) {
-    this.annualInterestRate = annualInterestRate;
-  }
+    public double getAnnualInterestRate() {
+        return annualInterestRate;
+    }
 
-  /**
-   * Return numberOfYears
-   */
-  public int getNumberOfYears() {
-    return numberOfYears;
-  }
+    public void setAnnualInterestRate(double annualInterestRate) {
+        if (annualInterestRate <= 0) {
+            throw new IllegalArgumentException("Annual interest rate should be >= 0");
+        }
 
-  /**
-   * Set a new numberOfYears
-   */
-  public void setNumberOfYears(int numberOfYears) {
-    this.numberOfYears = numberOfYears;
-  }
+        this.annualInterestRate = annualInterestRate;
+    }
 
-  /**
-   * Return loanAmount
-   */
-  public double getLoanAmount() {
-    return loanAmount;
-  }
+    public int getNumberOfYears() {
+        return numberOfYears;
+    }
 
-  /**
-   * Set a newLoanAmount
-   */
-  public void setLoanAmount(double loanAmount) {
-    this.loanAmount = loanAmount;
-  }
+    public void setNumberOfYears(int numberOfYears) {
+        if (numberOfYears <= 0) {
+            throw new IllegalArgumentException("Number of years should be >= 0");
+        }
 
-  /**
-   * Find monthly payment
-   */
-  public double getMonthlyPayment() {
-    double monthlyInterestRate = annualInterestRate / 1200;
-    return loanAmount * monthlyInterestRate /
-           (1 - (1 / Math.pow(1 + monthlyInterestRate, numberOfYears * 12)));
-  }
+        this.numberOfYears = numberOfYears;
+    }
 
-  /**
-   * Find total payment
-   */
-  public double getTotalPayment() {
-    return getMonthlyPayment() * numberOfYears * 12;
-  }
+    public double getLoanAmount() {
+        return loanAmount;
+    }
 
-  /**
-   * Return loan date copy
-   */
-  public Date getLoanDate() {
-    return new Date(loanDate.getTime());
-  }
+    public void setLoanAmount(double loanAmount) {
+        if (loanAmount <= 0) {
+            throw new IllegalArgumentException("Loan amount should be >= 0");
+        }
+
+        this.loanAmount = loanAmount;
+    }
+
+    public double getMonthlyPayment() {
+        double monthlyInterestRate = annualInterestRate / 1200;
+        return loanAmount * monthlyInterestRate /
+               (1 - (1 / Math.pow(1 + monthlyInterestRate, numberOfYears * 12)));
+    }
+
+    public double getTotalPayment() {
+        return getMonthlyPayment() * numberOfYears * 12;
+    }
+
+    public Date getLoanDate() {
+        return new Date(loanDate.getTime());
+    }
 }

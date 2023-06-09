@@ -6,7 +6,7 @@ import java.io.PrintWriter;
 import java.util.Arrays;
 import java.util.concurrent.ThreadLocalRandom;
 
-public class WriteData {
+class WriteData {
     public static void main(String[] args) throws IOException {
         String workingDirectory = System.getProperty("user.dir");
         String currentDirectory = "src/chapter_12_exception_handling_and_text_io";

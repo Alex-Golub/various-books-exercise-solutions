@@ -2,7 +2,7 @@ package chapter_12_exception_handling_and_text_io;
 
 import utils.exceptions.InvalidRadiusException;
 
-public class CircleWithRadiusException {
+class CircleWithRadiusException {
 
     private static int numberOfObjects = 0;
     private double radius;

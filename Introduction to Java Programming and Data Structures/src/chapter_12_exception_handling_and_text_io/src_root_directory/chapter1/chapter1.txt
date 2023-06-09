@@ -1,0 +1,7 @@
+package chapter_12_exception_handling_and_text_io.src_root_directory.chapter1;
+
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}

@@ -3,57 +3,57 @@
 ## Table of Contents
 
 * [12.2 Exception-Handling Overview](#122-exception-handling-overview)
-   * [12.2.1](#1221)
-   * [12.2.2](#1222)
-   * [12.2.3](#1223)
-   * [12.2.4](#1224)
-   * [12.2.5](#1225)
-   * [12.2.6](#1226)
+  * [12.2.1](#1221)
+  * [12.2.2](#1222)
+  * [12.2.3](#1223)
+  * [12.2.4](#1224)
+  * [12.2.5](#1225)
+  * [12.2.6](#1226)
 * [12.3 Exception Types](#123-exception-types)
-   * [12.3.1](#1231)
-   * [12.3.2](#1232)
-   * [12.3.3](#1233-)
+  * [12.3.1](#1231)
+  * [12.3.2](#1232)
+  * [12.3.3](#1233-)
 * [12.4 Declaring, Throwing, and Catching Exceptions](#124-declaring-throwing-and-catching-exceptions)
-   * [12.4.1](#1241)
-   * [12.4.2](#1242)
-   * [12.4.3](#1243)
-   * [12.4.4](#1244)
-   * [12.4.5](#1245)
-   * [12.4.6](#1246)
-   * [12.4.7](#1247)
-   * [12.4.8](#1248)
-   * [12.4.9](#1249)
-   * [12.4.10](#12410)
-   * [12.4.11](#12411)
+  * [12.4.1](#1241)
+  * [12.4.2](#1242)
+  * [12.4.3](#1243)
+  * [12.4.4](#1244)
+  * [12.4.5](#1245)
+  * [12.4.6](#1246)
+  * [12.4.7](#1247)
+  * [12.4.8](#1248)
+  * [12.4.9](#1249)
+  * [12.4.10](#12410)
+  * [12.4.11](#12411)
 * [12.5 The `finally` Clause](#125-the-finally-clause)
-   * [12.5.1](#1251)
+  * [12.5.1](#1251)
 * [12.6 When to Use Exceptions](#126-when-to-use-exceptions)
-   * [12.6.1](#1261)
+  * [12.6.1](#1261)
 * [12.7 Rethrowing Exceptions](#127-rethrowing-exceptions)
-   * [12.7.1](#1271)
+  * [12.7.1](#1271)
 * [12.8 Chained Exceptions](#128-chained-exceptions)
-   * [12.8.1](#1281)
+  * [12.8.1](#1281)
 * [12.9 Defining Custom Exception Classes](#129-defining-custom-exception-classes)
-   * [12.9.1](#1291)
-   * [12.9.2](#1292)
+  * [12.9.1](#1291)
+  * [12.9.2](#1292)
 * [12.10 The `File` Class](#1210-the-file-class)
-   * [12.10.1](#12101)
-   * [12.10.2](#12102)
-   * [12.10.3](#12103)
+  * [12.10.1](#12101)
+  * [12.10.2](#12102)
+  * [12.10.3](#12103)
 * [12.11 File Input and Output](#1211-file-input-and-output)
-   * [12.11.1](#12111)
-   * [12.11.2](#12112)
-   * [12.11.3](#12113)
-   * [12.11.4](#12114)
-   * [12.11.5](#12115)
-   * [12.11.6](#12116)
-   * [12.11.7](#12117)
-   * [12.11.8](#12118)
+  * [12.11.1](#12111)
+  * [12.11.2](#12112)
+  * [12.11.3](#12113)
+  * [12.11.4](#12114)
+  * [12.11.5](#12115)
+  * [12.11.6](#12116)
+  * [12.11.7](#12117)
+  * [12.11.8](#12118)
 * [12.12 Reading Data from the Web](#1212-reading-data-from-the-web)
-   * [12.12.1](#12121)
+  * [12.12.1](#12121)
 * [12.13 Case Study: Web Crawler](#1213-case-study-web-crawler)
-   * [12.13.1](#12131)
-   * [12.13.2](#12132)
+  * [12.13.1](#12131)
+  * [12.13.2](#12132)
 
 ## 12.2 Exception-Handling Overview
 
@@ -243,7 +243,7 @@ Continue after the catch block
 > }
 > ```
 > (b)
-> 
+>
 > ```java
 > public class Test {
 >     public static void main(String[] args) {
@@ -1162,7 +1162,8 @@ public class FileExample {
 }
 ```
 
-Yes, you can find the size of a file (number of bytes) using the `length()` method of the `File` class. It returns the size of the file in **bytes** as a `long` value. Here's an example:
+Yes, you can find the size of a file (number of bytes) using the `length()` method of the `File` class. It returns the size of the file in
+**bytes** as a `long` value. Here's an example:
 
 ```java
 import java.io.File;
@@ -1222,7 +1223,8 @@ To perform I/O operations on a file, you need to use other classes such as `Inpu
 
 Creating a `File` object **does not automatically create a file on the disk**.  
 The `File` class represents a file or directory path, but it does not physically create the file.  
-It is merely a **representation of the file's location** and provides methods to interact with the file system.
+It is merely a **representation of the file's location
+** and provides methods to interact with the file system.
 
 If you need to create a file on the disk, you would typically use the appropriate I/O classes mentioned earlier to create and write content to the file. For example, you can use `FileOutputStream` or `FileWriter` along with a `File` object to create and write to a file.
 

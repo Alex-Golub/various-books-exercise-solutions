@@ -16,18 +16,18 @@ This repository contains my personal solutions to programming exercises and Chec
 
 ## Progress
 
-- [x] [Chapter 1 Introduction to Computers, Programs, and Java™ => 13 Questions](src/chapter1_Intro)
-- [x] [Chapter 2 Elementary Programming => 23 Questions](src/chapter2_Elementary_Programming)
-- [x] [Chapter 3 Selections => 35 Questions](src/chapter3_Selections)
-- [x] [Chapter 4 Mathematical Functions, Characters, and Strings => 26 Questions](src/chapter4_Math_Characters_Strings)
-- [x] [Chapter 5 Loops => 51 Questions](src/chapter5_Loops)
-- [x] [Chapter 6 Methods => 39 Questions](src/chapter6_Methods)
-- [x] [Chapter 7 Single-Dimensional Arrays => 37 Questions](src/chapter7_SD_Arrays)
-- [x] [Chapter 8 Multidimensional Arrays => 37 Questions](src/chapter8_MD_Arrays)
-- [x] [Chapter 9 Objects and Classes => 13 Questions](src/chapter9_Objects_and_Classes)
-- [x] [Chapter 10 Object-Oriented Thinking => 28 Questions](src/chapter10_Object_Oriented_Thinking)
-- [ ] [Chapter 11 Inheritance and Polymorphism => 19 Questions](src/chapter11_Inheritance_and_Polymorphism)
-- [ ] Chapter 12 Exception Handling and Text I/O
+- [x] [Chapter 1 Introduction to Computers, Programs, and Java™](src/chapter1_Intro)
+- [x] [Chapter 2 Elementary Programming](src/chapter2_Elementary_Programming)
+- [x] [Chapter 3 Selections](src/chapter3_Selections)
+- [x] [Chapter 4 Mathematical Functions, Characters, and Strings](src/chapter4_Math_Characters_Strings)
+- [x] [Chapter 5 Loops](src/chapter5_Loops)
+- [x] [Chapter 6 Methods](src/chapter6_Methods)
+- [x] [Chapter 7 Single-Dimensional Arrays](src/chapter7_SD_Arrays)
+- [x] [Chapter 8 Multidimensional Arrays](src/chapter8_MD_Arrays)
+- [x] [Chapter 9 Objects and Classes](src/chapter9_Objects_and_Classes)
+- [x] [Chapter 10 Object-Oriented Thinking](src/chapter10_Object_Oriented_Thinking)
+- [x] [Chapter 11 Inheritance and Polymorphism](src/chapter11_Inheritance_and_Polymorphism)
+- [x] [Chapter 12 Exception Handling and Text I/O](src/chapter_12_exception_handling_and_text_io)
 - [ ] Chapter 13 Abstract Classes and Interfaces
 - [ ] Chapter 14 JavaFX Basics
 - [ ] Chapter 15 Event-Driven Programming and Animations

@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class WebCrawler {
+class WebCrawler {
 
     public static final int URL_PROCESSED = 100;
 
