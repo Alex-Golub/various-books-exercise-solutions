@@ -2,7 +2,7 @@ package chapter11_Inheritance_and_Polymorphism;
 
 import utils.chapter_11.GeometricObject;
 
-class Rectangle extends GeometricObject {
+public class Rectangle extends GeometricObject {
     private double width;
     private double height;
 
