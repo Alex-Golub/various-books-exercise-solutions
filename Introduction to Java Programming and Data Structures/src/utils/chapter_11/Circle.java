@@ -1,12 +1,23 @@
 package utils.chapter_11;
 
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
+
+@ToString(callSuper = true)
+@EqualsAndHashCode(callSuper = false)
 public class Circle extends GeometricObject {
+    
     private double radius;
 
     public Circle() {
     }
 
     public Circle(double radius) {
+        this.radius = radius;
+    }
+
+    public Circle(String color, boolean filled, double radius) {
+        super(color, filled);
         this.radius = radius;
     }
 

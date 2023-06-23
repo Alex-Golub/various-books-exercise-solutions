@@ -1,8 +1,10 @@
-package chapter11_Inheritance_and_Polymorphism;
+package utils.chapter_11;
 
-import utils.chapter_11.GeometricObject;
+import lombok.ToString;
 
+@ToString(callSuper = true)
 public class Rectangle extends GeometricObject {
+
     private double width;
     private double height;
 
@@ -10,6 +12,12 @@ public class Rectangle extends GeometricObject {
     }
 
     public Rectangle(double width, double height) {
+        this.width = width;
+        this.height = height;
+    }
+
+    public Rectangle(String color, boolean filled, double width, double height) {
+        super(color, filled);
         this.width = width;
         this.height = height;
     }
@@ -52,5 +60,18 @@ public class Rectangle extends GeometricObject {
     /** Return perimeter */
     public double getPerimeter() {
         return 2 * (width + height);
+    }
+
+    @Override
+    public boolean equals(Object other) {
+        if (this == other) {
+            return true;
+        }
+
+        if (other == null || getClass() != other.getClass()) {
+            return false;
+        }
+
+        return Math.abs(getArea() - ((Rectangle) other).getArea()) < 1e-10;
     }
 }

@@ -12,8 +12,12 @@ public class MyStack<T> extends ArrayList<T> {
     public MyStack() {
     }
 
+    /**
+     * Preform a deep copy of the passed collection
+     * @param c collection to copy
+     */
     public MyStack(Collection<? extends T> c) {
-        super(c);
+        super(new ArrayList<>(c));
     }
 
     public T peek() {

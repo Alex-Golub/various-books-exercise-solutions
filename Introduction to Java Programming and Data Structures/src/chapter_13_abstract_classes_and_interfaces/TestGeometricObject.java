@@ -1,6 +1,6 @@
 package chapter_13_abstract_classes_and_interfaces;
 
-import chapter11_Inheritance_and_Polymorphism.Rectangle;
+import utils.chapter_11.Rectangle;
 import utils.chapter_11.Circle;
 import utils.chapter_11.GeometricObject;
 

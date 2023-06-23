@@ -28,7 +28,7 @@ This repository contains my personal solutions to programming exercises and Chec
 - [x] [Chapter 10 Object-Oriented Thinking](src/chapter10_Object_Oriented_Thinking)
 - [x] [Chapter 11 Inheritance and Polymorphism](src/chapter11_Inheritance_and_Polymorphism)
 - [x] [Chapter 12 Exception Handling and Text I/O](src/chapter_12_exception_handling_and_text_io)
-- [ ] Chapter 13 Abstract Classes and Interfaces
+- [x] [Chapter 13 Abstract Classes and Interfaces](src/chapter_13_abstract_classes_and_interfaces)
 - [ ] Chapter 14 JavaFX Basics
 - [ ] Chapter 15 Event-Driven Programming and Animations
 - [ ] Chapter 16 JavaFX UI Controls and Multimedia

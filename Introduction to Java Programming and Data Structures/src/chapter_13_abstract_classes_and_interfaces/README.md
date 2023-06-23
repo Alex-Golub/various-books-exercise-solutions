@@ -877,10 +877,10 @@ In this updated code, the `Person` class correctly implements the `Comparable<Pe
 ```java
 package utils.chapter_13;
 
-import chapter11_Inheritance_and_Polymorphism.Rectangle;
+import utils.chapter_11.Rectangle;
 
-public class ComparableRectangle 
-        extends Rectangle 
+public class ComparableRectangle
+        extends Rectangle
         implements Comparable<ComparableRectangle> {
 
     public ComparableRectangle(double width, double height) {

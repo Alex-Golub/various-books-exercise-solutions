@@ -1,8 +1,14 @@
 package utils.chapter_11;
 
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
+
 import java.time.LocalDateTime;
 
-public abstract class GeometricObject {
+@EqualsAndHashCode
+@ToString
+public abstract class GeometricObject implements Comparable<GeometricObject> {
+
     private final LocalDateTime dateCreated;
     private String color = "white";
     private boolean filled;
@@ -59,12 +65,6 @@ public abstract class GeometricObject {
         return dateCreated;
     }
 
-    @Override
-    public String toString() {
-        return "created on " + dateCreated + "\ncolor: " + color +
-               " and filled: " + filled;
-    }
-
     /**
      * Abstract method getArea
      */
@@ -74,4 +74,23 @@ public abstract class GeometricObject {
      * Abstract method getPerimeter
      */
     public abstract double getPerimeter();
+
+    /**
+     * Compares two GeometricObjects and returns the object that's considered larger based on its area.
+     *
+     * @param o1 the first GeometricObject to compare
+     * @param o2 the second GeometricObject to compare
+     * @return the GeometricObject that's larger based on its area
+     */
+    public static GeometricObject max(GeometricObject o1, GeometricObject o2) {
+        return o1.compareTo(o2) > 0 ? o1 : o2;
+    }
+
+    /**
+     * Compare this GeometricObject area to the other GeometricObject
+     */
+    @Override
+    public int compareTo(GeometricObject o) {
+        return Double.compare(getArea(), o.getArea());
+    }
 }

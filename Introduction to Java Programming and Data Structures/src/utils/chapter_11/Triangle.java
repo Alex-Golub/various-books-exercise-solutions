@@ -1,18 +1,18 @@
 package utils.chapter_11;
 
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.ToString;
 import utils.exceptions.IllegalTriangleException;
 
-import java.util.Scanner;
-
 @Getter
 @ToString(callSuper = true)
+@EqualsAndHashCode(callSuper = true)
 public class Triangle extends GeometricObject {
 
-    private double a;
-    private double b;
-    private double c;
+    private final double a;
+    private final double b;
+    private final double c;
 
     public Triangle() {
         a = 1.0;
@@ -49,25 +49,6 @@ public class Triangle extends GeometricObject {
 
         if (!isValid) {
             throw new IllegalTriangleException(errorMessage);
-        }
-    }
-
-    public static void main(String[] args) throws IllegalTriangleException {
-        try (Scanner console = new Scanner(System.in)) {
-            System.out.print("Enter three sides of the triangle: ");
-            double a = Double.parseDouble(console.nextLine());
-            double b = Double.parseDouble(console.nextLine());
-            double c = Double.parseDouble(console.nextLine());
-            System.out.print("Enter color: ");
-            String color = console.nextLine();
-            System.out.print("Enter true or false to indicate whether it is filled: ");
-            boolean filled = console.nextBoolean();
-            Triangle triangle = new Triangle(color, filled, a, b, c);
-            System.out.println("Area: " + triangle.getArea());
-            System.out.println("Perimeter: " + triangle.getPerimeter());
-            System.out.println("Color: " + triangle.getColor());
-            System.out.println("Is filled: " + triangle.isFilled());
-            System.out.println("triangle = " + triangle);
         }
     }
 
