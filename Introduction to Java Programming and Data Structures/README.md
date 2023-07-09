@@ -16,19 +16,19 @@ This repository contains my personal solutions to programming exercises and Chec
 
 ## Progress
 
-- [x] [Chapter 1 Introduction to Computers, Programs, and Java™](src/main/java/chapter1_Intro)
-- [x] [Chapter 2 Elementary Programming](src/main/java/chapter2_Elementary_Programming)
-- [x] [Chapter 3 Selections](src/main/java/chapter3_Selections)
-- [x] [Chapter 4 Mathematical Functions, Characters, and Strings](src/main/java/chapter4_Math_Characters_Strings)
-- [x] [Chapter 5 Loops](src/main/java/chapter5_Loops)
-- [x] [Chapter 6 Methods](src/main/java/chapter6_Methods)
-- [x] [Chapter 7 Single-Dimensional Arrays](src/main/java/chapter7_SD_Arrays)
-- [x] [Chapter 8 Multidimensional Arrays](src/main/java/chapter8_MD_Arrays)
-- [x] [Chapter 9 Objects and Classes](src/main/java/chapter9_Objects_and_Classes)
-- [x] [Chapter 10 Object-Oriented Thinking](src/main/java/chapter10_Object_Oriented_Thinking)
-- [x] [Chapter 11 Inheritance and Polymorphism](src/main/java/chapter11_Inheritance_and_Polymorphism)
-- [x] [Chapter 12 Exception Handling and Text I/O](src/main/java/chapter_12_exception_handling_and_text_io)
-- [x] [Chapter 13 Abstract Classes and Interfaces](src/main/java/chapter_13_abstract_classes_and_interfaces)
+- [x] [Chapter 1 Introduction to Computers, Programs, and Java™](src/main/java/org/mrdrprof/solutions/chapter1_Intro)
+- [x] [Chapter 2 Elementary Programming](src/main/java/org/mrdrprof/solutions/chapter2_Elementary_Programming)
+- [x] [Chapter 3 Selections](src/main/java/org/mrdrprof/solutions/chapter3_Selections)
+- [x] [Chapter 4 Mathematical Functions, Characters, and Strings](src/main/java/org/mrdrprof/solutions/chapter4_Math_Characters_Strings)
+- [x] [Chapter 5 Loops](src/main/java/org/mrdrprof/solutions/chapter5_Loops)
+- [x] [Chapter 6 Methods](src/main/java/org/mrdrprof/solutions/chapter6_Methods)
+- [x] [Chapter 7 Single-Dimensional Arrays](src/main/java/org/mrdrprof/solutions/chapter7_SD_Arrays)
+- [x] [Chapter 8 Multidimensional Arrays](src/main/java/org/mrdrprof/solutions/chapter8_MD_Arrays)
+- [x] [Chapter 9 Objects and Classes](src/main/java/org/mrdrprof/solutions/chapter9_Objects_and_Classes)
+- [x] [Chapter 10 Object-Oriented Thinking](src/main/java/org/mrdrprof/solutions/chapter10_Object_Oriented_Thinking)
+- [x] [Chapter 11 Inheritance and Polymorphism](src/main/java/org/mrdrprof/solutions/chapter11_Inheritance_and_Polymorphism)
+- [x] [Chapter 12 Exception Handling and Text I/O](src/main/java/org/mrdrprof/solutions/chapter_12_exception_handling_and_text_io)
+- [x] [Chapter 13 Abstract Classes and Interfaces](src/main/java/org/mrdrprof/solutions/chapter_13_abstract_classes_and_interfaces)
 - [ ] Chapter 14 JavaFX Basics
 - [ ] Chapter 15 Event-Driven Programming and Animations
 - [ ] Chapter 16 JavaFX UI Controls and Multimedia

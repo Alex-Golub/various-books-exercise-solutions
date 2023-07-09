@@ -1,5 +1,6 @@
 plugins {
-    java
+    application
+    id("org.openjfx.javafxplugin") version "0.0.14"
 }
 
 repositories {
@@ -26,4 +27,13 @@ dependencies {
 
 tasks.withType<JavaCompile> {
     options.encoding = "UTF-8"
+}
+
+javafx {
+    version = "17"
+    modules("javafx.controls", "javafx.fxml")
+}
+
+application {
+    mainClass.set("org.mrdrprof.solutions.chapter_14_javafx_basics.theory.MyJavaFX")
 }
