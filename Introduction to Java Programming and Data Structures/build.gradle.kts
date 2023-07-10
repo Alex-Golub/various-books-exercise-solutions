@@ -1,4 +1,7 @@
 plugins {
+    idea
+    groovy
+    kotlin("jvm") version "1.9.0"
     application
     id("org.openjfx.javafxplugin") version "0.0.14"
 }
@@ -16,6 +19,7 @@ val lombokVersion by extra("1.18.28")
 val commonsLang3Version by extra("3.12.0")
 val commonsCollectionsVersion by extra("4.4")
 val commonsIoVersion by extra("2.13.0")
+val groovyVersion by extra("4.0.12")
 
 dependencies {
     compileOnly("org.projectlombok:lombok:$lombokVersion")
@@ -23,10 +27,12 @@ dependencies {
     implementation("org.apache.commons:commons-lang3:$commonsLang3Version")
     implementation("org.apache.commons:commons-collections4:$commonsCollectionsVersion")
     implementation("commons-io:commons-io:$commonsIoVersion")
+    implementation("org.apache.groovy:groovy:$groovyVersion")
 }
 
 tasks.withType<JavaCompile> {
     options.encoding = "UTF-8"
+    options.isFork = true
 }
 
 javafx {
@@ -35,5 +41,12 @@ javafx {
 }
 
 application {
-    mainClass.set("org.mrdrprof.solutions.chapter_14_javafx_basics.theory.MyJavaFX")
+    mainClass.set("org.mrdrprof.solutions.chapter_14_javafx_basics.theory.DisplayClock")
+}
+
+idea {
+    module {
+        isDownloadJavadoc = true
+        isDownloadSources = true
+    }
 }
