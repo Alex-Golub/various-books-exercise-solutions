@@ -35,13 +35,18 @@ tasks.withType<JavaCompile> {
     options.isFork = true
 }
 
+tasks.withType<JavaExec> {
+    standardInput = System.`in`
+}
+
 javafx {
     version = "17"
     modules("javafx.controls", "javafx.fxml")
 }
 
 application {
-    mainClass.set("org.mrdrprof.solutions.chapter_14_javafx_basics.theory.DisplayClock")
+//    mainClass.set("org.mrdrprof.solutions.chapter_14_javafx_basics.theory.DisplayClock")
+    mainClass.set("org.mrdrprof.solutions.chapter_14_javafx_basics.practice.Ex1429")
 }
 
 idea {
