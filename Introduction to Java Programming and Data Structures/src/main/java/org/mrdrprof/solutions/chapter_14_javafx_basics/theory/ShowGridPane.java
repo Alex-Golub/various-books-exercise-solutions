@@ -13,7 +13,7 @@ import javafx.stage.Stage;
 
 public class ShowGridPane extends Application {
 
-  @Override // Override the start method in the Application class
+  @Override
   public void start(Stage primaryStage) {
     // Create a gridPane and set its properties
     GridPane gridPane = new GridPane();

@@ -7,7 +7,7 @@ import javafx.scene.layout.StackPane
 import javafx.stage.Stage
 
 class ButtonInPaneKt : Application() {
-    // Override the start method in the Application class
+   
     override fun start(primaryStage: Stage) {
         // Create a scene and place a button in the scene
         val pane = StackPane()

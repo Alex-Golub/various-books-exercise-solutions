@@ -11,7 +11,7 @@ public class MyJavaFX extends Application {
    * JavaFX support. Not needed for running from the command line.
    * to run the class invoke ./gradlew run or gradle run from the Gradle GUI
    */
-  @Override // Override the start method in the Application class
+  @Override
   public void start(Stage primaryStage) {
     // Create a button and place it in the scene
     Button btOK = new Button("OK");

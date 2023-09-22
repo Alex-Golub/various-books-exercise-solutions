@@ -46,7 +46,7 @@ javafx {
 
 application {
 //    mainClass.set("org.mrdrprof.solutions.chapter_14_javafx_basics.theory.DisplayClock")
-    mainClass.set("org.mrdrprof.solutions.chapter_14_javafx_basics.practice.Ex1429")
+    mainClass.set("org.mrdrprof.solutions.chapter_15_event_driven_programming_and_animations.theory.Test1")
 }
 
 idea {

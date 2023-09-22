@@ -18,7 +18,7 @@ import javafx.stage.Stage;
  */
 public class Ex1414 extends Application {
 
-    @Override // Override the start method in the Application class
+    @Override
     public void start(Stage primaryStage) {
         Pane pane = new MyCubePane();
 

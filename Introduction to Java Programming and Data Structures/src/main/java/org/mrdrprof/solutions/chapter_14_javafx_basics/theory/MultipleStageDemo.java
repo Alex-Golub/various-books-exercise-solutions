@@ -18,7 +18,7 @@ public class MultipleStageDemo extends Application {
     System.out.println(getClass().getDeclaredConstructor().getName() + " has been invoked");
   }
 
-  @Override // Override the start method in the Application class
+  @Override
   public void start(Stage primaryStage) {
     // Create a scene and place a button in the scene
     Scene scene = new Scene(new Button("OK"), 200, 250);

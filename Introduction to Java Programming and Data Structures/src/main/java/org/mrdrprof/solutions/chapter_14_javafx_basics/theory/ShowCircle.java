@@ -20,7 +20,7 @@ public class ShowCircle extends Application {
     launch(args);
   }
 
-  @Override // Override the start method in the Application class
+  @Override
   public void start(Stage primaryStage) {
     // Create a circle and set its properties
     Circle circle = new Circle(SCENE_HEIGHT / 2.0,

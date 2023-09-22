@@ -10,7 +10,7 @@ import javafx.stage.Stage;
 
 public class ShowPolygon extends Application {
 
-  @Override // Override the start method in the Application class
+  @Override
   public void start(Stage primaryStage) {
     // Create a scene and place it in the stage
     Scene scene = new Scene(new MyPolygon(), 400, 400);

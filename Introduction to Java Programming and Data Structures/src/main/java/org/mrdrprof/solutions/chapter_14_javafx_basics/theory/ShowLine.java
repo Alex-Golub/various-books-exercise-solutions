@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 
 public class ShowLine extends Application {
   
-  @Override // Override the start method in the Application class
+  @Override
   public void start(Stage primaryStage) {
     // Create a scene and place it in the stage
     Scene scene = new Scene(new LinePane(), 200, 200);

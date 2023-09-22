@@ -7,7 +7,7 @@ import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
 public class ButtonInPane extends Application {
-  @Override // Override the start method in the Application class
+  @Override
   public void start(Stage primaryStage) {
     // Create a scene and place a button in the scene
     StackPane pane = new StackPane();

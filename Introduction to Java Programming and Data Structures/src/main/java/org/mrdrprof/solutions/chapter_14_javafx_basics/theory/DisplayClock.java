@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 
 public class DisplayClock extends Application {
 
-    @Override // Override the start method in the Application class
+    @Override
     public void start(Stage primaryStage) {
         ClockPane clock = new ClockPane();
         String timeString = clock.getHour() + ":" + clock.getMinute() + ":" + clock.getSecond();

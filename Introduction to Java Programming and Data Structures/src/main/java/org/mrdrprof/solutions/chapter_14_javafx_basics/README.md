@@ -171,7 +171,7 @@ Overall, the evolution of Java GUI technologies has progressed from AWT to Swing
 >       System.out.println("Test constructor is invoked");
 >    }
 > 
->    @Override // Override the start method in the Application class
+>    @Override
 >    public void start(Stage primaryStage) {
 >       System.out.println("start method is invoked");
 >    }

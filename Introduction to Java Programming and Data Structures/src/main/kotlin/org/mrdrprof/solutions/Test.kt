@@ -1,10 +1,11 @@
 package org.mrdrprof.solutions
 
-val scanner = java.util.Scanner(System.`in`)
+fun main() {
+    val a = readln().toInt()
+    val b = readln().toInt()
+    val c = readln().toInt()
 
-fun main(args: Array<String>){
-    val a = scanner.nextInt()
-    val b = scanner.nextInt()
+    val isRightEquation = { a: Int, b: Int, c: Int -> a * b == c }
 
-    println(3 * (a + b))
+    println(isRightEquation(a, b, c))
 }

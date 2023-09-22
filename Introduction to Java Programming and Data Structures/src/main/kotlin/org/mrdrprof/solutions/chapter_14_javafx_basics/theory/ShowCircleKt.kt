@@ -8,7 +8,7 @@ import javafx.scene.shape.Circle
 import javafx.stage.Stage
 
 class ShowCircleKt : Application() {
-    // Override the start method in the Application class
+   
     override fun start(primaryStage: Stage) {
         // Create a circle and set its properties
         val circle = Circle()

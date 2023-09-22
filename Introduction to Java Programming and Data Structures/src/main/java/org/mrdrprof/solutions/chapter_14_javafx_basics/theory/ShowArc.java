@@ -12,7 +12,7 @@ import javafx.stage.Stage;
 
 public class ShowArc extends Application {
 
-  @Override // Override the start method in the Application class
+  @Override
   public void start(Stage primaryStage) {
     Arc arc1 = new Arc(150, 100, 80, 80, 30, 35); // Create an arc
     arc1.setFill(Color.RED); // Set fill color

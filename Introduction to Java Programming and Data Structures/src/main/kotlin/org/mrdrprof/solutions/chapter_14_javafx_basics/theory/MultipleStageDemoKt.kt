@@ -10,7 +10,7 @@ class MultipleStageDemoKt : Application() {
         println(javaClass.getDeclaredConstructor().name + " has been invoked")
     }
 
-    // Override the start method in the Application class
+   
     override fun start(primaryStage: Stage) {
         // Create a scene and place a button in the scene
         val scene = Scene(Button("OK"), 200.0, 250.0)

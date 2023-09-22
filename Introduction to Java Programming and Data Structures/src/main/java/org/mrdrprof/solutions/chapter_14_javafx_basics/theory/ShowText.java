@@ -13,7 +13,7 @@ import javafx.stage.Stage;
 
 public class ShowText extends Application {
   
-  @Override // Override the start method in the Application class
+  @Override
   public void start(Stage primaryStage) {
     // Create a pane to hold the texts
     Pane pane = new Pane();

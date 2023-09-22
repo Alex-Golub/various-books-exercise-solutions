@@ -11,7 +11,7 @@ class MyJavaFXKt : Application() {
      * JavaFX support. Not needed for running from the command line.
      * to run the class invoke ./gradlew run or gradle run from the Gradle GUI
      */
-    // Override the start method in the Application class
+   
     override fun start(primaryStage: Stage) {
         // Create a button and place it in the scene
         val btOK = Button("OK")
