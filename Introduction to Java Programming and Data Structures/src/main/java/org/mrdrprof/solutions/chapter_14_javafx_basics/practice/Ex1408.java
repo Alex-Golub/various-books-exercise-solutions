@@ -2,13 +2,13 @@ package org.mrdrprof.solutions.chapter_14_javafx_basics.practice;
 
 import javafx.application.Application;
 import javafx.geometry.Insets;
-import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.RowConstraints;
 import javafx.stage.Stage;
+import org.mrdrprof.solutions.utils.chapter_14.ImageLocationUtils;
 
 /**
  * 14.8 (Display 54 cards) Expand Exercise 14.3 to display all 54 cards (including two

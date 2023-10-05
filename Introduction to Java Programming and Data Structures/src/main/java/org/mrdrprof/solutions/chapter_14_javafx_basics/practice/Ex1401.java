@@ -5,6 +5,7 @@ import javafx.scene.Scene;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
+import org.mrdrprof.solutions.utils.chapter_14.ImageLocationUtils;
 
 /**
  * 14.1 (Display images) Write a program that displays four images in a grid pane, as
