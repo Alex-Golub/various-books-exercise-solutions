@@ -45,8 +45,8 @@ javafx {
 }
 
 application {
-//    mainClass.set("org.mrdrprof.solutions.chapter_15_event_driven_programming_and_animations.theory.Test1")
-    mainClass.set("org.mrdrprof.solutions.chapter_15_event_driven_programming_and_animations.practice.Ex1518")
+//    mainClass.set("org.mrdrprof.solutions.chapter_14_javafx_basics.practice.Ex1410")
+    mainClass.set("org.mrdrprof.solutions.chapter_15_event_driven_programming_and_animations.practice.Ex1528")
 }
 
 idea {
