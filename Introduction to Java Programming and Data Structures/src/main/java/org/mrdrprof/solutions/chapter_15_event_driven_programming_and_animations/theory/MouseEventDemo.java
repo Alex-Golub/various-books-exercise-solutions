@@ -20,7 +20,7 @@ public class MouseEventDemo extends Application {
 
             System.out.printf("x: %.2f, y: %.2f%n", e.getX(), e.getY());
         });
-        
+
 
         // Create a scene and place it in the stage
         Scene scene = new Scene(pane, 300, 100);

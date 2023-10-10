@@ -9,7 +9,7 @@ import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 
 public class ResizableCircleRectangle extends Application {
-    
+
     private final Circle circle = new Circle(60);
     private final Rectangle rectangle = new Rectangle(120, 120);
     private final StackPane pane = new StackPane();

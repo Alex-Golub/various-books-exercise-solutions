@@ -35,7 +35,7 @@ public class KeyEventDemo extends Application {
                     }
             }
         });
-    
+
         // Create a scene and place the pane in the stage
         Scene scene = new Scene(pane);
         primaryStage.setTitle("KeyEventDemo"); // Set the stage title

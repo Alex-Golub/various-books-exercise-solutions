@@ -21,7 +21,7 @@ import java.util.Random;
  * shown in Figure 15.31b. When you click the circle, it disappears and a new
  * random-color circle is displayed at another random location. After 20 circles
  * are clicked, display the time spent in the pane, as shown in Figure 15.31c.
- * 
+ *
  * @author Alex Golub
  * @since October 06, 2023 4:39 PM
  */

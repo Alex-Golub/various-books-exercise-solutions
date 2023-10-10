@@ -12,12 +12,12 @@ import javafx.stage.Stage;
 import javafx.util.Duration;
 
 public class PathTransitionDemo extends Application {
-    
+
     @Override
     public void start(Stage primaryStage) {
         // Create a pane 
         Pane pane = new Pane();
-    
+
         // Create a rectangle
         Rectangle rectangle = new Rectangle(0, 0, 25, 50);
         rectangle.setFill(Color.ORANGE);

@@ -1,32 +1,63 @@
 package org.mrdrprof.solutions.chapter_14_javafx_basics.theory;
 
+import javafx.animation.Animation;
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Line;
 import javafx.scene.text.Text;
+import javafx.util.Duration;
+import lombok.Getter;
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
 public class ClockPane extends Pane {
 
+    @Getter
     private int hour;
+    @Getter
     private int minute;
+    @Getter
     private int second;
+
+    // Create a handler for animation
+    private final EventHandler<ActionEvent> eventHandler = e -> setCurrentTime();
+
+    // Create an animation for a running clock
+    private final Timeline animation = new Timeline(new KeyFrame(Duration.millis(1000), eventHandler));
 
     public ClockPane() {
         setCurrentTime();
+
+        animation.setCycleCount(Animation.INDEFINITE);
+        animation.play(); // Start animation
     }
 
     public ClockPane(int hour, int minute, int second) {
         this.hour = hour;
         this.minute = minute;
         this.second = second;
+        paintClock();
+
+        animation.setCycleCount(Animation.INDEFINITE);
+        animation.play(); // Start animation
     }
 
-    public int getHour() {
-        return hour;
+    public void pause() {
+        animation.pause();
+    }
+
+    public void start() {
+        animation.play();
+    }
+
+    public void stop() {
+        animation.stop();
     }
 
     public void setHour(int hour) {
@@ -34,17 +65,9 @@ public class ClockPane extends Pane {
         paintClock();
     }
 
-    public int getMinute() {
-        return minute;
-    }
-
     public void setMinute(int minute) {
         this.minute = minute;
         paintClock();
-    }
-
-    public int getSecond() {
-        return second;
     }
 
     public void setSecond(int second) {
@@ -52,7 +75,6 @@ public class ClockPane extends Pane {
         paintClock();
     }
 
-    /* Set the current time for the clock */
     public void setCurrentTime() {
         // Construct a calendar for the current date and time
         Calendar calendar = new GregorianCalendar();
@@ -101,7 +123,7 @@ public class ClockPane extends Pane {
         Line hLine = new Line(centerX, centerY, hourX, hourY);
         hLine.setStroke(Color.GREEN);
 
-        getChildren().clear(); // Clear the pane
+        getChildren().clear();
         getChildren().addAll(circle, t1, t2, t3, t4, sLine, mLine, hLine);
     }
 

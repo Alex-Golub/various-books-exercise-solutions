@@ -30,7 +30,7 @@ This repository contains my personal solutions to programming exercises and Chec
 - [x] [Chapter 12 Exception Handling and Text I/O](src/main/java/org/mrdrprof/solutions/chapter_12_exception_handling_and_text_io)
 - [x] [Chapter 13 Abstract Classes and Interfaces](src/main/java/org/mrdrprof/solutions/chapter_13_abstract_classes_and_interfaces)
 - [x] [Chapter 14 JavaFX Basics](src/main/java/org/mrdrprof/solutions/chapter_14_javafx_basics)
-- [ ] Chapter 15 Event-Driven Programming and Animations
+- [x] [Chapter 15 Event-Driven Programming and Animations](src/main/java/org/mrdrprof/solutions/chapter_15_event_driven_programming_and_animations)
 - [ ] Chapter 16 JavaFX UI Controls and Multimedia
 - [ ] Chapter 17 Binary I/O
 - [ ] Chapter 18 Recursion

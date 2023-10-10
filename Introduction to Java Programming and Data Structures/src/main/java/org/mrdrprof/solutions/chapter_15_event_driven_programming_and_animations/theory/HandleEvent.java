@@ -15,7 +15,7 @@ public class HandleEvent extends Application {
     public void start(Stage primaryStage) {
         HBox pane = new HBox(10);
         pane.setAlignment(Pos.CENTER);
-        
+
         // create source object
         Button btOK = new Button("OK");
         Button btCancel = new Button("Cancel");

@@ -50,7 +50,7 @@ public class ControlCircle extends Application {
             circlePane.enlarge();
         }
     }
-    
+
     class ShrinkHandler implements EventHandler<ActionEvent> {
         @Override
         public void handle(ActionEvent e) {

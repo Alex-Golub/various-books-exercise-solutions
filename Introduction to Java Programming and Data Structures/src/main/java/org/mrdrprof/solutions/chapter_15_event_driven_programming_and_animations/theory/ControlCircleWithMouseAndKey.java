@@ -11,7 +11,7 @@ import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 
 public class ControlCircleWithMouseAndKey extends Application {
-    
+
     private final CirclePane circlePane = new CirclePane();
 
     @Override

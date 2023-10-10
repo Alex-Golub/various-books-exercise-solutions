@@ -13,7 +13,7 @@ import javafx.stage.Stage;
  * circles with radius 10 at location (40, 40) and (120, 150) with a line connecting the two circles, as shown in Figure 15.30b. The distance between the circles
  * is displayed along the line. The user can drag a circle. When that happens, the
  * circle and its line are moved, and the distance between the circles is updated.
- * 
+ *
  * @author Alex Golub
  * @since October 06, 2023 1:18 PM
  */
@@ -72,7 +72,7 @@ public class Ex1516 extends Application {
 
         double distance = calculateDistance(x1, y1, x2, y2);
         distanceText.setText(String.format("%.2f", distance));
-        
+
         // distance text location
         distanceText.setX((x1 + x2) / 2);
         distanceText.setY((y1 + y2) / 2);
