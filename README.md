@@ -10,6 +10,8 @@ This repository contains my solutions for the following books (checkpoints, code
 - [ ] Learning Java with Games | Chong-wei Xu | 2018 Edition
 - [ ] ~~Java How To Program (Early Objects) | Deitel & Associates, Inc. | 10th Edition | 2015~~
 - [ ] ~~Big Java (Early Objects) | 7th edition | 2019~~
+- [ ] Java Challenges: 100+ Proven Tasks that Will Prepare You for Anything | Michael Inden | 2021
+- [ ] Java Coding Problems | Anghel Leonard | 2022
 
 ## DSA
 
