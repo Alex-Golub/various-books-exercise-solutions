@@ -46,7 +46,8 @@ javafx {
 
 application {
 //    mainClass.set("org.mrdrprof.solutions.chapter_14_javafx_basics.practice.Ex1410")
-    mainClass.set("org.mrdrprof.solutions.chapter_15_event_driven_programming_and_animations.practice.Ex1535")
+//    mainClass.set("org.mrdrprof.solutions.chapter_15_event_driven_programming_and_animations.practice.Ex1535")
+    mainClass.set("org.mrdrprof.solutions.chatper_16_javafx_ui_controls_and_multimedia.theory.LabelWithGraphic")
 }
 
 idea {
